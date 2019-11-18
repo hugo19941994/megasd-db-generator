@@ -1,0 +1,4 @@
+dbs/*.json
+db.xml
+libretro-imgs/**/*.png
+.DS_Store
