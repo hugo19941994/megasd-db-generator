@@ -9,6 +9,7 @@ verify_ssl = true
 lxml = "*"
 stop-words = "*"
 requests = "*"
+fuzzywuzzy = {extras = ["speedup"],version = "*"}
 
 [requires]
 python_version = "3.8"
