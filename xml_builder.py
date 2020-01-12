@@ -7,9 +7,21 @@ from xml.dom import minidom
 from lxml import etree
 from io import StringIO, BytesIO
 from stop_words import get_stop_words
+from fuzzywuzzy import process
+import unicodedata
+from csv import DictWriter
+
+cfm = open('cover_fuzzy_matches.csv', 'w')
+cfmw = DictWriter(cfm, fieldnames=["ROM", "Cover", "Score"])
+cfmw.writeheader()
+
+ifm = open('info_fuzzy_matches.csv', 'w')
+ifmw = DictWriter(ifm, fieldnames=["ROM", "DB Entry", "Score"])
+ifmw.writeheader()
 
 STOP_WORDS = get_stop_words('en')
 STOP_WORDS = [word.replace('\'', '') for word in STOP_WORDS]
+STOP_WORDS.remove('same')
 
 # Unique counter per game
 COUNTER = 0
@@ -22,11 +34,11 @@ def main():
     xmlschema = etree.XMLSchema(xmlschema_doc)
     a = etree.Element('{http://tempuri.org/GameDB.xsd}GameDB')
 
-    do_roms('No-Intro', '*.md', 'output/Sega - Mega Drive - Genesis/Named_Titles', 'dbs/md.json', a)
-    do_roms('No-Intro', '*.sms', 'output/Sega - Master System - Mark III/Named_Titles', 'dbs/master.json', a)
+    do_roms('No-Intro', '*.md', 'output/Sega - Mega Drive - Genesis/Named_Titles', 'dbs/genesis.json', a)
+    do_roms('No-Intro', '*.sms', 'output/Sega - Master System - Mark III/Named_Titles', 'dbs/ms.json', a)
     do_roms('No-Intro', '*.32x', 'output/Sega - 32X/Named_Titles', 'dbs/32x.json', a)
-    do_roms('No-Intro', '*.sg', 'output/Sega - SG-1000/Named_Titles', 'dbs/sg.json', a)
-    do_roms('Redump', '*.cue', 'output/Sega - Mega-CD - Sega CD/Named_Titles', 'dbs/scd.json', a)
+    do_roms('No-Intro', '*.sg', 'output/Sega - SG-1000/Named_Titles', 'dbs/sg1000.json', a)
+    do_roms('Redump', '*.cue', 'output/Sega - Mega CD & Sega CD/Named_Titles', 'dbs/cd.json', a)
 
     # Insert genres at the end of the XML
     l1 = etree.SubElement(a, '{http://tempuri.org/GameDB.xsd}Genre')
@@ -194,7 +206,16 @@ def crc(fileName):
         return "%X"%(prev & 0xFFFFFFFF)
 
 def normalize(name):
-    norm = name.lower().replace('-', '').replace(':', '').replace('\'', '').replace('~', '').replace(',', '').replace('&', '').replace('.', '').replace('+', '').replace('_', '').split('(')[0]
+    nfkd_form = unicodedata.normalize('NFKD', name)
+    name = u"".join([c for c in nfkd_form if not unicodedata.combining(c)])
+
+    norm = os.path.splitext(name)[0]
+    norm = norm.lower().replace(' ii', ' 2').replace(' iii', ' 3').replace(' iv', '4')
+    norm = norm.replace('~', '').replace('!', '').replace('-', '').replace(':', '').replace('\'', '').replace('~', '').replace(',', '').replace('&', '').replace('+', '').replace('_', '').replace('/', '').replace('.', '')
+
+    if '(' in norm:
+        norm = norm.split('(')[0]
+
     return ''.join([word for word in norm.split() if word not in STOP_WORDS])
 
 def do_roms(rom_path, rom_ext, cover_path, db_path, a):
@@ -208,24 +229,28 @@ def do_roms(rom_path, rom_ext, cover_path, db_path, a):
 
     # Load game covers
     game_covers_l = []
-    for x in os.walk(f'/home/hfs/{cover_path}'):
+    for x in os.walk(f'/home/hfs/scripts/{cover_path}'):
         for y in glob.glob(os.path.join(x[0], '*.png')):
-            game_covers_l.append(y[10:])
+            game_covers_l.append(y[18:])
     game_covers = {}
     # Normalize cover name (some will be overwritten by the normalization)
     for d in game_covers_l:
         game_covers[normalize(os.path.basename(d))] = d
 
-    # Load GB games lists
+    # Load IGDB games lists
     # Use downloader.py
-    games_list = {}
+    games_list = []
     with open(db_path) as f:
-        games_list = {**games_list, **json.load(f)}
+        games_list = json.load(f)
 
     # Normalize game names
     new_games_list = {}
-    for game in games_list.keys():
-        new_games_list[normalize(game)] = games_list[game]
+    for game in games_list:
+        new_games_list[normalize(game['name'])] = game
+        # Add alternate names to list too (copies the whole object)
+        if 'alternative_names' in game:
+            for alt_name in game['alternative_names']:
+                new_games_list[normalize(alt_name)] = game
     games_list = new_games_list
 
     # Build dict of normalized game title -> rom paths
@@ -240,6 +265,10 @@ def do_roms(rom_path, rom_ext, cover_path, db_path, a):
     found_covers = 0
     #hashes = []
     for filename, paths in res.items():
+        # Skip any BIOS files
+        if '[bios]' in filename:
+            continue
+
         COUNTER += 1
 
         b = etree.SubElement(a, '{http://tempuri.org/GameDB.xsd}Game')
@@ -248,19 +277,33 @@ def do_roms(rom_path, rom_ext, cover_path, db_path, a):
         c.text = str(COUNTER)
 
         d = etree.SubElement(b, '{http://tempuri.org/GameDB.xsd}Name')
+        #d.text = os.path.basename(paths[0])
         d.text = os.path.basename(paths[0].split('(')[0]) + f'({rom_ext[2:]})'
 
-        if filename in games_list.keys():
+        # Fuzzy match
+        match = process.extractOne(filename, games_list.keys())
+        score = 90
+        if match[0][-1].isdigit() or filename[-1].isdigit():
+            score = 100
+        if (len(filename) < 6) or (len(match[0]) < 6):
+            score = 100
+
+        if match[1] >= score:
+            game = games_list[match[0]]
+
             found_db += 1
 
-            # Year must be inserted before the genre
-            if games_list[filename]['date'] is not None:
-                e2 = etree.SubElement(b, '{http://tempuri.org/GameDB.xsd}Year')
-                e2.text = games_list[filename]['date']
+            if match[1] != 100:
+                ifmw.writerow({'ROM': paths[0], 'DB Entry': games_list[match[0]]["name"], "Score": match[1]})
 
-            if len(games_list[filename]['genres']) != 0:
+            # Year must be inserted before the genre
+            if 'release_dates' in game and 'y' in game['release_dates'][0]:
+                e2 = etree.SubElement(b, '{http://tempuri.org/GameDB.xsd}Year')
+                e2.text = str(game['release_dates'][0]['y'])
+
+            if 'genres' in game and len(game['genres']) != 0:
                 e = etree.SubElement(b, '{http://tempuri.org/GameDB.xsd}Genre')
-                g = games_list[filename]['genres'][0]
+                g = game['genres'][0]
                 if g == 'Shooter':
                     e.text = str(1)
                 elif g == 'Action':
@@ -307,9 +350,16 @@ def do_roms(rom_path, rom_ext, cover_path, db_path, a):
                     print(f'ABORTING - WRONG GENRE {g}')
                     exit()
 
-        if filename in game_covers.keys():
+        # Fuzzy match
+        match = process.extractOne(filename, game_covers.keys())
+        if match[1] >= score:
+
+            if match[1] != 100:
+                cfmw.writerow({"ROM": paths[0], "Cover": game_covers[match[0]], "Score": match[1]})
+
+            game_cover = game_covers[match[0]]
             f = etree.SubElement(b, '{http://tempuri.org/GameDB.xsd}Screenshot')
-            f.text = game_covers[filename].replace('/mnt/c', 'c:\\').replace('/', '\\\\')
+            f.text = game_cover.replace('/mnt/c', 'c:\\').replace('/', '\\\\')
             found_covers += 1
 
         # Calulcate hash for all rom variations
@@ -320,7 +370,7 @@ def do_roms(rom_path, rom_ext, cover_path, db_path, a):
                 g = etree.SubElement(a, '{http://tempuri.org/GameDB.xsd}GameCk')
 
                 h = etree.SubElement(g, '{http://tempuri.org/GameDB.xsd}Checksum')
-                h.text = crc_hash
+                h.text = crc_hash.zfill(8)
 
                 i = etree.SubElement(g, '{http://tempuri.org/GameDB.xsd}GameID')
                 i.text = str(COUNTER)
@@ -341,3 +391,5 @@ def do_roms(rom_path, rom_ext, cover_path, db_path, a):
 
 if __name__ == '__main__':
     main()
+    cfm.close()
+    ifm.close()
