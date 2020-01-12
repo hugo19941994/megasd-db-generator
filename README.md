@@ -30,3 +30,5 @@ python xml_builder.py
 Place the generated `db.xml` file and the output folder in the same folder as the `GameDBManagerMD` executable file, press convert images and finally scan your SD card.
 
 **The current version of the database has been compiled using the IGDB as the data source instead of GiantBomb. Adjustments might need to be made for the latest xml_builder.py to work with data from GB**
+
+All fuzzy matches will be stored in a CSV file (`cover_fuzzy_matches.csv` and `info_fuzzy_matches.csv`) to easily check if the match is correct or not
