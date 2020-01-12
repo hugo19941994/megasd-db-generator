@@ -1,8 +1,8 @@
-# MegaSD Cover Scripts
+# MegaSD DB Generator
 
 Python 3 scripts to create a DB for [Terraonion's GameDB Manager](https://github.com/Terraonion-dev/GameDBManagerMD) for the MegaSD.
 
-Downloads info from [GiantBomb's API](https://www.giantbomb.com/api/)
+Downloads info from [GiantBomb's API](https://www.giantbomb.com/api/) or from the [IGDB](https://www.igdb.com/discover)
 
 ## How to run
 
@@ -14,6 +14,8 @@ Download covers from the [libretro](http://thumbnailpacks.libretro.com/) website
 
 # Install dependencies
 pipenv install
+
+# Download info from GB or IGDB using Postman
 
 # Set the GB API Key
 export GB_API_KEY=9a286a31-6da4-4fc3-a356-dcc62d1eb289
@@ -27,3 +29,4 @@ python xml_builder.py
 
 Place the generated `db.xml` file and the output folder in the same folder as the `GameDBManagerMD` executable file, press convert images and finally scan your SD card.
 
+**The current version of the database has been compiled using the IGDB as the data source instead of GiantBomb. Adjustments might need to be made for the latest xml_builder.py to work with data from GB**

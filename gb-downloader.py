@@ -25,7 +25,7 @@ def download(platform, file_name):
         results = results + response['results']
         offset += 100
 
-    with open(f'dbs/{file_name}', 'w') as f:
+    with open(f'dbsold/{file_name}', 'w') as f:
         querystring = {"api_key":API_KEY,"format":"json","field_list":"original_release_date,genres,expected_release_year"}
         headers = {
             'Accept': "*/*",

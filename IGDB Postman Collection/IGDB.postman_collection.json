@@ -1,0 +1,164 @@
+{
+	"info": {
+		"_postman_id": "1411b476-03e7-4d86-9124-baa70d479a17",
+		"name": "IGDB",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://api-v3.igdb.com/games",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user-key",
+						"type": "text",
+						"value": "{{IGDB-Key}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "fields id,genres,name,release_dates,alternative_names; where platforms = [29]; limit 500;offset 500;"
+				},
+				"url": {
+					"raw": "https://api-v3.igdb.com/games/",
+					"protocol": "https",
+					"host": [
+						"api-v3",
+						"igdb",
+						"com"
+					],
+					"path": [
+						"games",
+						""
+					]
+				},
+				"description": "* 78 -> Sega CD\n* 29 -> Genesis/ Mega Drive\n* 84 -> SG-1000\n* 64 -> Master System\n* 30 -> Sega 32X"
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-v3.igdb.com/platforms",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user-key",
+						"type": "text",
+						"value": "{{IGDB-Key}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "fields *; where name = \"Sega 32X\"; limit 250;"
+				},
+				"url": {
+					"raw": "https://api-v3.igdb.com/platforms/",
+					"protocol": "https",
+					"host": [
+						"api-v3",
+						"igdb",
+						"com"
+					],
+					"path": [
+						"platforms",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-v3.igdb.com/release_dates",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user-key",
+						"type": "text",
+						"value": "{{IGDB-Key}}"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "fields id,y,region; where platform = 29; limit 500; offset 1000;"
+				},
+				"url": {
+					"raw": "https://api-v3.igdb.com/release_dates",
+					"protocol": "https",
+					"host": [
+						"api-v3",
+						"igdb",
+						"com"
+					],
+					"path": [
+						"release_dates"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-v3.igdb.com/genres",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user-key",
+						"value": "{{IGDB-Key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "fields *; limit 21; sort id;"
+				},
+				"url": {
+					"raw": "https://api-v3.igdb.com/genres",
+					"protocol": "https",
+					"host": [
+						"api-v3",
+						"igdb",
+						"com"
+					],
+					"path": [
+						"genres"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-v3.igdb.com/alternative_names",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "user-key",
+						"value": "{{IGDB-Key}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "fields name; where id = (18777, 1453, 17420, 2071, 8307, 22963, 16550, 1506, 18765, 18766, 27297, 5715, 16500, 25722, 3364, 3365, 17171, 6748, 562, 15776, 15777, 16632, 1668, 15485, 9569, 1173, 16743, 19495, 22862, 23286, 8852, 15037, 18450, 18451, 17805, 8329, 16628, 19350, 17825, 16968, 7591, 7592, 15794, 15795, 15796, 15797, 15798, 15799, 2763, 2764, 5302, 17107, 17108, 17109, 6652, 6653, 6656, 18054, 6747, 5130, 15940, 15941, 15942, 23320, 23321, 23322, 23323, 18176, 18177, 18178, 23681, 6863, 16448, 16449); limit 500;"
+				},
+				"url": {
+					"raw": "https://api-v3.igdb.com/alternative_names/",
+					"protocol": "https",
+					"host": [
+						"api-v3",
+						"igdb",
+						"com"
+					],
+					"path": [
+						"alternative_names",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
