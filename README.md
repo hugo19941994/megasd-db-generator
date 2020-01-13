@@ -4,9 +4,13 @@ Python 3 scripts to create a DB for [Terraonion's GameDB Manager](https://github
 
 Downloads info from [GiantBomb's API](https://www.giantbomb.com/api/) or from the [IGDB](https://www.igdb.com/discover)
 
+## Thumbnails
+
+Most original thumbnails come from the [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails) project. They can also be downloaded from the [libretro website](http://thumbnailpacks.libretro.com/). They have been resized and their color palette reduced to work with the MegaSD menu.
+
 ## How to run
 
-Download covers from the [libretro](http://thumbnailpacks.libretro.com/) website and place them inside `./libretro-imgs`. Place any No-Intro ROMs in the `No-Intro` folder and all Redump bin+cue files in the `Redump` folder.
+Place any No-Intro ROMs in the `No-Intro` folder and all Redump bin+cue files in the `Redump` folder.
 
 ```bash
 # Convert images to tiles
