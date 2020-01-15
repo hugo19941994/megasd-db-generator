@@ -1,4 +1,5 @@
 dbs/*.json
+dats/*.dat
 db.xml
 libretro-imgs/**/*.png
 .DS_Store

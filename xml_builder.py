@@ -1,3 +1,5 @@
+from lxml import objectify
+from datetime import date
 from collections import defaultdict
 import json
 import zlib
@@ -10,6 +12,7 @@ from stop_words import get_stop_words
 from fuzzywuzzy import process
 import unicodedata
 from csv import DictWriter
+from zipfile import ZipFile
 
 cfm = open('cover_fuzzy_matches.csv', 'w')
 cfmw = DictWriter(cfm, fieldnames=["ROM", "Cover", "Score"])
@@ -18,6 +21,10 @@ cfmw.writeheader()
 ifm = open('info_fuzzy_matches.csv', 'w')
 ifmw = DictWriter(ifm, fieldnames=["ROM", "DB Entry", "Score"])
 ifmw.writeheader()
+
+release_md = open('release.md', 'w')
+release_md.write('| System | Info | Covers |\n')
+release_md.write('| --- | --- | --- |\n')
 
 STOP_WORDS = get_stop_words('en')
 STOP_WORDS = [word.replace('\'', '') for word in STOP_WORDS]
@@ -28,17 +35,18 @@ COUNTER = 0
 # Some geneis sgames have same CRC as Master system games?
 hashes = []
 
+
 def main():
     # load xsd for xml validation
     xmlschema_doc = etree.parse('game.xsd')
     xmlschema = etree.XMLSchema(xmlschema_doc)
     a = etree.Element('{http://tempuri.org/GameDB.xsd}GameDB')
 
-    do_roms('No-Intro', '*.md', 'output/Sega - Mega Drive - Genesis/Named_Titles', 'dbs/genesis.json', a)
-    do_roms('No-Intro', '*.sms', 'output/Sega - Master System - Mark III/Named_Titles', 'dbs/ms.json', a)
-    do_roms('No-Intro', '*.32x', 'output/Sega - 32X/Named_Titles', 'dbs/32x.json', a)
-    do_roms('No-Intro', '*.sg', 'output/Sega - SG-1000/Named_Titles', 'dbs/sg1000.json', a)
-    do_roms('Redump', '*.cue', 'output/Sega - Mega CD & Sega CD/Named_Titles', 'dbs/cd.json', a)
+    do_roms('Mega Drive - Genesis', '*.md', 'output/Sega - Mega Drive - Genesis/Named_Titles', 'dbs/genesis.json', a)
+    do_roms('Master System - Mark III', '*.sms', 'output/Sega - Master System - Mark III/Named_Titles', 'dbs/ms.json', a)
+    do_roms('32X', '*.32x', 'output/Sega - 32X/Named_Titles', 'dbs/32x.json', a)
+    do_roms('SG-1000', '*.sg', 'output/Sega - SG-1000/Named_Titles', 'dbs/sg1000.json', a)
+    do_roms('Mega CD & Sega CD', '*.cue', 'output/Sega - Mega CD & Sega CD/Named_Titles', 'dbs/cd.json', a)
 
     # Insert genres at the end of the XML
     l1 = etree.SubElement(a, '{http://tempuri.org/GameDB.xsd}Genre')
@@ -180,6 +188,8 @@ def main():
         f.write(xmlstr)
 
 # Calculate CRC for ROMs (not valid for CDs)
+
+
 def crc(fileName):
     file_without_ext, ext = os.path.splitext(fileName)
     if ext == '.cue':
@@ -198,12 +208,13 @@ def crc(fileName):
             f.read(16)
             b = f.read(2048)
             prev = zlib.crc32(b, prev)
-        return "%X"%(prev & 0xFFFFFFFF)
+        return "%X" % (prev & 0xFFFFFFFF)
     else:
         prev = 0
-        for eachLine in open(fileName,"rb"):
+        for eachLine in open(fileName, "rb"):
             prev = zlib.crc32(eachLine, prev)
-        return "%X"%(prev & 0xFFFFFFFF)
+        return "%X" % (prev & 0xFFFFFFFF)
+
 
 def normalize(name):
     nfkd_form = unicodedata.normalize('NFKD', name)
@@ -211,25 +222,30 @@ def normalize(name):
 
     norm = os.path.splitext(name)[0]
     norm = norm.lower().replace(' ii', ' 2').replace(' iii', ' 3').replace(' iv', '4')
-    norm = norm.replace('~', '').replace('!', '').replace('-', '').replace(':', '').replace('\'', '').replace('~', '').replace(',', '').replace('&', '').replace('+', '').replace('_', '').replace('/', '').replace('.', '')
+    norm = norm.replace('~', '').replace('!', '').replace('-', '').replace(':', '').replace('\'', '').replace('~',
+                                                                                                              '').replace(',', '').replace('&', '').replace('+', '').replace('_', '').replace('/', '').replace('.', '')
 
     if '(' in norm:
         norm = norm.split('(')[0]
 
     return ''.join([word for word in norm.split() if word not in STOP_WORDS])
 
-def do_roms(rom_path, rom_ext, cover_path, db_path, a):
+
+def do_roms(datfile_name, rom_ext, cover_path, db_path, a):
     global COUNTER
     global hashes
     # Load all roms with full path
     roms = []
-    for x in os.walk(rom_path):
-        for y in glob.glob(os.path.join(x[0], rom_ext)):
-            roms.append(y)
+    roms_hash = {}  # store rom name with corresponding hash
+    filename = [x for x in os.listdir('./dats') if datfile_name in x][0]
+    tree = objectify.parse(f"./dats/{filename}")
+    for t in tree.iter('rom'):
+        roms.append(t.attrib.get('name'))
+        roms_hash[t.attrib.get('name')] = t.attrib.get('crc')
 
     # Load game covers
     game_covers_l = []
-    for x in os.walk(f'/home/hfs/scripts/{cover_path}'):
+    for x in os.walk(f'{cover_path}'):
         for y in glob.glob(os.path.join(x[0], '*.png')):
             game_covers_l.append(y[18:])
     game_covers = {}
@@ -346,7 +362,7 @@ def do_roms(rom_path, rom_ext, cover_path, db_path, a):
                     e.text = str(20)
                 elif g == 'Other':
                     e.text = str(21)
-                else: # Wrong genre
+                else:  # Wrong genre
                     print(f'ABORTING - WRONG GENRE {g}')
                     exit()
 
@@ -364,7 +380,8 @@ def do_roms(rom_path, rom_ext, cover_path, db_path, a):
 
         # Calulcate hash for all rom variations
         for p in paths:
-            crc_hash = crc(p)
+            #crc_hash = crc(p)
+            crc_hash = roms_hash[p]
             if crc_hash not in hashes:
                 hashes.append(crc_hash)
                 g = etree.SubElement(a, '{http://tempuri.org/GameDB.xsd}GameCk')
@@ -389,7 +406,24 @@ def do_roms(rom_path, rom_ext, cover_path, db_path, a):
     print('Matches with DB: ' + str(found_db))
     print('Matches with Covers: ' + str(found_covers))
 
+    release_md.write(f"| {datfile_name} | {found_db} | {found_covers} |\n")
+
+
 if __name__ == '__main__':
     main()
     cfm.close()
     ifm.close()
+    release_md.close()
+
+    # create a ZipFile object
+    zipObj = ZipFile(f'DB_{date.today()}.zip', 'w')
+    # Add multiple files to the zip
+    zipObj.write('db.xml')
+    zipObj.write('cover_fuzzy_matches.csv')
+    zipObj.write('info_fuzzy_matches.csv')
+    for root, dirs, files in os.walk('output'):
+        for f in files:
+            zipObj.write(os.path.join(root, f))
+
+    # close the Zip File
+    zipObj.close()
