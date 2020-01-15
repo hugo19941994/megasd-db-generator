@@ -247,7 +247,7 @@ def do_roms(datfile_name, rom_ext, cover_path, db_path, a):
     game_covers_l = []
     for x in os.walk(f'{cover_path}'):
         for y in glob.glob(os.path.join(x[0], '*.png')):
-            game_covers_l.append(y[18:])
+            game_covers_l.append(y)
     game_covers = {}
     # Normalize cover name (some will be overwritten by the normalization)
     for d in game_covers_l:
