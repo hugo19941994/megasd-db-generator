@@ -1,5 +1,6 @@
 dbs/*.json
 dats/*.dat
+!dats/Sega - Mega CD & Sega CD - Datfile (CUSTOM) (2019-12-22).dat
 db.xml
 .DS_Store
 *.zip

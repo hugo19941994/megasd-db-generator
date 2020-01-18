@@ -78,7 +78,8 @@ def checkDATs():
 
 def downloadDATs():
     downloadNoIntro()
-    downloadRedump()
+    # TODO: Redump CRCs don't correspond to the MegaSD's expected CRC values
+    # downloadRedump()
     checkDATs()
 
     logging.info("Successfully downloaded DATs\n")
