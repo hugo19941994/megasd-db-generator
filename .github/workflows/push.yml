@@ -23,25 +23,13 @@ jobs:
         - name: Install dependencies using Pipenv
           run: pipenv install --deploy --system
 
-        - name: Download No-Intro and Redump dats
-          run: python3 dat-downloader.py
-
-        - name: Download game info DBs from IGDB
-          run: python3 igdb-downloader.py
+        - name: Download dats, db and generate the XML
+          run: ./generator/main.py --download-dats --download-db --generate-xml
           env:
               IGDB_API_KEY: ${{ secrets.IGDB_API_KEY }}
 
-        - name: Build db.xml
-          run: python3 xml_builder.py
-
         - name: Store date into an environment variable
           run: echo "::set-env name=DATE::$(date '+%Y-%m-%d')"
-
-        - name: Store release body into variable
-          uses: pCYSl5EDgo/cat@master
-          id: releaseText
-          with:
-              path: release.md
 
         - name: Create Github release
           id: create_release
@@ -51,7 +39,7 @@ jobs:
           with:
               tag_name: ${{ github.ref }}
               release_name: DB ${{env.DATE}}
-              body: ${{ steps.releaseText.outputs.text }}
+              body: ${{ env.GITHUB_RELEASE_MD }}
               draft: true
               prerelease: true
 
