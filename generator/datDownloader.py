@@ -81,4 +81,4 @@ def downloadDATs():
     downloadRedump()
     checkDATs()
 
-    logging.info("Successfully downloaded DATs")
+    logging.info("Successfully downloaded DATs\n")

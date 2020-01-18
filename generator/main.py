@@ -9,8 +9,10 @@ from XMLBuilder import XMLGenerator
 
 
 def main():
-    logging.basicConfig(level=logging.INFO)
-    logging.info('MegaSD DB Generator')
+    FORMAT = '%(asctime)s - %(message)s'
+    logging.basicConfig(level=logging.INFO, format=FORMAT)
+
+    logging.info('MegaSD DB Generator\n')
 
     parser = argparse.ArgumentParser()
 

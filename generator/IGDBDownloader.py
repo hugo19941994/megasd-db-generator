@@ -1,10 +1,12 @@
 import requests
+import logging
 import json
 import os
 
 
 class IGDBDownloader():
     def __init__(self):
+        logging.info("Downloading info from IGDB\n")
         self.api_key = os.environ['IGDB_API_KEY']
         self.genres = self.download_genres()
         self.regions = {
@@ -20,6 +22,9 @@ class IGDBDownloader():
 
         for db in [(29, 'genesis.json'), (64, 'ms.json'), (78, 'cd.json'), (30, '32x.json'), (84, 'sg1000.json')]:
             self.download_console(db[0], db[1])
+
+        if len(os.listdir("./dbs")) != 5:
+            raise Exception("Expected 5 JSONs in ./dbs folder")
 
     def download_genres(self):
         """

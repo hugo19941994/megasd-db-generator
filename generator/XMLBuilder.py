@@ -17,6 +17,7 @@ import zlib
 
 class XMLGenerator():
     def __init__(self):
+        logging.info("Generating DB XML")
         self.cfm = StringIO()
         self.cfmw = DictWriter(self.cfm, fieldnames=["ROM", "Cover", "Score"])
         self.cfmw.writeheader()
@@ -26,8 +27,7 @@ class XMLGenerator():
         self.ifmw.writeheader()
 
         # Store some info to later put in the GitHub release as markdown
-        # Stored as env var
-        self.release_md = "| System | Info | Covers |\n| --- | --- | --- |\n"
+        self.release_md = "| System | Info | Covers |%0A| --- | --- | --- |%0A"
 
         self.STOP_WORDS = get_stop_words('en')
         self.STOP_WORDS = [word.replace('\'', '') for word in self.STOP_WORDS]
@@ -41,27 +41,30 @@ class XMLGenerator():
 
         try:
             # Generate XML
-            self.run()
+            XMLStr = self.run()
 
             # Generate release ZIP file
-            self.generate_zip()
+            self.generate_zip(XMLStr)
 
-            # Used for github actions TODO: any other way hiding this info?
-            print("::set-env name={GITHUB_RELEASE_MD}::{"+self.release_md+"}")
+            # Release text for Github
+            if os.environ.get("GITHUB_ACTIONS"):
+                print(f"::set-output name=GITHUB_RELEASE_MD::{self.release_md}")
+
         finally:
             # Close files
             self.cfm.close()
             self.ifm.close()
 
-    def generate_zip(self):
+    def generate_zip(self, XMLStr):
         # create a ZipFile object
         zipObj = ZipFile(f'DB_{date.today()}.zip', 'w')
 
         # Add multiple files to the zip
-        zipObj.write('db.xml')
+        zipObj.writestr("db.xml", XMLStr)
         zipObj.writestr("cover_fuzzy_matches.csv", self.cfm.getvalue())
         zipObj.writestr("info_fuzzy_matches.csv", self.ifm.getvalue())
 
+        # Insert images
         for root, dirs, files in os.walk('output'):
             for f in files:
                 zipObj.write(os.path.join(root, f))
@@ -88,7 +91,8 @@ class XMLGenerator():
 
     def run(self):
         # load xsd for xml validation
-        xmlschema_doc = etree.parse(f"{os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))}/game.xsd")
+        xmlschema_doc = etree.parse(
+            f"{os.path.realpath(os.path.join(os.getcwd(), os.path.dirname(__file__)))}/game.xsd")
         xmlschema = etree.XMLSchema(xmlschema_doc)
         a = etree.Element('{http://tempuri.org/GameDB.xsd}GameDB')
 
@@ -235,9 +239,8 @@ class XMLGenerator():
             pass
 
         # Save XML with indentation
-        xmlstr = minidom.parseString(etree.tostring(a)).toprettyxml(indent="    ")
-        with open('db.xml', 'w') as f:
-            f.write(xmlstr)
+        # Return DB in XML as string
+        return minidom.parseString(etree.tostring(a)).toprettyxml(indent="    ")
 
     def do_roms(self, datfile_name, rom_ext, cover_path, db_path, a):
         # Load all roms with full path
@@ -406,9 +409,9 @@ class XMLGenerator():
         logging.info(f"ROM type: {rom_ext}")
         logging.info(f"Total ROMs: {len(res.keys())}")
         logging.info(f"IGDB Matches: {found_db}/{len(games_list.keys())}")
-        logging.info(f"Cover matches: {found_covers}/{len(game_covers.keys())}")
+        logging.info(f"Cover matches: {found_covers}/{len(game_covers.keys())}\n")
 
-        self.release_md += f"| {datfile_name} | {found_db} | {found_covers} |\n"
+        self.release_md += f"| {datfile_name} | {found_db} | {found_covers} |%0A"
 
     @staticmethod
     def crc(fileName):

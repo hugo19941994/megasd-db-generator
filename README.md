@@ -14,14 +14,28 @@ Most original thumbnails come from the [libretro-thumbnails](https://github.com/
 # Install dependencies
 pipenv install
 
-# Download info from GB or IGDB using Postman
-
-# Set the GB API Key
+# Set the IGDB API Key
 export IGDB_API_KEY=9a286a31-6da4-4fc3-a356-dcc62d1eb289
 
-# Download info from GB and generate the JSON DB (they will be downloaded in the dbs folder)
-./generator/main.py --download-dats --download-db --generate-xml
+# Download DATs from No-Intro and Redump
+./generator/main.py --download-dats
+
+# Downloads info from IGDB
+./generator/main.py --download-db
+
+# Generate the final DB in a zip file
+./generator/main.py --generate-xml
+
+# Or all stages at the same time
+# ./generator/main.py --download-dats --download-db --generate-xml
 ```
 
-This will generate a `.zip` file with the thumbnails, the XML database, and a list of fuzzy matched ROMs.
+The generated `.zip` file contains the thumbnails, the XML database, and a list of fuzzy matched ROMs.
 
+## Missing info
+
+**The DB is a work-in-progress**. It might never be 100% complete.
+
+If you want to contribute any missing info I encourage you to add the info in [IGDB](https://www.igdb.com/discover) and the CI pipeline should automatically integrate those changes.
+
+For any missing images first check the [libretro](https://github.com/libretro-thumbnails/libretro-thumbnails) repo. If the image is missing upload a PR there and open an issue here mentioning the screenshot. After the image is resized and its palette optimized it will be merged.

@@ -6,24 +6,23 @@ jobs:
     build:
         runs-on: ubuntu-latest
 
-        strategy:
-            matrix:
-                python-version: [3.8]
-
         steps:
         - name: Checkout code
           uses: actions/checkout@v1
 
         - name: Setup Python
           uses: actions/setup-python@v1
+          with:
+            python-version: 3.8
 
         - name: Install pipenv
-          uses: dschep/install-pipenv-action@v1
+          run: sudo pip install pipenv
 
         - name: Install dependencies using Pipenv
           run: pipenv install --deploy --system
 
         - name: Download dats, db and generate the XML
+          id: generator
           run: ./generator/main.py --download-dats --download-db --generate-xml
           env:
               IGDB_API_KEY: ${{ secrets.IGDB_API_KEY }}
@@ -39,12 +38,11 @@ jobs:
           with:
               tag_name: ${{ github.ref }}
               release_name: DB ${{env.DATE}}
-              body: ${{ env.GITHUB_RELEASE_MD }}
+              body: ${{ steps.generator.outputs.GITHUB_RELEASE_MD }}
               draft: true
               prerelease: true
 
         - name: Upload zipped database into the release
-          id: upload-release-asset
           uses: actions/upload-release-asset@v1.0.1
           env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
