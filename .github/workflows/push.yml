@@ -1,0 +1,54 @@
+name: Generate XML
+
+on: [push]
+
+jobs:
+    build:
+        runs-on: ubuntu-latest
+
+        steps:
+        - name: Checkout code
+          uses: actions/checkout@v1
+
+        - name: Setup Python
+          uses: actions/setup-python@v1
+          with:
+            python-version: 3.8
+
+        - name: Install pipenv
+          run: sudo pip install pipenv
+
+        - name: Install dependencies using Pipenv
+          run: pipenv install --deploy --system
+
+        - name: Download dats, db and generate the XML
+          id: generator
+          run: ./generator/main.py --download-dats --download-db --generate-xml
+          env:
+              IGDB_API_KEY: ${{ secrets.IGDB_API_KEY }}
+
+        - name: Store date into an environment variable
+          run: echo "::set-env name=DATE::$(date '+%Y-%m-%d')"
+
+        - name: Create Github release
+          id: create_release
+          uses: actions/create-release@master
+          env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+              tag_name: ${{ github.ref }}
+              release_name: DB ${{env.DATE}}
+              body: ${{ steps.generator.outputs.GITHUB_RELEASE_MD }}
+              draft: true
+              prerelease: true
+
+        - name: Upload zipped database into the release
+          uses: actions/upload-release-asset@v1.0.1
+          env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          with:
+              upload_url: ${{ steps.create_release.outputs.upload_url }}
+              asset_path: ./DB_${{env.DATE}}.zip
+              asset_name: DB_${{env.DATE}}.zip
+              asset_content_type: application/zip
+

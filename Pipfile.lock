@@ -82,8 +82,7 @@
         },
         "python-levenshtein": {
             "hashes": [
-                "sha256:033a11de5e3d19ea25c9302d11224e1a1898fe5abd23c61c7c360c25195e3eb1",
-                "sha256:45659378cd4d2c61101e10c96e2ec5b24552a0465ad006ab4b31a0e89fa9a36b"
+                "sha256:033a11de5e3d19ea25c9302d11224e1a1898fe5abd23c61c7c360c25195e3eb1"
             ],
             "version": "==0.12.0"
         },
