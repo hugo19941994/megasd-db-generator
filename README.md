@@ -6,7 +6,7 @@ Downloads info from [IGDB](https://www.igdb.com/discover)
 
 ## Thumbnails
 
-Most original thumbnails come from the [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails) project. They can also be downloaded from the [libretro website](http://thumbnailpacks.libretro.com/). They have been resized and their color palette reduced to work with the MegaSD menu.
+Most original thumbnails come from the [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails) project (they can also be downloaded from the [libretro website](http://thumbnailpacks.libretro.com/)). Some others have been sourced from [Hidden Palace](https://hiddenpalace.org/). They have been resized and their color palette reduced to work with the MegaSD menu.
 
 ## How to run
 
