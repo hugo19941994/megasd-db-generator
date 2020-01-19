@@ -1,8 +1,8 @@
 # MegaSD DB Generator
 
-Python 3 scripts to create a DB for [Terraonion's GameDB Manager](https://github.com/Terraonion-dev/GameDBManagerMD) for the MegaSD.
+Python 3 scripts to create a DB for [Terraonion's GameDB Manager](https://github.com/Terraonion-dev/GameDBManagerMD) for the MegaSD. Downloads info from [IGDB](https://www.igdb.com/discover)
 
-Downloads info from [IGDB](https://www.igdb.com/discover)
+### [User Guide](https://github.com/hugo19941994/megasd-db-generator/wiki/User-Guide)
 
 ## Thumbnails
 
@@ -30,7 +30,7 @@ export IGDB_API_KEY=9a286a31-6da4-4fc3-a356-dcc62d1eb289
 # ./generator/main.py --download-dats --download-db --generate-xml
 ```
 
-The generated `.zip` file contains the thumbnails, the XML database, and a list of fuzzy matched ROMs.
+The generated `.zip` file contains the thumbnails, the XML database, and a list of fuzzy matched ROMs. Our CI pipeline will automatically generate new [releases](https://github.com/hugo19941994/megasd-db-generator/releases) as needed.
 
 ## Missing info
 
