@@ -1560,4 +1560,18 @@
     <game name="Captain Tsubasa (Japan)">
         <rom name="Captain Tsubasa (Japan).cue" crc="A76FD837"/>
     </game>
+	<game name="Frog Feast (2005)(Oldergames)(NTSC)(US)">
+		<rom name="Frog Feast (2005)(Oldergames)(NTSC)(US).cue" crc="eea22989"/>
+	</game>
+	<game name="Marko (USA) (unl)">
+		<rom name="Marko (2003)(Good Deal Games)(US).cue" crc="62e0ed95"/>
+	</game>
+	<game name="Mighty Mighty Missile! (USA) (unl)">
+		<rom name="Mighty Mighty Missile! (2004)(Good Deal Games)(US).cue" crc="dd2da826"/>
+	</game>
+	<game name="Penn &amp; Teller's Smoke and Mirrors (Apr 30, 1995 prototype)">
+		<rom name="PTSM1.cue" crc="38aad7c5"/>
+	</game>
+	<game name="Star Strike (USA) (unl)">
+		<rom name="Star Strike (2000)(Good Deal Games)(US).cue" crc="e87bee55"/>
 </datafile>
