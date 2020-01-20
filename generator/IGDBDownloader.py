@@ -159,7 +159,7 @@ class IGDBDownloader():
             "Music": "Other",
             "Platform": "Platform",
             "Puzzle": "Puzzle",
-            "Racing": "Sports",
+            "Racing": "Driving",
             "Real Time Strategy (RTS)": "Strategy",
             "Role-playing (RPG)": "Strategy",
             "Simulator": "Other",
