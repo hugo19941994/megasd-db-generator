@@ -193,7 +193,7 @@
         <rom name="Night Trap (USA) (Disc 2) (Rerelease).cue" crc="DCB99F89"/>
     </game>
     <game name="Space Ace (USA) (Demo)">
-        <rom name="Space Ace (USA) (Demo).cue" crc="CA356DEB"/>
+        <rom name="Space Ace (USA) (Demo).cue" crc="31317397"/>
     </game>
     <game name="Aoki Ookami to Shiroki Mejika - Genchou Hishi (Japan)">
         <rom name="Aoki Ookami to Shiroki Mejika - Genchou Hishi (Japan).cue" crc="AE64344A"/>
@@ -1084,7 +1084,7 @@
         <rom name="Devastator (Japan).cue" crc="10298596"/>
     </game>
     <game name="Dragon's Lair (USA) (Demo)">
-        <rom name="Dragon's Lair (USA) (Demo).cue" crc="23E45FB8"/>
+        <rom name="Dragon's Lair (USA) (Demo).cue" crc="632C0B18"/>
     </game>
     <game name="Silpheed (Japan)">
         <rom name="Silpheed (Japan).cue" crc="A1C71747"/>
@@ -1561,18 +1561,18 @@
         <rom name="Captain Tsubasa (Japan).cue" crc="A76FD837"/>
     </game>
     <game name="Frog Feast (2005)(Oldergames)(NTSC)(US)">
-	<rom name="Frog Feast (2005)(Oldergames)(NTSC)(US).cue" crc="eea22989"/>
+		<rom name="Frog Feast (2005)(Oldergames)(NTSC)(US).cue" crc="EEA22989"/>
     </game>
     <game name="Marko (USA) (unl)">
-	<rom name="Marko (2003)(Good Deal Games)(US).cue" crc="62e0ed95"/>
+		<rom name="Marko (2003)(Good Deal Games)(US).cue" crc="62E0ED95"/>
     </game>
     <game name="Mighty Mighty Missile! (USA) (unl)">
-	<rom name="Mighty Mighty Missile! (2004)(Good Deal Games)(US).cue" crc="dd2da826"/>
+		<rom name="Mighty Mighty Missile! (2004)(Good Deal Games)(US).cue" crc="DD2DA826"/>
     </game>
     <game name="Penn &amp; Teller's Smoke and Mirrors (Apr 30, 1995 prototype)">
-	<rom name="PTSM1.cue" crc="38aad7c5"/>
+		<rom name="PTSM1.cue" crc="38AAD7C5"/>
     </game>
     <game name="Star Strike (USA) (unl)">
-	<rom name="Star Strike (2000)(Good Deal Games)(US).cue" crc="e87bee55"/>
+		<rom name="Star Strike (2000)(Good Deal Games)(US).cue" crc="E87BEE55"/>
     </game>
 </datafile>
