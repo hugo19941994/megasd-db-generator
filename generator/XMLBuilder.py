@@ -11,6 +11,7 @@ import glob
 import json
 import logging
 import os
+import re
 import unicodedata
 import zlib
 
@@ -83,13 +84,16 @@ class XMLGenerator():
         norm = os.path.splitext(name)[0]
 
         norm = norm.lower()
-        substitutions = [(' ii', ' 2'), (' iii', ' 3'), (' iv', '4'), ('~', ''), ('!', ''), ('-', ''), (':', ''),
-                         ('\'', ''), ('~', ''), (',', ''), ('&', ''), ('+', ''), ('_', ''), ('/', ''), ('.', '')]
+        substitutions = [(' ii', ' 2'), (' iii', ' 3'), (' iv', '4'), ('!', ''), ('-', ' '), (':', ''), ('\'', ''),
+                         ('~', ' '), (',', ''), ('&', ''), ('+', ''), ('_', ' '), ('/', ''), ('.', ''), ('*', ' ')]
         for sub in substitutions:
             norm = norm.replace(sub[0], sub[1])
 
         if '(' in norm:
             norm = norm.split('(')[0]
+
+        # Remove any duplicated spaces
+        norm = re.sub(r' {2,}', ' ', norm)
 
         return ''.join([word for word in norm.split() if word not in self.STOP_WORDS])
 
