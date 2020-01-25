@@ -33,6 +33,10 @@ class XMLGenerator():
         self.STOP_WORDS = [word.replace('\'', '') for word in self.STOP_WORDS]
         self.STOP_WORDS.remove('same')
 
+        # Add some mor stopwords manually
+        self.STOP_WORDS.append('les')
+        self.STOP_WORDS.append('la')
+
         # Unique counter per game
         self.COUNTER = 0
 
