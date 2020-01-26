@@ -20,11 +20,11 @@ class IGDBDownloader():
             8: "worldwide"
         }
 
-        for db in [(29, 'genesis.json'), (64, 'ms.json'), (78, 'cd.json'), (30, '32x.json'), (84, 'sg1000.json')]:
+        for db in [(86, 'pce.json'), (150, 'pcecd.json'), (128, 'super.json')]:
             self.download_console(db[0], db[1])
 
-        if len(os.listdir("./dbs")) != 5:
-            raise Exception("Expected 5 JSONs in ./dbs folder")
+        if len(os.listdir("./dbs")) != 3:
+            raise Exception("Expected 3 JSONs in ./dbs folder")
 
     def download_genres(self):
         """

@@ -11,7 +11,6 @@ import glob
 import json
 import logging
 import os
-import re
 import unicodedata
 import zlib
 
@@ -33,10 +32,6 @@ class XMLGenerator():
         self.STOP_WORDS = get_stop_words('en')
         self.STOP_WORDS = [word.replace('\'', '') for word in self.STOP_WORDS]
         self.STOP_WORDS.remove('same')
-
-        # Add some mor stopwords manually
-        self.STOP_WORDS.append('les')
-        self.STOP_WORDS.append('la')
 
         # Unique counter per game
         self.COUNTER = 0
@@ -62,7 +57,7 @@ class XMLGenerator():
 
     def generate_zip(self, XMLStr):
         # create a ZipFile object
-        zipObj = ZipFile(f'DB_{date.today()}.zip', 'w')
+        zipObj = ZipFile(f'DB_SSDS3_{date.today()}.zip', 'w')
 
         # Add multiple files to the zip
         zipObj.writestr("db.xml", XMLStr)
@@ -84,16 +79,14 @@ class XMLGenerator():
         norm = os.path.splitext(name)[0]
 
         norm = norm.lower()
-        substitutions = [(' ii', ' 2'), (' iii', ' 3'), (' iv', '4'), ('!', ''), ('-', ' '), (':', ''), ('\'', ''),
-                         ('~', ' '), (',', ''), ('&', ''), ('+', ''), ('_', ' '), ('/', ''), ('.', ''), ('*', ' ')]
+        substitutions = [(' ii', ' 2'), (' iii', ' 3'), (' iv', '4'), ('~', ''), ('!', ''), ('-', ''), (':', ''),
+                         ('\'', ''), ('~', ''), (',', ''), ('&', ''), ('+', ''), ('_', ''), ('/', ''), ('.', ''),
+                         ('i.ii', 'i & ii')]
         for sub in substitutions:
             norm = norm.replace(sub[0], sub[1])
 
         if '(' in norm:
             norm = norm.split('(')[0]
-
-        # Remove any duplicated spaces
-        norm = re.sub(r' {2,}', ' ', norm)
 
         return ''.join([word for word in norm.split() if word not in self.STOP_WORDS])
 
@@ -104,13 +97,11 @@ class XMLGenerator():
         xmlschema = etree.XMLSchema(xmlschema_doc)
         a = etree.Element('{http://tempuri.org/GameDB.xsd}GameDB')
 
-        self.do_roms('Mega Drive - Genesis', '*.md',
-                     'output/Sega - Mega Drive - Genesis/Named_Titles', 'dbs/genesis.json', a)
-        self.do_roms('Master System - Mark III', '*.sms',
-                     'output/Sega - Master System - Mark III/Named_Titles', 'dbs/ms.json', a)
-        self.do_roms('32X', '*.32x', 'output/Sega - 32X/Named_Titles', 'dbs/32x.json', a)
-        self.do_roms('SG-1000', '*.sg', 'output/Sega - SG-1000/Named_Titles', 'dbs/sg1000.json', a)
-        self.do_roms('Mega CD & Sega CD', '*.cue', 'output/Sega - Mega CD & Sega CD/Named_Titles', 'dbs/cd.json', a)
+        self.do_roms('NEC - PC Engine - TurboGrafx 16', '*.pce',
+                     'output/pce', 'dbs/db.json', a)
+        self.do_roms('redump-ssds3-custom', '*.cue',
+                     'output/pce', 'dbs/db.json', a)
+        self.do_roms('NEC - PC Engine SuperGrafx', '*.pce', 'output/pce', 'dbs/db.json', a)
 
         # Insert genres at the end of the XML
         l1 = etree.SubElement(a, '{http://tempuri.org/GameDB.xsd}Genre')
@@ -314,13 +305,15 @@ class XMLGenerator():
 
             # Fuzzy match
             match = process.extractOne(filename, games_list.keys())
-            score = 90
+            score = 70
             if match[0][-1].isdigit() or filename[-1].isdigit():
                 score = 100
             if (len(filename) < 6) or (len(match[0]) < 6):
                 score = 100
 
+            current_game_name = ""
             if match[1] >= score:
+                current_game_name = match[0]
                 game = games_list[match[0]]
 
                 found_db += 1
@@ -385,7 +378,6 @@ class XMLGenerator():
             # Fuzzy match
             match = process.extractOne(filename, game_covers.keys())
             if match[1] >= score:
-
                 if match[1] != 100:
                     self.cfmw.writerow({"ROM": paths[0], "Cover": game_covers[match[0]], "Score": match[1]})
 
@@ -393,6 +385,18 @@ class XMLGenerator():
                 f = etree.SubElement(b, '{http://tempuri.org/GameDB.xsd}Screenshot')
                 f.text = game_cover.replace('/mnt/c', 'c:\\').replace('/', '\\\\')
                 found_covers += 1
+            elif current_game_name != "" and 'alternative_names' in game:
+                candidates = game['alternative_names'] + [current_game_name]
+                for c in candidates:
+                    match = process.extractOne(c, game_covers.keys())
+                    if match[1] != 100:
+                        self.cfmw.writerow({"ROM": paths[0], "Cover": game_covers[match[0]], "Score": match[1]})
+
+                    game_cover = game_covers[match[0]]
+                    f = etree.SubElement(b, '{http://tempuri.org/GameDB.xsd}Screenshot')
+                    f.text = game_cover.replace('/mnt/c', 'c:\\').replace('/', '\\\\')
+                    found_covers += 1
+                    break
 
             # Calulcate hash for all rom variations
             for p in paths:

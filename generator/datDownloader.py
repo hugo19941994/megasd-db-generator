@@ -49,7 +49,7 @@ def downloadNoIntro():
     archive = zipfile.ZipFile(zipdata)
 
     # Extract relevent DAT files
-    dats = ["32X", "Master System - Mark III", "Mega Drive - Genesis", "SG-1000"]
+    dats = ["NEC - PC Engine - TurboGrafx 16", "NEC - PC Engine SuperGrafx"]
     for f in archive.namelist():
         if any(platform in f for platform in dats):
             archive.extract(f, "./dats/")
@@ -59,7 +59,7 @@ def downloadRedump():
     logging.info("Downloading Redump Sega CD DAT")
 
     # Download redump Sega-CD datfile
-    r = requests.get("http://redump.org/datfile/mcd/")
+    r = requests.get("http://redump.org/datfile/pce/")
     r.raise_for_status()
 
     # Load zip file into memory
@@ -72,14 +72,14 @@ def downloadRedump():
 
 
 def checkDATs():
-    if len(os.listdir("./dats")) != 5:
-        raise Exception("Expected 5 DATs in ./dats folder")
+    if len(os.listdir("./dats")) != 3:
+        raise Exception("Expected 3 DATs in ./dats folder")
 
 
 def downloadDATs():
     downloadNoIntro()
     # TODO: Redump CRCs don't correspond to the MegaSD's expected CRC values
-    # downloadRedump()
+    downloadRedump()
     checkDATs()
 
     logging.info("Successfully downloaded DATs\n")

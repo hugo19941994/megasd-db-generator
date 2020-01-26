@@ -10,6 +10,8 @@ lxml = "*"
 stop-words = "*"
 requests = "*"
 fuzzywuzzy = {extras = ["speedup"],version = "*"}
+beautifulsoup4 = "*"
+pillow = "*"
 
 [requires]
-python_version = "3.8"
+python_version = "3.7"

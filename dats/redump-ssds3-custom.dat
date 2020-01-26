@@ -1,0 +1,1482 @@
+<?xml version="1.0" ?>
+<datafile>
+    <game name="Genocide (Japan)">
+        <rom name="Genocide (Japan)" crc="871D6504"/>
+    </game>
+    <game name="Monster Maker - Yami no Ryuukishi (Japan)">
+        <rom name="Monster Maker - Yami no Ryuukishi (Japan)" crc="10623B45"/>
+    </game>
+    <game name="Dragon Half (Japan)">
+        <rom name="Dragon Half (Japan)" crc="948FB648"/>
+    </game>
+    <game name="Legion (Japan)">
+        <rom name="Legion (Japan)" crc="934C8B2"/>
+    </game>
+    <game name="Golden Axe (Japan) (Alt)">
+        <rom name="Golden Axe (Japan) (Alt)" crc="BEDC4890"/>
+    </game>
+    <game name="Dynastic Hero, The (USA)">
+        <rom name="Dynastic Hero, The (USA)" crc="881CDAF4"/>
+    </game>
+    <game name="Jantei Monogatari 3 - Saver Angels (Japan)">
+        <rom name="Jantei Monogatari 3 - Saver Angels (Japan)" crc="7809DB82"/>
+    </game>
+    <game name="Go! Go! Birdie Chance (Japan)">
+        <rom name="Go! Go! Birdie Chance (Japan)" crc="60456963"/>
+    </game>
+    <game name="Vasteel 2 (Japan)">
+        <rom name="Vasteel 2 (Japan)" crc="D41B00B3"/>
+    </game>
+    <game name="Seiryuu Densetsu - Monbit (Japan) (Rev 1)">
+        <rom name="Seiryuu Densetsu - Monbit (Japan) (Rev 1)" crc="8C2EA348"/>
+    </game>
+    <game name="Basted (Japan)">
+        <rom name="Basted (Japan)" crc="2C38A69D"/>
+    </game>
+    <game name="Cosmic Fantasy - Bouken Shounen Yuu (Japan)">
+        <rom name="Cosmic Fantasy - Bouken Shounen Yuu (Japan)" crc="1AF08D2E"/>
+    </game>
+    <game name="Bikkuriman Daijikai (Japan)">
+        <rom name="Bikkuriman Daijikai (Japan)" crc="39C9ADAD"/>
+    </game>
+    <game name="Juuouki (Japan) (Rev 5)">
+        <rom name="Juuouki (Japan) (Rev 5)" crc="CC47AE78"/>
+    </game>
+    <game name="Might and Magic (Japan)">
+        <rom name="Might and Magic (Japan)" crc="1007E330"/>
+    </game>
+    <game name="Dragon Slayer - The Legend of Heroes II (Japan)">
+        <rom name="Dragon Slayer - The Legend of Heroes II (Japan)" crc="23C3DF78"/>
+    </game>
+    <game name="Himitsu no Hanazono (Japan)">
+        <rom name="Himitsu no Hanazono (Japan)" crc="475E9241"/>
+    </game>
+    <game name="Ranma 1-2 (Japan)">
+        <rom name="Ranma 1-2 (Japan)" crc="BD022E42"/>
+    </game>
+    <game name="Pop'n Magic (Japan)">
+        <rom name="Pop'n Magic (Japan)" crc="A1F40EF8"/>
+    </game>
+    <game name="Xak (Japan)">
+        <rom name="Xak (Japan)" crc="946C505F"/>
+    </game>
+    <game name="Godzilla Bakutou Retsuden (Japan)">
+        <rom name="Godzilla Bakutou Retsuden (Japan)" crc="60BBFEBA"/>
+    </game>
+    <game name="Metal Angel (Japan)">
+        <rom name="Metal Angel (Japan)" crc="3C44C30C"/>
+    </game>
+    <game name="NEXZR (Japan)">
+        <rom name="NEXZR (Japan)" crc="97FB9E33"/>
+    </game>
+    <game name="Tanjou - Debut (Japan)">
+        <rom name="Tanjou - Debut (Japan)" crc="1CEA72EB"/>
+    </game>
+    <game name="Garou Densetsu 2 - Aratanaru Tatakai (Japan) (FABT, FAET, FAFT)">
+        <rom name="Garou Densetsu 2 - Aratanaru Tatakai (Japan) (FABT, FAET, FAFT)" crc="94F288E3"/>
+    </game>
+    <game name="A.III. - A Ressha de Ikou III (Japan)">
+        <rom name="A.III. - A Ressha de Ikou III (Japan)" crc="1D7D0F0A"/>
+    </game>
+    <game name="ImageFight II - Operation Deepstriker (Japan)">
+        <rom name="ImageFight II - Operation Deepstriker (Japan)" crc="15D32EDB"/>
+    </game>
+    <game name="Emerald Dragon (Japan)">
+        <rom name="Emerald Dragon (Japan)" crc="E32847DC"/>
+    </game>
+    <game name="CAL III - Kanketsu-hen (Japan)">
+        <rom name="CAL III - Kanketsu-hen (Japan)" crc="E62B0398"/>
+    </game>
+    <game name="Hatsukoi Monogatari (Japan) (Rev 2)">
+        <rom name="Hatsukoi Monogatari (Japan) (Rev 2)" crc="5D92D263"/>
+    </game>
+    <game name="J. B. Harold Series 1 - Murder Club (Japan)">
+        <rom name="J. B. Harold Series 1 - Murder Club (Japan)" crc="53C9CC82"/>
+    </game>
+    <game name="Yamamura Misa Suspense - Kinsenka Kyouezara Satsujin Jiken (Japan)">
+        <rom name="Yamamura Misa Suspense - Kinsenka Kyouezara Satsujin Jiken (Japan)" crc="92C3D7CD"/>
+    </game>
+    <game name="Sotsugyou - Graduation (Japan)">
+        <rom name="Sotsugyou - Graduation (Japan)" crc="931154F8"/>
+    </game>
+    <game name="Megami Paradise (Japan)">
+        <rom name="Megami Paradise (Japan)" crc="6C865597"/>
+    </game>
+    <game name="Sexy Idol Mahjong - Yakyuuken no Uta (Japan)">
+        <rom name="Sexy Idol Mahjong - Yakyuuken no Uta (Japan)" crc="899490CB"/>
+    </game>
+    <game name="Shadow of the Beast - Mashou no Okite (Japan)">
+        <rom name="Shadow of the Beast - Mashou no Okite (Japan)" crc="837C0C0A"/>
+    </game>
+    <game name="Inoue Mami - Kono Hoshi ni Tatta Hitori no Kimi (Japan)">
+        <rom name="Inoue Mami - Kono Hoshi ni Tatta Hitori no Kimi (Japan)" crc="20324"/>
+    </game>
+    <game name="Virgin Dream (Japan)">
+        <rom name="Virgin Dream (Japan)" crc="140035DB"/>
+    </game>
+    <game name="Private Eye dol (Japan)">
+        <rom name="Private Eye dol (Japan)" crc="F28624DB"/>
+    </game>
+    <game name="Nemurenu Yoru no Chiisana Ohanashi (Japan)">
+        <rom name="Nemurenu Yoru no Chiisana Ohanashi (Japan)" crc="D845B66E"/>
+    </game>
+    <game name="CAL II (Japan) (Alt)">
+        <rom name="CAL II (Japan) (Alt)" crc="6FF20DE8"/>
+    </game>
+    <game name="Gyuwambler Jiko Chuushinha - Gekitou 36 Janshi (Japan) (Alt)">
+        <rom name="Gyuwambler Jiko Chuushinha - Gekitou 36 Janshi (Japan) (Alt)" crc="A79D1A6"/>
+    </game>
+    <game name="Sorcerian (Japan)">
+        <rom name="Sorcerian (Japan)" crc="EA179905"/>
+    </game>
+    <game name="Madou Monogatari I - Honoo no Sotsuenji (Japan)">
+        <rom name="Madou Monogatari I - Honoo no Sotsuenji (Japan)" crc="BBE1B01B"/>
+    </game>
+    <game name="Sangokushi - Eiketsu Tenka ni Nozomu (Japan)">
+        <rom name="Sangokushi - Eiketsu Tenka ni Nozomu (Japan)" crc="FF589F3A"/>
+    </game>
+    <game name="Kaizou Choujin Shubibinman 3 - Ikai no Princess (Japan)">
+        <rom name="Kaizou Choujin Shubibinman 3 - Ikai no Princess (Japan)" crc="8892C825"/>
+    </game>
+    <game name="Cosmic Fantasy 4 - Ginga Shounen Densetsu - Totsunyuu-hen (Japan)">
+        <rom name="Cosmic Fantasy 4 - Ginga Shounen Densetsu - Totsunyuu-hen (Japan)" crc="21D79AA2"/>
+    </game>
+    <game name="Tokimeki Memorial (Japan) (Rev 2) (FABT)">
+        <rom name="Tokimeki Memorial (Japan) (Rev 2) (FABT)" crc="72F6A726"/>
+    </game>
+    <game name="Tadaima Yuusha Boshuu-chuu (Japan)">
+        <rom name="Tadaima Yuusha Boshuu-chuu (Japan)" crc="1D63B99"/>
+    </game>
+    <game name="Formation Soccer 95 della Serie A (Japan)">
+        <rom name="Formation Soccer 95 della Serie A (Japan)" crc="D687DBFF"/>
+    </game>
+    <game name="Monster Lair (USA)">
+        <rom name="Monster Lair (USA)" crc="ABA23BE1"/>
+    </game>
+    <game name="Farjius no Jakoutei - Neo Metal Fantasy (Japan) (Rev 1)">
+        <rom name="Farjius no Jakoutei - Neo Metal Fantasy (Japan) (Rev 1)" crc="1F660DE6"/>
+    </game>
+    <game name="Last Armageddon (Japan) (Rev 6)">
+        <rom name="Last Armageddon (Japan) (Rev 6)" crc="7DED2AB8"/>
+    </game>
+    <game name="Rally Championship (Japan) (FABT)">
+        <rom name="Rally Championship (Japan) (FABT)" crc="E739F391"/>
+    </game>
+    <game name="Rising Sun (Japan)">
+        <rom name="Rising Sun (Japan)" crc="22A9A824"/>
+    </game>
+    <game name="Patlabor - Chapter of Griffon (Japan)">
+        <rom name="Patlabor - Chapter of Griffon (Japan)" crc="D3F2CFF1"/>
+    </game>
+    <game name="Browning (Japan)">
+        <rom name="Browning (Japan)" crc="BF296272"/>
+    </game>
+    <game name="Where in the World Is Carmen Sandiego (Japan) (En,Ja)">
+        <rom name="Where in the World Is Carmen Sandiego (Japan) (En,Ja)" crc="90943F1E"/>
+    </game>
+    <game name="Garou Densetsu Special (Japan) (FABT)">
+        <rom name="Garou Densetsu Special (Japan) (FABT)" crc="673C210A"/>
+    </game>
+    <game name="Super Albatross (Japan)">
+        <rom name="Super Albatross (Japan)" crc="C4DF78DE"/>
+    </game>
+    <game name="Taiheiki (Japan)">
+        <rom name="Taiheiki (Japan)" crc="6868B433"/>
+    </game>
+    <game name="It Came from the Desert (USA)">
+        <rom name="It Came from the Desert (USA)" crc="FBE9B39B"/>
+    </game>
+    <game name="Ultra Box 5-gou (Japan)">
+        <rom name="Ultra Box 5-gou (Japan)" crc="7EADEEFF"/>
+    </game>
+    <game name="ROM^2 Karaoke Vol. 4 - Choito Otona! (Japan)">
+        <rom name="ROM^2 Karaoke Vol. 4 - Choito Otona! (Japan)" crc="D4980B71"/>
+    </game>
+    <game name="Renny Blaster (Japan)">
+        <rom name="Renny Blaster (Japan)" crc="6085D737"/>
+    </game>
+    <game name="Hu PGA Tour - PowerGolf 2 - Golfer (Japan)">
+        <rom name="Hu PGA Tour - PowerGolf 2 - Golfer (Japan)" crc="263A216D"/>
+    </game>
+    <game name="Jantei Monogatari (Japan)">
+        <rom name="Jantei Monogatari (Japan)" crc="E693CC36"/>
+    </game>
+    <game name="Ultra Box 6-gou (Japan)">
+        <rom name="Ultra Box 6-gou (Japan)" crc="10446F71"/>
+    </game>
+    <game name="Sherlock Holmes - Consulting Detective (USA)">
+        <rom name="Sherlock Holmes - Consulting Detective (USA)" crc="8833245E"/>
+    </game>
+    <game name="Quiz Avenue II (Japan)">
+        <rom name="Quiz Avenue II (Japan)" crc="A3ABE93F"/>
+    </game>
+    <game name="Ultra Box 3-gou (Japan)">
+        <rom name="Ultra Box 3-gou (Japan)" crc="B1EF385B"/>
+    </game>
+    <game name="Star Mobile (Japan)">
+        <rom name="Star Mobile (Japan)" crc="9BBB36BC"/>
+    </game>
+    <game name="CD Hanafuda - Bishoujo Fan Club (Japan) (Unl)">
+        <rom name="CD Hanafuda - Bishoujo Fan Club (Japan) (Unl)" crc="B80102A9"/>
+    </game>
+    <game name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan)">
+        <rom name="Battle Shanghai - Dragon's Eye ~ Shanghai III - Dragon's Eye (Japan)" crc="2ADF68B3"/>
+    </game>
+    <game name="Mitsubachi Gakuen (Japan)">
+        <rom name="Mitsubachi Gakuen (Japan)" crc="7A20A430"/>
+    </game>
+    <game name="Pachio-kun - Maboroshi no Densetsu (Japan) (Rev 8)">
+        <rom name="Pachio-kun - Maboroshi no Densetsu (Japan) (Rev 8)" crc="135013BA"/>
+    </game>
+    <game name="Cosmic Fantasy 3 - Bouken Shounen Rei (Japan)">
+        <rom name="Cosmic Fantasy 3 - Bouken Shounen Rei (Japan)" crc="37E9F42F"/>
+    </game>
+    <game name="Super Schwarzschild 2 (Japan)">
+        <rom name="Super Schwarzschild 2 (Japan)" crc="CE566D2C"/>
+    </game>
+    <game name="Super Darius (Japan) (Alt)">
+        <rom name="Super Darius (Japan) (Alt)" crc="BC4F96E9"/>
+    </game>
+    <game name="Hyper Wars (Japan) (SABS)">
+        <rom name="Hyper Wars (Japan) (SABS)" crc="7D996B46"/>
+    </game>
+    <game name="Godzilla (USA)">
+        <rom name="Godzilla (USA)" crc="1A39E61F"/>
+    </game>
+    <game name="Bomberman - Panic Bomber (Japan) (FAAT)">
+        <rom name="Bomberman - Panic Bomber (Japan) (FAAT)" crc="5E9AD6FF"/>
+    </game>
+    <game name="ROM^2 Karaoke Vol. 5 - Karaoke Maku no Uchi (Japan)">
+        <rom name="ROM^2 Karaoke Vol. 5 - Karaoke Maku no Uchi (Japan)" crc="B8B4D16F"/>
+    </game>
+    <game name="Urusei Yatsura - Stay with You (Japan)">
+        <rom name="Urusei Yatsura - Stay with You (Japan)" crc="D09344A0"/>
+    </game>
+    <game name="Mirai Shounen Conan (Japan)">
+        <rom name="Mirai Shounen Conan (Japan)" crc="7835990F"/>
+    </game>
+    <game name="Sengoku Kantou Sangokushi (Japan)">
+        <rom name="Sengoku Kantou Sangokushi (Japan)" crc="805CD0C6"/>
+    </game>
+    <game name="Psychic Storm (Japan)">
+        <rom name="Psychic Storm (Japan)" crc="FB8A8872"/>
+    </game>
+    <game name="Solid Force (Japan)">
+        <rom name="Solid Force (Japan)" crc="E7F28BEF"/>
+    </game>
+    <game name="Mahjong Clinic Special (Japan)">
+        <rom name="Mahjong Clinic Special (Japan)" crc="F83376A2"/>
+    </game>
+    <game name="Black Hole Assault (Japan)">
+        <rom name="Black Hole Assault (Japan)" crc="5DF28A14"/>
+    </game>
+    <game name="Jack Nicklaus' World Tour Golf - 162 Holes (Japan)">
+        <rom name="Jack Nicklaus' World Tour Golf - 162 Holes (Japan)" crc="AD80A821"/>
+    </game>
+    <game name="Snatcher CD-ROMantic - Pilot Disk (Japan)">
+        <rom name="Snatcher CD-ROMantic - Pilot Disk (Japan)" crc="EF8D12F1"/>
+    </game>
+    <game name="Ryuuko no Ken (Japan) (En,Ja,Es) (FABT)">
+        <rom name="Ryuuko no Ken (Japan) (En,Ja,Es) (FABT)" crc="D0A80406"/>
+    </game>
+    <game name="Super Real Mahjong P.V Custom (Japan)">
+        <rom name="Super Real Mahjong P.V Custom (Japan)" crc="A32EB69C"/>
+    </game>
+    <game name="Sangokushi III (Japan)">
+        <rom name="Sangokushi III (Japan)" crc="D0CC3702"/>
+    </game>
+    <game name="Wrestle Angels - Double Impact (Japan)">
+        <rom name="Wrestle Angels - Double Impact (Japan)" crc="D0268B6F"/>
+    </game>
+    <game name="Ginga Ojousama Densetsu Yuna 2 - Eien no Princess (Japan) (FAAT)">
+        <rom name="Ginga Ojousama Densetsu Yuna 2 - Eien no Princess (Japan) (FAAT)" crc="D6FFE1D7"/>
+    </game>
+    <game name="SydMead's TerraForming (USA)">
+        <rom name="SydMead's TerraForming (USA)" crc="6E6DE92"/>
+    </game>
+    <game name="Sol Moonarge (Japan)">
+        <rom name="Sol Moonarge (Japan)" crc="24B1DCFF"/>
+    </game>
+    <game name="CAL II (Japan)">
+        <rom name="CAL II (Japan)" crc="6FF20DE8"/>
+    </game>
+    <game name="Pro Yakyuu, The (Japan)">
+        <rom name="Pro Yakyuu, The (Japan)" crc="B9A5D9F0"/>
+    </game>
+    <game name="Eiyuu Sangokushi (Japan)">
+        <rom name="Eiyuu Sangokushi (Japan)" crc="905D36A0"/>
+    </game>
+    <game name="Exile (USA)">
+        <rom name="Exile (USA)" crc="4BA511AE"/>
+    </game>
+    <game name="Ane-san (Japan)">
+        <rom name="Ane-san (Japan)" crc="92B8927"/>
+    </game>
+    <game name="Might and Magic III - Isles of Terra (Japan)">
+        <rom name="Might and Magic III - Isles of Terra (Japan)" crc="2D36A86D"/>
+    </game>
+    <game name="Sylphia (Japan)">
+        <rom name="Sylphia (Japan)" crc="C2D2FEEE"/>
+    </game>
+    <game name="Motteke Tamago (Japan)">
+        <rom name="Motteke Tamago (Japan)" crc="45F53928"/>
+    </game>
+    <game name="Dragon Knight II (Japan)">
+        <rom name="Dragon Knight II (Japan)" crc="F1FA5CD8"/>
+    </game>
+    <game name="Bomberman '94 (Japan) (Sample)">
+        <rom name="Bomberman '94 (Japan) (Sample)" crc="99497B04"/>
+    </game>
+    <game name="Dungeon Master - Theron's Quest (Japan)">
+        <rom name="Dungeon Master - Theron's Quest (Japan)" crc="AE9382A3"/>
+    </game>
+    <game name="Super Darius (Japan)">
+        <rom name="Super Darius (Japan)" crc="BC4F96E9"/>
+    </game>
+    <game name="Laplace no Ma (Japan)">
+        <rom name="Laplace no Ma (Japan)" crc="41970E51"/>
+    </game>
+    <game name="PC Engine Hyper Catalog CD-ROM - 1994 Summer (Japan) (Disc B)">
+        <rom name="PC Engine Hyper Catalog CD-ROM - 1994 Summer (Japan) (Disc B)" crc="33190301"/>
+    </game>
+    <game name="Ys IV - The Dawn of Ys (Japan) (Rev 3)">
+        <rom name="Ys IV - The Dawn of Ys (Japan) (Rev 3)" crc="D02AF439"/>
+    </game>
+    <game name="Space Adventure Cobra - Kokuryuuou no Densetsu (Japan)">
+        <rom name="Space Adventure Cobra - Kokuryuuou no Densetsu (Japan)" crc="5D6A3A2B"/>
+    </game>
+    <game name="Kisou Louga II - The Ends of Shangrila (Japan)">
+        <rom name="Kisou Louga II - The Ends of Shangrila (Japan)" crc="AB9140D2"/>
+    </game>
+    <game name="Psychic Detective Series Vol. 4 - Orgel (Japan)">
+        <rom name="Psychic Detective Series Vol. 4 - Orgel (Japan)" crc="78AF28AD"/>
+    </game>
+    <game name="Akumajou Dracula X - Chi no Rondo (Japan) (FABT, FACT)">
+        <rom name="Akumajou Dracula X - Chi no Rondo (Japan) (FABT, FACT)" crc="D5034C56"/>
+    </game>
+    <game name="Super CD-ROM^2 Taiken Soft Shuu (Japan)">
+        <rom name="Super CD-ROM^2 Taiken Soft Shuu (Japan)" crc="92DD1ABF"/>
+    </game>
+    <game name="Shanghai II (Japan)">
+        <rom name="Shanghai II (Japan)" crc="CD96DFF9"/>
+    </game>
+    <game name="ROM^2 Karaoke Vol. 2 - Nattoku Idol (Japan)">
+        <rom name="ROM^2 Karaoke Vol. 2 - Nattoku Idol (Japan)" crc="1C37A90"/>
+    </game>
+    <game name="SimEarth - The Living Planet (USA)">
+        <rom name="SimEarth - The Living Planet (USA)" crc="F5F2C047"/>
+    </game>
+    <game name="Todd's Adventures in Slime World (Japan)">
+        <rom name="Todd's Adventures in Slime World (Japan)" crc="19F581D8"/>
+    </game>
+    <game name="Sherlock Holmes - Consulting Detective Vol. II (Japan)">
+        <rom name="Sherlock Holmes - Consulting Detective Vol. II (Japan)" crc="138E3F46"/>
+    </game>
+    <game name="Valis IV (Japan)">
+        <rom name="Valis IV (Japan)" crc="5B5E8E10"/>
+    </game>
+    <game name="Sherlock Holmes - Consulting Detective (Japan)">
+        <rom name="Sherlock Holmes - Consulting Detective (Japan)" crc="44D8F1F5"/>
+    </game>
+    <game name="Magical Saurus Tour (Japan)">
+        <rom name="Magical Saurus Tour (Japan)" crc="D18A5054"/>
+    </game>
+    <game name="Makai Eiyuuden - Shape Shifter (Japan)">
+        <rom name="Makai Eiyuuden - Shape Shifter (Japan)" crc="561FC6F4"/>
+    </game>
+    <game name="Shinsetsu Shiawase Usagi 2 - Kairaku e no Invitation (Japan) (Unl)">
+        <rom name="Shinsetsu Shiawase Usagi 2 - Kairaku e no Invitation (Japan) (Unl)" crc="3E253BC9"/>
+    </game>
+    <game name="In Magical Adventure - Fray CD - Xak Gaiden (Japan)">
+        <rom name="In Magical Adventure - Fray CD - Xak Gaiden (Japan)" crc="531F67D3"/>
+    </game>
+    <game name="Eikan wa Kimi ni - Koukou Yakyuu Zenkoku Taikai (Japan)">
+        <rom name="Eikan wa Kimi ni - Koukou Yakyuu Zenkoku Taikai (Japan)" crc="7ACEED5C"/>
+    </game>
+    <game name="Adventure Quiz - Capcom World + Hatena no Daibouken (Japan)">
+        <rom name="Adventure Quiz - Capcom World + Hatena no Daibouken (Japan)" crc="FA3FCC68"/>
+    </game>
+    <game name="World Heroes 2 (Japan)">
+        <rom name="World Heroes 2 (Japan)" crc="E1AC4171"/>
+    </game>
+    <game name="Buster Bros. (USA)">
+        <rom name="Buster Bros. (USA)" crc="D9C9F0AD"/>
+    </game>
+    <game name="Kiaidan 00 (Japan)">
+        <rom name="Kiaidan 00 (Japan)" crc="F24567D4"/>
+    </game>
+    <game name="Horror Story (Japan)">
+        <rom name="Horror Story (Japan)" crc="DC80230E"/>
+    </game>
+    <game name="Fighting Street (Japan) (Rev 5)">
+        <rom name="Fighting Street (Japan) (Rev 5)" crc="4CFBD302"/>
+    </game>
+    <game name="De-Ja (Japan)">
+        <rom name="De-Ja (Japan)" crc="48A3E4D9"/>
+    </game>
+    <game name="Zan - Kagerou no Toki (Japan)">
+        <rom name="Zan - Kagerou no Toki (Japan)" crc="8BFE09FB"/>
+    </game>
+    <game name="TV Show, The (Japan)">
+        <rom name="TV Show, The (Japan)" crc="299FCCD9"/>
+    </game>
+    <game name="Valis II (USA)">
+        <rom name="Valis II (USA)" crc="41482161"/>
+    </game>
+    <game name="Cosmic Fantasy 4 - Ginga Shounen Densetsu - Gekitou-hen (Japan)">
+        <rom name="Cosmic Fantasy 4 - Ginga Shounen Densetsu - Gekitou-hen (Japan)" crc="C584058D"/>
+    </game>
+    <game name="Pachio-kun - Warau Uchuu (Japan)">
+        <rom name="Pachio-kun - Warau Uchuu (Japan)" crc="985C71EF"/>
+    </game>
+    <game name="Cosmic Fantasy 2 (USA)">
+        <rom name="Cosmic Fantasy 2 (USA)" crc="7F8DDA87"/>
+    </game>
+    <game name="Duo Comic - Bakuretsu Hunter (Japan)">
+        <rom name="Duo Comic - Bakuretsu Hunter (Japan)" crc="1B7232BE"/>
+    </game>
+    <game name="Pomping World (Japan)">
+        <rom name="Pomping World (Japan)" crc="70746814"/>
+    </game>
+    <game name="Uchuu Senkan Yamato (Japan)">
+        <rom name="Uchuu Senkan Yamato (Japan)" crc="63AEB6E4"/>
+    </game>
+    <game name="Populous - The Promised Lands (Japan)">
+        <rom name="Populous - The Promised Lands (Japan)" crc="DCC9109"/>
+    </game>
+    <game name="Laser Soft Visual Collection Vol. 1 - Cosmic Fantasy Visual-shuu (Japan)">
+        <rom name="Laser Soft Visual Collection Vol. 1 - Cosmic Fantasy Visual-shuu (Japan)" crc="3D0EBE1E"/>
+    </game>
+    <game name="1552 Tenka Tairan (Japan)">
+        <rom name="1552 Tenka Tairan (Japan)" crc="F7B09F56"/>
+    </game>
+    <game name="Jantei Monogatari 2 - Uchuu Tantei Diban - Kanketsu-hen (Japan)">
+        <rom name="Jantei Monogatari 2 - Uchuu Tantei Diban - Kanketsu-hen (Japan)" crc="778AB89A"/>
+    </game>
+    <game name="Gensou Tairiku Auleria (Japan)">
+        <rom name="Gensou Tairiku Auleria (Japan)" crc="7F5543D3"/>
+    </game>
+    <game name="Ultra Box Soukan-gou (Japan)">
+        <rom name="Ultra Box Soukan-gou (Japan)" crc="D04065A7"/>
+    </game>
+    <game name="CD Mahjong - Bishoujo Chuushinha (Japan) (Unl)">
+        <rom name="CD Mahjong - Bishoujo Chuushinha (Japan) (Unl)" crc="E54AC857"/>
+    </game>
+    <game name="Nobunaga no Yabou - Bushou Fuuunroku (Japan)">
+        <rom name="Nobunaga no Yabou - Bushou Fuuunroku (Japan)" crc="B076C1E9"/>
+    </game>
+    <game name="Juuouki (Japan) (Rev 4)">
+        <rom name="Juuouki (Japan) (Rev 4)" crc="D75C707C"/>
+    </game>
+    <game name="Prince of Persia (Japan)">
+        <rom name="Prince of Persia (Japan)" crc="E78E6190"/>
+    </game>
+    <game name="Record of Lodoss War (Japan)">
+        <rom name="Record of Lodoss War (Japan)" crc="2BB4B42C"/>
+    </game>
+    <game name="Super Schwarzschild (Japan)">
+        <rom name="Super Schwarzschild (Japan)" crc="179E7765"/>
+    </game>
+    <game name="Palladion - Auto Crusher Palladium (Japan)">
+        <rom name="Palladion - Auto Crusher Palladium (Japan)" crc="AC7A7930"/>
+    </game>
+    <game name="Nishimura Kyoutarou Mystery - Hokutosei no Onna (Japan)">
+        <rom name="Nishimura Kyoutarou Mystery - Hokutosei no Onna (Japan)" crc="BE3E2028"/>
+    </game>
+    <game name="Master of Monsters (Japan)">
+        <rom name="Master of Monsters (Japan)" crc="7EE7F6DC"/>
+    </game>
+    <game name="Sugoroku, The '92 - Nari Tore - Nariagari Trendy (Japan)">
+        <rom name="Sugoroku, The '92 - Nari Tore - Nariagari Trendy (Japan)" crc="665A02AD"/>
+    </game>
+    <game name="PC Engine Hyper Catalog CD-ROM 2 - 1993 Spring (Japan)">
+        <rom name="PC Engine Hyper Catalog CD-ROM 2 - 1993 Spring (Japan)" crc="2C02458E"/>
+    </game>
+    <game name="Sotsugyou II - Neo Generation (Japan)">
+        <rom name="Sotsugyou II - Neo Generation (Japan)" crc="93F25D63"/>
+    </game>
+    <game name="ROM^2 Karaoke Volume 5 (Japan)">
+        <rom name="ROM^2 Karaoke Volume 5 (Japan)" crc="8BD08FAD"/>
+    </game>
+    <game name="Sexy Idol Mahjong (Japan)">
+        <rom name="Sexy Idol Mahjong (Japan)" crc="A783A61D"/>
+    </game>
+    <game name="Ultra Box 4-gou (Japan)">
+        <rom name="Ultra Box 4-gou (Japan)" crc="2D09644C"/>
+    </game>
+    <game name="Kabuki Ittouryoudan (Japan)">
+        <rom name="Kabuki Ittouryoudan (Japan)" crc="65710A6A"/>
+    </game>
+    <game name="ROM^2 Karaoke Volume 3 (Japan)">
+        <rom name="ROM^2 Karaoke Volume 3 (Japan)" crc="C97B665A"/>
+    </game>
+    <game name="Ys Book I &amp; II (USA)">
+        <rom name="Ys Book I &amp; II (USA)" crc="FB683B9B"/>
+    </game>
+    <game name="Ginga Ojousama Densetsu Yuna (Japan) (FAFT)">
+        <rom name="Ginga Ojousama Densetsu Yuna (Japan) (FAFT)" crc="1370CAFB"/>
+    </game>
+    <game name="Jim Power in Mutant Planet (Japan)">
+        <rom name="Jim Power in Mutant Planet (Japan)" crc="3D7EFA3B"/>
+    </game>
+    <game name="Cosmic Fantasy - Bouken Shounen Yuu (Japan) (Alt 1)">
+        <rom name="Cosmic Fantasy - Bouken Shounen Yuu (Japan) (Alt 1)" crc="1AF08D2E"/>
+    </game>
+    <game name="Final Zone II (Japan)">
+        <rom name="Final Zone II (Japan)" crc="500CC433"/>
+    </game>
+    <game name="Pachio-kun 3 - Pachi-Slot &amp; Pachinko (Japan)">
+        <rom name="Pachio-kun 3 - Pachi-Slot &amp; Pachinko (Japan)" crc="ACE1378F"/>
+    </game>
+    <game name="Far East of Eden - Tengai Makyou II - Manji Maru (Japan)">
+        <rom name="Far East of Eden - Tengai Makyou II - Manji Maru (Japan)" crc="B2AC1752"/>
+    </game>
+    <game name="Bazar de Gozarre no Game de Gozarre (Japan)">
+        <rom name="Bazar de Gozarre no Game de Gozarre (Japan)" crc="7EA8AA37"/>
+    </game>
+    <game name="ROM ROM Stadium (Japan)">
+        <rom name="ROM ROM Stadium (Japan)" crc="4441244A"/>
+    </game>
+    <game name="Ginga Ojousama Densetsu Yuna 2 - Eien no Princess (Japan) (FABT)">
+        <rom name="Ginga Ojousama Densetsu Yuna 2 - Eien no Princess (Japan) (FABT)" crc="D6FFE1D7"/>
+    </game>
+    <game name="Doukyuusei (Japan) (Rev 4)">
+        <rom name="Doukyuusei (Japan) (Rev 4)" crc="999EE1A0"/>
+    </game>
+    <game name="Bishoujo Senshi Sailor Moon Collection (Japan)">
+        <rom name="Bishoujo Senshi Sailor Moon Collection (Japan)" crc="C896A076"/>
+    </game>
+    <game name="Chou Aniki (Japan) (FAAT, FACT)">
+        <rom name="Chou Aniki (Japan) (FAAT, FACT)" crc="32126825"/>
+    </game>
+    <game name="Jack Nicklaus Turbo Golf (USA)">
+        <rom name="Jack Nicklaus Turbo Golf (USA)" crc="2F02355F"/>
+    </game>
+    <game name="Neo Nectaris (Japan)">
+        <rom name="Neo Nectaris (Japan)" crc="61D3F1C3"/>
+    </game>
+    <game name="Ginga Ojousama Densetsu Yuna (Japan) (FABT, FACT)">
+        <rom name="Ginga Ojousama Densetsu Yuna (Japan) (FABT, FACT)" crc="1370CAFB"/>
+    </game>
+    <game name="PC Engine Hyper Catalog CD-ROM 6 - 1994 Summer (Japan) (Disc B)">
+        <rom name="PC Engine Hyper Catalog CD-ROM 6 - 1994 Summer (Japan) (Disc B)" crc="5F34548"/>
+    </game>
+    <game name="Fantastic Night Dreams - Cotton (Japan) (En,Ja)">
+        <rom name="Fantastic Night Dreams - Cotton (Japan) (En,Ja)" crc="C72923C5"/>
+    </game>
+    <game name="Doukyuusei (Japan) (Rev 3)">
+        <rom name="Doukyuusei (Japan) (Rev 3)" crc="999EE1A0"/>
+    </game>
+    <game name="Ranma 1-2 - Datou, Ganso Musabetsu Kakutou-ryuu! (Japan)">
+        <rom name="Ranma 1-2 - Datou, Ganso Musabetsu Kakutou-ryuu! (Japan)" crc="6E622B64"/>
+    </game>
+    <game name="Mad Stalker - Full Metal Force (Japan)">
+        <rom name="Mad Stalker - Full Metal Force (Japan)" crc="B0C15C9C"/>
+    </game>
+    <game name="Tenchi Muyou! Ryououki (Japan)">
+        <rom name="Tenchi Muyou! Ryououki (Japan)" crc="7EB62185"/>
+    </game>
+    <game name="Strider Hiryuu (Japan)">
+        <rom name="Strider Hiryuu (Japan)" crc="5C72A016"/>
+    </game>
+    <game name="J. League Tremendous Soccer '94 (Japan)">
+        <rom name="J. League Tremendous Soccer '94 (Japan)" crc="28D16FC8"/>
+    </game>
+    <game name="Sotsugyou - Graduation (Japan) (Rev 1)">
+        <rom name="Sotsugyou - Graduation (Japan) (Rev 1)" crc="931154F8"/>
+    </game>
+    <game name="Gradius II - Gofer no Yabou (Japan)">
+        <rom name="Gradius II - Gofer no Yabou (Japan)" crc="30D22508"/>
+    </game>
+    <game name="Hawk F-123 (Japan)">
+        <rom name="Hawk F-123 (Japan)" crc="7CFC35F6"/>
+    </game>
+    <game name="Valis III (Japan)">
+        <rom name="Valis III (Japan)" crc="83045703"/>
+    </game>
+    <game name="Hellfire S - The Another Story (Japan)">
+        <rom name="Hellfire S - The Another Story (Japan)" crc="7349AC03"/>
+    </game>
+    <game name="Fantastic Night Dreams - Cotton (USA)">
+        <rom name="Fantastic Night Dreams - Cotton (USA)" crc="E8FC92BA"/>
+    </game>
+    <game name="Sexy Idol Mahjong - Fashion Monogatari (Japan)">
+        <rom name="Sexy Idol Mahjong - Fashion Monogatari (Japan)" crc="9DC798C8"/>
+    </game>
+    <game name="Ginga Fukei Densetsu Sapphire (Japan)">
+        <rom name="Ginga Fukei Densetsu Sapphire (Japan)" crc="FB52D639"/>
+    </game>
+    <game name="Ginga Fukei Densetsu Sapphire (Japan) (Reprint)">
+        <rom name="Ginga Fukei Densetsu Sapphire (Japan) (Reprint)" crc="FB52D639"/>
+    </game>
+    <game name="Dragon Knight III (Japan)">
+        <rom name="Dragon Knight III (Japan)" crc="2132B4A9"/>
+    </game>
+    <game name="ROM^2 Karaoke Volume 4 (Japan)">
+        <rom name="ROM^2 Karaoke Volume 4 (Japan)" crc="3BE0147D"/>
+    </game>
+    <game name="Quiz Marugoto the World (Japan) (Rev 7)">
+        <rom name="Quiz Marugoto the World (Japan) (Rev 7)" crc="1F430E53"/>
+    </game>
+    <game name="Sherlock Holmes - Consulting Detective - Volume 2 (USA)">
+        <rom name="Sherlock Holmes - Consulting Detective - Volume 2 (USA)" crc="DB3A601A"/>
+    </game>
+    <game name="Startling Odyssey (Japan)">
+        <rom name="Startling Odyssey (Japan)" crc="2E3ED4B4"/>
+    </game>
+    <game name="Addams Family, The (USA)">
+        <rom name="Addams Family, The (USA)" crc="14933B95"/>
+    </game>
+    <game name="CD Battle - Hikari no Yuusha-tachi (Japan)">
+        <rom name="CD Battle - Hikari no Yuusha-tachi (Japan)" crc="20B806A0"/>
+    </game>
+    <game name="Iga Ninden Gaiou (Japan)">
+        <rom name="Iga Ninden Gaiou (Japan)" crc="F962DDE"/>
+    </game>
+    <game name="Ginga Ojousama Densetsu Yuna HuVIDEO CD (Japan)">
+        <rom name="Ginga Ojousama Densetsu Yuna HuVIDEO CD (Japan)" crc="F924F2F5"/>
+    </game>
+    <game name="Develo - Starter Kit - Assembler-hen (Japan)">
+        <rom name="Develo - Starter Kit - Assembler-hen (Japan)" crc="DC9C119"/>
+    </game>
+    <game name="Lords of Thunder (USA)">
+        <rom name="Lords of Thunder (USA)" crc="CF2E0D3F"/>
+    </game>
+    <game name="ROM^2 Karaoke Volume 1 (Japan)">
+        <rom name="ROM^2 Karaoke Volume 1 (Japan)" crc="84C638EB"/>
+    </game>
+    <game name="Mysterious Song (USA) (En,Fr,Es) (Unl)">
+        <rom name="Mysterious Song (USA) (En,Fr,Es) (Unl)" crc="60CB00BD"/>
+    </game>
+    <game name="Sol Bianca (Japan)">
+        <rom name="Sol Bianca (Japan)" crc="FA8890BB"/>
+    </game>
+    <game name="Aoki Ookami to Shiroki Mejika - Genchou Hishi (Japan)">
+        <rom name="Aoki Ookami to Shiroki Mejika - Genchou Hishi (Japan)" crc="4D8AF9F6"/>
+    </game>
+    <game name="Double Dragon II - The Revenge (Japan)">
+        <rom name="Double Dragon II - The Revenge (Japan)" crc="260CAE57"/>
+    </game>
+    <game name="Vasteel (USA)">
+        <rom name="Vasteel (USA)" crc="AB3EB239"/>
+    </game>
+    <game name="Dragon Slayer - The Legend of Heroes (Japan)">
+        <rom name="Dragon Slayer - The Legend of Heroes (Japan)" crc="7A8E29CF"/>
+    </game>
+    <game name="Alshark (Japan)">
+        <rom name="Alshark (Japan)" crc="F1CD7DF6"/>
+    </game>
+    <game name="Final Zone II (USA)">
+        <rom name="Final Zone II (USA)" crc="500CC433"/>
+    </game>
+    <game name="Cyber City Oedo 808 - Kemono no Alignment (Japan)">
+        <rom name="Cyber City Oedo 808 - Kemono no Alignment (Japan)" crc="6D01AB4A"/>
+    </game>
+    <game name="Flash Hiders (Japan)">
+        <rom name="Flash Hiders (Japan)" crc="CE7884A9"/>
+    </game>
+    <game name="CD Denjin - Rockabilly Tengoku (Japan)">
+        <rom name="CD Denjin - Rockabilly Tengoku (Japan)" crc="BCB0314"/>
+    </game>
+    <game name="Quiz no Hoshi - Star of Quiz (Japan)">
+        <rom name="Quiz no Hoshi - Star of Quiz (Japan)" crc="942EE4DD"/>
+    </game>
+    <game name="Princess Maker 1 (Japan)">
+        <rom name="Princess Maker 1 (Japan)" crc="A8A3C1A9"/>
+    </game>
+    <game name="Tokimeki Memorial (Japan)">
+        <rom name="Tokimeki Memorial (Japan)" crc="5647CD26"/>
+    </game>
+    <game name="Gulclight TDF 2 (Japan)">
+        <rom name="Gulclight TDF 2 (Japan)" crc="575C6FE6"/>
+    </game>
+    <game name="Babel (Japan)">
+        <rom name="Babel (Japan)" crc="785B6316"/>
+    </game>
+    <game name="Faceball (Japan)">
+        <rom name="Faceball (Japan)" crc="5B8A78F"/>
+    </game>
+    <game name="Wizardry III, IV (Japan)">
+        <rom name="Wizardry III, IV (Japan)" crc="29BCDBF5"/>
+    </game>
+    <game name="Xak III - The Eternal Recurrence (Japan)">
+        <rom name="Xak III - The Eternal Recurrence (Japan)" crc="4FE453FA"/>
+    </game>
+    <game name="Motoroader MC (Japan)">
+        <rom name="Motoroader MC (Japan)" crc="26AC342F"/>
+    </game>
+    <game name="Summer Carnival '93 - NEXZR Special (Japan)">
+        <rom name="Summer Carnival '93 - NEXZR Special (Japan)" crc="EE6665E9"/>
+    </game>
+    <game name="Forgotten Worlds (USA) (En,Ja)">
+        <rom name="Forgotten Worlds (USA) (En,Ja)" crc="EFD86633"/>
+    </game>
+    <game name="Kagami no Kuni no Legend (Japan)">
+        <rom name="Kagami no Kuni no Legend (Japan)" crc="37CAEC23"/>
+    </game>
+    <game name="Human Sports Festival (Japan)">
+        <rom name="Human Sports Festival (Japan)" crc="F2DB25A8"/>
+    </game>
+    <game name="Super Daisenryaku (Japan)">
+        <rom name="Super Daisenryaku (Japan)" crc="8291B896"/>
+    </game>
+    <game name="Last Armageddon (Japan) (Rev 5)">
+        <rom name="Last Armageddon (Japan) (Rev 5)" crc="9ACE19A7"/>
+    </game>
+    <game name="Goetzendiener (Japan)">
+        <rom name="Goetzendiener (Japan)" crc="9FE57D3E"/>
+    </game>
+    <game name="Puyo Puyo CD Tsuu (Japan)">
+        <rom name="Puyo Puyo CD Tsuu (Japan)" crc="A2B90045"/>
+    </game>
+    <game name="Splash Lake - Ostrich Daibouken (Japan)">
+        <rom name="Splash Lake - Ostrich Daibouken (Japan)" crc="FF9FE23E"/>
+    </game>
+    <game name="Aurora Quest - Otaku no Seiza in Another World (Japan)">
+        <rom name="Aurora Quest - Otaku no Seiza in Another World (Japan)" crc="50AE2211"/>
+    </game>
+    <game name="Manhole, The (Japan)">
+        <rom name="Manhole, The (Japan)" crc="74D479F1"/>
+    </game>
+    <game name="Burai - Yatsudama no Yuushi Densetsu (Japan)">
+        <rom name="Burai - Yatsudama no Yuushi Densetsu (Japan)" crc="DBFEB27E"/>
+    </game>
+    <game name="Faussete Amour (Japan)">
+        <rom name="Faussete Amour (Japan)" crc="6C68C59D"/>
+    </game>
+    <game name="Seirei Senshi Spriggan (Japan)">
+        <rom name="Seirei Senshi Spriggan (Japan)" crc="49E95F53"/>
+    </game>
+    <game name="Rayxanber III (Japan)">
+        <rom name="Rayxanber III (Japan)" crc="DBA6A68D"/>
+    </game>
+    <game name="Ys III - Wanderers from Ys (USA)">
+        <rom name="Ys III - Wanderers from Ys (USA)" crc="3A327194"/>
+    </game>
+    <game name="Dungeon Explorer II (Japan)">
+        <rom name="Dungeon Explorer II (Japan)" crc="5E6FD328"/>
+    </game>
+    <game name="John Madden Duo CD Football (USA) (RE)">
+        <rom name="John Madden Duo CD Football (USA) (RE)" crc="7E48F80E"/>
+    </game>
+    <game name="Dragon Slayer - The Legend of Heroes (USA)">
+        <rom name="Dragon Slayer - The Legend of Heroes (USA)" crc="799CE04B"/>
+    </game>
+    <game name="Alnam no Kiba - Juuzoku Juuni Shinto Densetsu (Japan) (FAAT)">
+        <rom name="Alnam no Kiba - Juuzoku Juuni Shinto Densetsu (Japan) (FAAT)" crc="DE80AAA2"/>
+    </game>
+    <game name="PC Engine Hyper Catalog CD-ROM 4 - 1993 Winter (Japan)">
+        <rom name="PC Engine Hyper Catalog CD-ROM 4 - 1993 Winter (Japan)" crc="DB25DD9B"/>
+    </game>
+    <game name="Far East of Eden - Tengai Makyou - Ziria (Japan) (Rev 7)">
+        <rom name="Far East of Eden - Tengai Makyou - Ziria (Japan) (Rev 7)" crc="E53764C5"/>
+    </game>
+    <game name="Kuusou Kagaku Sekai Gulliver Boy (Japan)">
+        <rom name="Kuusou Kagaku Sekai Gulliver Boy (Japan)" crc="600DDE92"/>
+    </game>
+    <game name="ROM^2 Karaoke Volume 1 (Japan) (Alt)">
+        <rom name="ROM^2 Karaoke Volume 1 (Japan) (Alt)" crc="84C638EB"/>
+    </game>
+    <game name="Popful Mail (Japan) (Sample)">
+        <rom name="Popful Mail (Japan) (Sample)" crc="FF1F43A8"/>
+    </game>
+    <game name="3x3 Eyes - Sanjiyan Henjou (Japan)">
+        <rom name="3x3 Eyes - Sanjiyan Henjou (Japan)" crc="D12DBA7B"/>
+    </game>
+    <game name="Hyper Dyne - SideArms Special (Japan)">
+        <rom name="Hyper Dyne - SideArms Special (Japan)" crc="A48EF503"/>
+    </game>
+    <game name="Doraemon - Nobita no Dorabian Night (Japan)">
+        <rom name="Doraemon - Nobita no Dorabian Night (Japan)" crc="6AA51D67"/>
+    </game>
+    <game name="Kaze no Densetsu Xanadu (Japan) (Sample)">
+        <rom name="Kaze no Densetsu Xanadu (Japan) (Sample)" crc="4B7FF2E8"/>
+    </game>
+    <game name="Metal Angel 2 (Japan)">
+        <rom name="Metal Angel 2 (Japan)" crc="3DB2CF0A"/>
+    </game>
+    <game name="Fighting Street (USA)">
+        <rom name="Fighting Street (USA)" crc="4CFBD302"/>
+    </game>
+    <game name="Last Alert (USA)">
+        <rom name="Last Alert (USA)" crc="375CC003"/>
+    </game>
+    <game name="Bishoujo Senshi Sailor Moon (Japan)">
+        <rom name="Bishoujo Senshi Sailor Moon (Japan)" crc="A180AF79"/>
+    </game>
+    <game name="Camp California (USA)">
+        <rom name="Camp California (USA)" crc="68155B24"/>
+    </game>
+    <game name="Summer Carnival '92 - Alzadick (Japan)">
+        <rom name="Summer Carnival '92 - Alzadick (Japan)" crc="736F902F"/>
+    </game>
+    <game name="Linda^3 (Japan) (Rev 1)">
+        <rom name="Linda^3 (Japan) (Rev 1)" crc="11B25015"/>
+    </game>
+    <game name="Alnam no Kiba - Juuzoku Juuni Shinto Densetsu (Japan) (FABT)">
+        <rom name="Alnam no Kiba - Juuzoku Juuni Shinto Densetsu (Japan) (FABT)" crc="DE80AAA2"/>
+    </game>
+    <game name="Spriggan Mark 2 - Re Terraform Project (Japan)">
+        <rom name="Spriggan Mark 2 - Re Terraform Project (Japan)" crc="FD633522"/>
+    </game>
+    <game name="Jantei Monogatari 2 - Uchuu Tantei Diban - Shutsudou-hen (Japan)">
+        <rom name="Jantei Monogatari 2 - Uchuu Tantei Diban - Shutsudou-hen (Japan)" crc="778AB89A"/>
+    </game>
+    <game name="Chou Jikuu Yousai Macross 2036 (Japan)">
+        <rom name="Chou Jikuu Yousai Macross 2036 (Japan)" crc="8DEC8E42"/>
+    </game>
+    <game name="Tecmo World Cup Super Soccer (Japan)">
+        <rom name="Tecmo World Cup Super Soccer (Japan)" crc="E762AF6B"/>
+    </game>
+    <game name="Wonder Boy III - Monster Lair (Japan) (Rev 3)">
+        <rom name="Wonder Boy III - Monster Lair (Japan) (Rev 3)" crc="99F62240"/>
+    </game>
+    <game name="ROM^2 Karaoke Vol. 3 - Yappashi Band (Japan)">
+        <rom name="ROM^2 Karaoke Vol. 3 - Yappashi Band (Japan)" crc="2F27597B"/>
+    </game>
+    <game name="Top o Nerae! GunBuster Vol. 2 (Japan)">
+        <rom name="Top o Nerae! GunBuster Vol. 2 (Japan)" crc="7FADB999"/>
+    </game>
+    <game name="Golden Axe (Japan)">
+        <rom name="Golden Axe (Japan)" crc="BEDC4890"/>
+    </game>
+    <game name="PC Engine Hyper Catalog CD-ROM 6 - 1994 Summer (Japan) (Disc A)">
+        <rom name="PC Engine Hyper Catalog CD-ROM 6 - 1994 Summer (Japan) (Disc A)" crc="84F7EBCD"/>
+    </game>
+    <game name="Mamono Hunter Youko - Makai kara no Tenkousei (Japan)">
+        <rom name="Mamono Hunter Youko - Makai kara no Tenkousei (Japan)" crc="FDB17130"/>
+    </game>
+    <game name="Ryuuko no Ken (Japan) (En,Ja,Es) (FACT)">
+        <rom name="Ryuuko no Ken (Japan) (En,Ja,Es) (FACT)" crc="D0A80406"/>
+    </game>
+    <game name="ROM^2 Karaoke Volume 2 (Japan)">
+        <rom name="ROM^2 Karaoke Volume 2 (Japan)" crc="72D8372F"/>
+    </game>
+    <game name="Top o Nerae! GunBuster Vol. 1 (Japan)">
+        <rom name="Top o Nerae! GunBuster Vol. 1 (Japan)" crc="92F4A059"/>
+    </game>
+    <game name="Monster Maker - Yami no Ryuukishi (Japan) (Alt)">
+        <rom name="Monster Maker - Yami no Ryuukishi (Japan) (Alt)" crc="10623B45"/>
+    </game>
+    <game name="Splash Lake (USA)">
+        <rom name="Splash Lake (USA)" crc="A9B695"/>
+    </game>
+    <game name="Revival Chase (USA) (En,Fr) (Unl)">
+        <rom name="Revival Chase (USA) (En,Fr) (Unl)" crc="D8B92BCA"/>
+    </game>
+    <game name="YaWaRa! 2 - A Fashionable Judo Girl! (Japan)">
+        <rom name="YaWaRa! 2 - A Fashionable Judo Girl! (Japan)" crc="C7CBAD10"/>
+    </game>
+    <game name="Lord of Wars (Japan)">
+        <rom name="Lord of Wars (Japan)" crc="9D3B21C"/>
+    </game>
+    <game name="Rayxanber II (Japan)">
+        <rom name="Rayxanber II (Japan)" crc="6AEEA1BC"/>
+    </game>
+    <game name="PC Engine Hyper Catalog CD-ROM - 1994 Summer (Japan) (Disc A)">
+        <rom name="PC Engine Hyper Catalog CD-ROM - 1994 Summer (Japan) (Disc A)" crc="84F7EBCD"/>
+    </game>
+    <game name="Kakutou Haou Densetsu - Algunos (Japan)">
+        <rom name="Kakutou Haou Densetsu - Algunos (Japan)" crc="F76F70BC"/>
+    </game>
+    <game name="Tenchi o Kurau (Japan)">
+        <rom name="Tenchi o Kurau (Japan)" crc="8E639764"/>
+    </game>
+    <game name="Pastel Lime (Japan)">
+        <rom name="Pastel Lime (Japan)" crc="E35764B9"/>
+    </game>
+    <game name="Quiz Tonosama no Yabou (Japan)">
+        <rom name="Quiz Tonosama no Yabou (Japan)" crc="AB2F3392"/>
+    </game>
+    <game name="Star Parodier (Japan)">
+        <rom name="Star Parodier (Japan)" crc="EA41E0B5"/>
+    </game>
+    <game name="Space Invaders - The Original Game (Japan)">
+        <rom name="Space Invaders - The Original Game (Japan)" crc="32F16F7A"/>
+    </game>
+    <game name="Ryuuko no Ken (Japan) (En,Ja,Es) (Sample)">
+        <rom name="Ryuuko no Ken (Japan) (En,Ja,Es) (Sample)" crc="D0A80406"/>
+    </game>
+    <game name="Nobunaga no Yabou - Zenkokuban (Japan)">
+        <rom name="Nobunaga no Yabou - Zenkokuban (Japan)" crc="7B20A5DC"/>
+    </game>
+    <game name="Mad Stalker - Full Metal Force (Japan) (Sample)">
+        <rom name="Mad Stalker - Full Metal Force (Japan) (Sample)" crc="3B5428B0"/>
+    </game>
+    <game name="Mashou Denki - La Valeur (Japan)">
+        <rom name="Mashou Denki - La Valeur (Japan)" crc="170A6E1B"/>
+    </game>
+    <game name="Lady Phantom (Japan) (FABT)">
+        <rom name="Lady Phantom (Japan) (FABT)" crc="68E1670C"/>
+    </game>
+    <game name="Dungeon Master - Theron's Quest (USA)">
+        <rom name="Dungeon Master - Theron's Quest (USA)" crc="C94354BD"/>
+    </game>
+    <game name="Farjius no Jakoutei - Neo Metal Fantasy (Japan)">
+        <rom name="Farjius no Jakoutei - Neo Metal Fantasy (Japan)" crc="6FB78E5A"/>
+    </game>
+    <game name="Valis III (USA)">
+        <rom name="Valis III (USA)" crc="83045703"/>
+    </game>
+    <game name="Moonlight Lady (Japan)">
+        <rom name="Moonlight Lady (Japan)" crc="A8EF04C"/>
+    </game>
+    <game name="Downtown Nekketsu Koushinkyoku - Soreyuke Daiundoukai (Japan)">
+        <rom name="Downtown Nekketsu Koushinkyoku - Soreyuke Daiundoukai (Japan)" crc="DBF79E24"/>
+    </game>
+    <game name="Dead of the Brain 1&amp;2 (Japan)">
+        <rom name="Dead of the Brain 1&amp;2 (Japan)" crc="F0F4B765"/>
+    </game>
+    <game name="Shin Onryou Senki (Japan)">
+        <rom name="Shin Onryou Senki (Japan)" crc="BAFD2EBA"/>
+    </game>
+    <game name="Death Bringer - The Knight of Darkness (Japan)">
+        <rom name="Death Bringer - The Knight of Darkness (Japan)" crc="D360CEFE"/>
+    </game>
+    <game name="Ys I &amp; II (Japan) (Alt)">
+        <rom name="Ys I &amp; II (Japan) (Alt)" crc="FB683B9B"/>
+    </game>
+    <game name="KO Seiki Beast Sanjuushi - Gaia Fukkatsu - Kanketsu-hen (Japan)">
+        <rom name="KO Seiki Beast Sanjuushi - Gaia Fukkatsu - Kanketsu-hen (Japan)" crc="400125C9"/>
+    </game>
+    <game name="F1 Team Simulation - Project F (Japan)">
+        <rom name="F1 Team Simulation - Project F (Japan)" crc="4BDFBCDD"/>
+    </game>
+    <game name="Dungeon Explorer II (USA)">
+        <rom name="Dungeon Explorer II (USA)" crc="AAE6F44C"/>
+    </game>
+    <game name="Pyramid Plunder (USA) (Unl)">
+        <rom name="Pyramid Plunder (USA) (Unl)" crc="36A59016"/>
+    </game>
+    <game name="Campaign Version - Daisenryaku II (Japan)">
+        <rom name="Campaign Version - Daisenryaku II (Japan)" crc="E5007540"/>
+    </game>
+    <game name="Red Alert (Japan)">
+        <rom name="Red Alert (Japan)" crc="4D3FFAFC"/>
+    </game>
+    <game name="Doukyuusei (Japan) (Rev 3) (Alt 2)">
+        <rom name="Doukyuusei (Japan) (Rev 3) (Alt 2)" crc="999EE1A0"/>
+    </game>
+    <game name="High Grenadier (Japan)">
+        <rom name="High Grenadier (Japan)" crc="D2A93A83"/>
+    </game>
+    <game name="PC Engine Hyper Catalog CD-ROM (Japan)">
+        <rom name="PC Engine Hyper Catalog CD-ROM (Japan)" crc="FD40901F"/>
+    </game>
+    <game name="Hyper Dyne - SideArms Special (Japan) (Alt)">
+        <rom name="Hyper Dyne - SideArms Special (Japan) (Alt)" crc="A48EF503"/>
+    </game>
+    <game name="Davis Cup Tennis, The (Japan)">
+        <rom name="Davis Cup Tennis, The (Japan)" crc="3FB1099"/>
+    </game>
+    <game name="AV Tanjou (Japan) (Unl)">
+        <rom name="AV Tanjou (Japan) (Unl)" crc="23786CCC"/>
+    </game>
+    <game name="Pachio-kun - Maboroshi no Densetsu (Japan) (Rev 7)">
+        <rom name="Pachio-kun - Maboroshi no Densetsu (Japan) (Rev 7)" crc="5BB8773B"/>
+    </game>
+    <game name="Hatsukoi Monogatari (Japan) (Rev 1)">
+        <rom name="Hatsukoi Monogatari (Japan) (Rev 1)" crc="A2A2C8AB"/>
+    </game>
+    <game name="Wizardry I, II (Japan)">
+        <rom name="Wizardry I, II (Japan)" crc="CEF2992D"/>
+    </game>
+    <game name="Tokimeki Memorial (Japan) (Rev 1)">
+        <rom name="Tokimeki Memorial (Japan) (Rev 1)" crc="5647CD26"/>
+    </game>
+    <game name="Far East of Eden - Tengai Makyou - Fuun Kabuki-den (Japan) (Sample)">
+        <rom name="Far East of Eden - Tengai Makyou - Fuun Kabuki-den (Japan) (Sample)" crc="7C9A5E46"/>
+    </game>
+    <game name="Hataraku Shoujo - Tekipaki Working Love (Japan)">
+        <rom name="Hataraku Shoujo - Tekipaki Working Love (Japan)" crc="BDCAC0CD"/>
+    </game>
+    <game name="Tengai Makyou - Deden no Kabuki-den (Japan)">
+        <rom name="Tengai Makyou - Deden no Kabuki-den (Japan)" crc="C82200DD"/>
+    </game>
+    <game name="SimEarth - The Living Planet (Japan)">
+        <rom name="SimEarth - The Living Planet (Japan)" crc="F5F2C047"/>
+    </game>
+    <game name="Bonanza Bros. (Japan)">
+        <rom name="Bonanza Bros. (Japan)" crc="DBA1F565"/>
+    </game>
+    <game name="Local Girls of Hawaii, The (USA) (Unl)">
+        <rom name="Local Girls of Hawaii, The (USA) (Unl)" crc="A55F9FA0"/>
+    </game>
+    <game name="Record of Lodoss War II (Japan)">
+        <rom name="Record of Lodoss War II (Japan)" crc="E2D7861C"/>
+    </game>
+    <game name="Gate of Thunder + Bonk's Adventure + Bonk's Revenge (USA)">
+        <rom name="Gate of Thunder + Bonk's Adventure + Bonk's Revenge (USA)" crc="7859AC7E"/>
+    </game>
+    <game name="Zero 4 Champ II (Japan)">
+        <rom name="Zero 4 Champ II (Japan)" crc="865DB2D9"/>
+    </game>
+    <game name="Shadow of the Beast (USA)">
+        <rom name="Shadow of the Beast (USA)" crc="A298B0B1"/>
+    </game>
+    <game name="Ookami-teki Monshou - Crest of Wolf (Japan)">
+        <rom name="Ookami-teki Monshou - Crest of Wolf (Japan)" crc="406E877F"/>
+    </game>
+    <game name="Valis III (Japan) (Alt)">
+        <rom name="Valis III (Japan) (Alt)" crc="83045703"/>
+    </game>
+    <game name="YaWaRa! A Fashionable Judo Girl! (Japan)">
+        <rom name="YaWaRa! A Fashionable Judo Girl! (Japan)" crc="722A9BDA"/>
+    </game>
+    <game name="Gate of Thunder (Japan) (FACT, FADT)">
+        <rom name="Gate of Thunder (Japan) (FACT, FADT)" crc="5150A29C"/>
+    </game>
+    <game name="Fighting Street (Japan) (Rev 4)">
+        <rom name="Fighting Street (Japan) (Rev 4)" crc="4CFBD302"/>
+    </game>
+    <game name="Cardangels (Japan)">
+        <rom name="Cardangels (Japan)" crc="BDBBFE35"/>
+    </game>
+    <game name="Advanced V.G. (Japan)">
+        <rom name="Advanced V.G. (Japan)" crc="8200BA77"/>
+    </game>
+    <game name="Burai II - Yami Koutei no Gyakushuu (Japan)">
+        <rom name="Burai II - Yami Koutei no Gyakushuu (Japan)" crc="FA1A1F4B"/>
+    </game>
+    <game name="Mahjong Vanilla Syndrome (Japan)">
+        <rom name="Mahjong Vanilla Syndrome (Japan)" crc="2234596D"/>
+    </game>
+    <game name="Tokimeki Memorial (Japan) (Rev 3)">
+        <rom name="Tokimeki Memorial (Japan) (Rev 3)" crc="72F6A726"/>
+    </game>
+    <game name="Road Spirits (Japan)">
+        <rom name="Road Spirits (Japan)" crc="6265F427"/>
+    </game>
+    <game name="Sotsugyou Shashin - Miki (Japan)">
+        <rom name="Sotsugyou Shashin - Miki (Japan)" crc="DCD017F7"/>
+    </game>
+    <game name="Mateki Densetsu Astralius (Japan)">
+        <rom name="Mateki Densetsu Astralius (Japan)" crc="2C3DDCCC"/>
+    </game>
+    <game name="Cosmic Fantasy 2 - Bouken Shounen Ban (Japan)">
+        <rom name="Cosmic Fantasy 2 - Bouken Shounen Ban (Japan)" crc="B0011C31"/>
+    </game>
+    <game name="Super Mahjong Taikai (Japan)">
+        <rom name="Super Mahjong Taikai (Japan)" crc="C85E552D"/>
+    </game>
+    <game name="GS (Ghost Sweeper) Mikami (Japan)">
+        <rom name="GS (Ghost Sweeper) Mikami (Japan)" crc="3B51B977"/>
+    </game>
+    <game name="Quiz Caravan Cult Q (Japan)">
+        <rom name="Quiz Caravan Cult Q (Japan)" crc="C60F22B"/>
+    </game>
+    <game name="Quiz Marugoto the World 2 - Time Machine ni Onegai! (Japan)">
+        <rom name="Quiz Marugoto the World 2 - Time Machine ni Onegai! (Japan)" crc="4CC62998"/>
+    </game>
+    <game name="Beyond Shadowgate (USA)">
+        <rom name="Beyond Shadowgate (USA)" crc="9E081B35"/>
+    </game>
+    <game name="Dragon Knight &amp; Grafitti (Japan)">
+        <rom name="Dragon Knight &amp; Grafitti (Japan)" crc="A0D21333"/>
+    </game>
+    <game name="Hyper Wars (Japan) (SAAS)">
+        <rom name="Hyper Wars (Japan) (SAAS)" crc="7D996B46"/>
+    </game>
+    <game name="F1 Circus Special - Pole to Win (Japan) (FABT)">
+        <rom name="F1 Circus Special - Pole to Win (Japan) (FABT)" crc="3CB429C2"/>
+    </game>
+    <game name="Ys III (Japan)">
+        <rom name="Ys III (Japan)" crc="3A327194"/>
+    </game>
+    <game name="Downtown Nekketsu Monogatari (Japan)">
+        <rom name="Downtown Nekketsu Monogatari (Japan)" crc="9FCA9668"/>
+    </game>
+    <game name="Emerald Dragon (Japan) (Rev 1)">
+        <rom name="Emerald Dragon (Japan) (Rev 1)" crc="8114A046"/>
+    </game>
+    <game name="Valis II (Japan) (Alt 1)">
+        <rom name="Valis II (Japan) (Alt 1)" crc="41482161"/>
+    </game>
+    <game name="R-Type Complete CD (Japan)">
+        <rom name="R-Type Complete CD (Japan)" crc="2187DDDD"/>
+    </game>
+    <game name="Nekketsu Legend - Baseballer (Japan)">
+        <rom name="Nekketsu Legend - Baseballer (Japan)" crc="AE3B56BF"/>
+    </game>
+    <game name="Seiya Monogatari - Anearth Fantasy Stories (Japan) (Demo)">
+        <rom name="Seiya Monogatari - Anearth Fantasy Stories (Japan) (Demo)" crc="B73180B9"/>
+    </game>
+    <game name="Mysterious Song (USA) (En,Fr,Es) (Unl) (Rerelease)">
+        <rom name="Mysterious Song (USA) (En,Fr,Es) (Unl) (Rerelease)" crc="90031BAE"/>
+    </game>
+    <game name="Dennou Tenshi - Digital Ange (Japan)">
+        <rom name="Dennou Tenshi - Digital Ange (Japan)" crc="DCDA27BD"/>
+    </game>
+    <game name="IQ Panic (Japan)">
+        <rom name="IQ Panic (Japan)" crc="D288AF09"/>
+    </game>
+    <game name="L-Dis (Japan)">
+        <rom name="L-Dis (Japan)" crc="CBF60A48"/>
+    </game>
+    <game name="Exile - Wicked Phenomenon (USA)">
+        <rom name="Exile - Wicked Phenomenon (USA)" crc="FEC3AED3"/>
+    </game>
+    <game name="Shougi Database Kiyuu (Japan)">
+        <rom name="Shougi Database Kiyuu (Japan)" crc="13C7AE4E"/>
+    </game>
+    <game name="Far East of Eden - Tengai Makyou - Ziria (Japan) (Rev 6)">
+        <rom name="Far East of Eden - Tengai Makyou - Ziria (Japan) (Rev 6)" crc="23EBA242"/>
+    </game>
+    <game name="Super Real Mahjong Special - Miki Kasumi Shouko no Omoide yori (Japan)">
+        <rom name="Super Real Mahjong Special - Miki Kasumi Shouko no Omoide yori (Japan)" crc="37F81626"/>
+    </game>
+    <game name="Startling Odyssey II - Maryuu Sensou (Japan)">
+        <rom name="Startling Odyssey II - Maryuu Sensou (Japan)" crc="9443CEA2"/>
+    </game>
+    <game name="CD Pachi-Slot - Bishoujo Gambler (Japan) (Unl)">
+        <rom name="CD Pachi-Slot - Bishoujo Gambler (Japan) (Unl)" crc="CF27FF6F"/>
+    </game>
+    <game name="Atlas, The - Renaissance Voyager (Japan)">
+        <rom name="Atlas, The - Renaissance Voyager (Japan)" crc="68C83C91"/>
+    </game>
+    <game name="Ranma 1-2 - Toraware no Hanayome (Japan)">
+        <rom name="Ranma 1-2 - Toraware no Hanayome (Japan)" crc="FF5D1699"/>
+    </game>
+    <game name="Quiz Marugoto the World (Japan) (Rev 8)">
+        <rom name="Quiz Marugoto the World (Japan) (Rev 8)" crc="3C306B40"/>
+    </game>
+    <game name="Puyo Puyo CD (Japan)">
+        <rom name="Puyo Puyo CD (Japan)" crc="30A43610"/>
+    </game>
+    <game name="Martial Champion (Japan)">
+        <rom name="Martial Champion (Japan)" crc="BAAA3EE6"/>
+    </game>
+    <game name="Shape Shifter (USA)">
+        <rom name="Shape Shifter (USA)" crc="55F9F330"/>
+    </game>
+    <game name="Far East of Eden - Tengai Makyou - Ziria (Japan) (Hibaihin)">
+        <rom name="Far East of Eden - Tengai Makyou - Ziria (Japan) (Hibaihin)" crc="611C135B"/>
+    </game>
+    <game name="Sword Master (Japan)">
+        <rom name="Sword Master (Japan)" crc="97BB1E97"/>
+    </game>
+    <game name="Mamono Hunter Youko - Tooki Yobigoe (Japan)">
+        <rom name="Mamono Hunter Youko - Tooki Yobigoe (Japan)" crc="7E66666E"/>
+    </game>
+    <game name="Nekketsu Koukou Dodgeball-bu CD - Soccer-hen (Japan)">
+        <rom name="Nekketsu Koukou Dodgeball-bu CD - Soccer-hen (Japan)" crc="50834E34"/>
+    </game>
+    <game name="PC Engine Fan - Special CD-ROM^2 Vol. 1 (Japan)">
+        <rom name="PC Engine Fan - Special CD-ROM^2 Vol. 1 (Japan)" crc="71F146D9"/>
+    </game>
+    <game name="Loom (USA)">
+        <rom name="Loom (USA)" crc="8997478F"/>
+    </game>
+    <game name="Implode (USA) (Unl)">
+        <rom name="Implode (USA) (Unl)" crc="748F637F"/>
+    </game>
+    <game name="Kawa no Nushitsuri - Shizen-ha (Japan)">
+        <rom name="Kawa no Nushitsuri - Shizen-ha (Japan)" crc="A8566CD6"/>
+    </game>
+    <game name="Laser Soft Visual Collection Vol. 2 - Valis Visual-shuu (Japan)">
+        <rom name="Laser Soft Visual Collection Vol. 2 - Valis Visual-shuu (Japan)" crc="FBFFB5CA"/>
+    </game>
+    <game name="Super Real Mahjong PIV Custom (Japan)">
+        <rom name="Super Real Mahjong PIV Custom (Japan)" crc="1FC826D0"/>
+    </game>
+    <game name="Faerie Dust Story - Meikyuu no Elfeene (Japan)">
+        <rom name="Faerie Dust Story - Meikyuu no Elfeene (Japan)" crc="D0B52A64"/>
+    </game>
+    <game name="Star Breaker (Japan)">
+        <rom name="Star Breaker (Japan)" crc="D0168D9C"/>
+    </game>
+    <game name="Exile II - Janen no Jishou (Japan)">
+        <rom name="Exile II - Janen no Jishou (Japan)" crc="ED668D67"/>
+    </game>
+    <game name="Magicoal (Japan)">
+        <rom name="Magicoal (Japan)" crc="8BD76BC5"/>
+    </game>
+    <game name="Avenger (Japan)">
+        <rom name="Avenger (Japan)" crc="20A28FB6"/>
+    </game>
+    <game name="Emerald Dragon (Japan) (Sample)">
+        <rom name="Emerald Dragon (Japan) (Sample)" crc="2A397041"/>
+    </game>
+    <game name="PC Engine Hyper Catalog CD-ROM 5 - 1994 Spring (Japan)">
+        <rom name="PC Engine Hyper Catalog CD-ROM 5 - 1994 Spring (Japan)" crc="2933DE37"/>
+    </game>
+    <game name="Shin Nihon Pro Wrestling - '94 Battlefield in Tokyo Dome (Japan)">
+        <rom name="Shin Nihon Pro Wrestling - '94 Battlefield in Tokyo Dome (Japan)" crc="6C7CF5AD"/>
+    </game>
+    <game name="Langrisser - Hikari no Matsuei (Japan)">
+        <rom name="Langrisser - Hikari no Matsuei (Japan)" crc="A6FEB184"/>
+    </game>
+    <game name="Hawiian Island Girls (USA) (Unl)">
+        <rom name="Hawiian Island Girls (USA) (Unl)" crc="91F61DA2"/>
+    </game>
+    <game name="Fiend Hunter (Japan)">
+        <rom name="Fiend Hunter (Japan)" crc="32D40285"/>
+    </game>
+    <game name="Brandish (Japan)">
+        <rom name="Brandish (Japan)" crc="C7FD2A9D"/>
+    </game>
+    <game name="AV Tanjou (Japan) (Unl) (Alt 1)">
+        <rom name="AV Tanjou (Japan) (Unl) (Alt 1)" crc="23786CCC"/>
+    </game>
+    <game name="Quiz Avenue (Japan)">
+        <rom name="Quiz Avenue (Japan)" crc="94846B17"/>
+    </game>
+    <game name="God Panic - Shijou Saikyou no Gundan (Japan)">
+        <rom name="God Panic - Shijou Saikyou no Gundan (Japan)" crc="9F71A649"/>
+    </game>
+    <game name="Far East of Eden - Tengai Makyou - Fuun Kabuki-den (Japan)">
+        <rom name="Far East of Eden - Tengai Makyou - Fuun Kabuki-den (Japan)" crc="FCE05682"/>
+    </game>
+    <game name="Shin Megami Tensei (Japan)">
+        <rom name="Shin Megami Tensei (Japan)" crc="AD41869F"/>
+    </game>
+    <game name="Yokoyama Mitsuteru Shin Sangokushi - Tenka wa Ware ni (Japan)">
+        <rom name="Yokoyama Mitsuteru Shin Sangokushi - Tenka wa Ware ni (Japan)" crc="9403C673"/>
+    </game>
+    <game name="Quest of Jongmaster - Janshin Densetsu (Japan)">
+        <rom name="Quest of Jongmaster - Janshin Densetsu (Japan)" crc="8FAA8E42"/>
+    </game>
+    <game name="Pro Yakyuu Super '94, The (Japan)">
+        <rom name="Pro Yakyuu Super '94, The (Japan)" crc="3768EDC6"/>
+    </game>
+    <game name="Quiz Avenue III (Japan)">
+        <rom name="Quiz Avenue III (Japan)" crc="2008E0EA"/>
+    </game>
+    <game name="Seiryuu Densetsu - Monbit (Japan) (Rev 4)">
+        <rom name="Seiryuu Densetsu - Monbit (Japan) (Rev 4)" crc="8C2EA348"/>
+    </game>
+    <game name="Lords of the Rising Sun (USA)">
+        <rom name="Lords of the Rising Sun (USA)" crc="939C03FB"/>
+    </game>
+    <game name="ROM^2 Karaoke Vol. 1 - Suteki ni Standard (Japan)">
+        <rom name="ROM^2 Karaoke Vol. 1 - Suteki ni Standard (Japan)" crc="E08328DD"/>
+    </game>
+    <game name="Space Adventure Cobra II - Densetsu no Otoko (Japan)">
+        <rom name="Space Adventure Cobra II - Densetsu no Otoko (Japan)" crc="9D18AC2"/>
+    </game>
+    <game name="Hyaku Monogatari - Honto ni Atta Kowai Hanashi (Japan)">
+        <rom name="Hyaku Monogatari - Honto ni Atta Kowai Hanashi (Japan)" crc="89BCA91"/>
+    </game>
+    <game name="Mahjong Lemon Angel (Japan)">
+        <rom name="Mahjong Lemon Angel (Japan)" crc="C04B5E40"/>
+    </game>
+    <game name="Blood Gear (Japan)">
+        <rom name="Blood Gear (Japan)" crc="16F06737"/>
+    </game>
+    <game name="Super Air Zonk - Rockabilly-Paradise (USA)">
+        <rom name="Super Air Zonk - Rockabilly-Paradise (USA)" crc="A5CBBB5"/>
+    </game>
+    <game name="Asuka 120% Maxima - Burning Fest. Maxima (Japan)">
+        <rom name="Asuka 120% Maxima - Burning Fest. Maxima (Japan)" crc="25FD39CE"/>
+    </game>
+    <game name="Winds of Thunder (Japan)">
+        <rom name="Winds of Thunder (Japan)" crc="EDBD1582"/>
+    </game>
+    <game name="Vasteel (Japan)">
+        <rom name="Vasteel (Japan)" crc="25CE0B22"/>
+    </game>
+    <game name="Efera &amp; Jiliora - The Emblem from Darkness (Japan)">
+        <rom name="Efera &amp; Jiliora - The Emblem from Darkness (Japan)" crc="81B38C76"/>
+    </game>
+    <game name="Travel Eple (Japan)">
+        <rom name="Travel Eple (Japan)" crc="B4549D7D"/>
+    </game>
+    <game name="Mahjong Vanilla Syndrome (Japan) (Alt)">
+        <rom name="Mahjong Vanilla Syndrome (Japan) (Alt)" crc="2234596D"/>
+    </game>
+    <game name="Pro Yakyuu Super, The (Japan) (FABT)">
+        <rom name="Pro Yakyuu Super, The (Japan) (FABT)" crc="2157BED5"/>
+    </game>
+    <game name="Record of Lodoss War II (Japan) (Sample)">
+        <rom name="Record of Lodoss War II (Japan) (Sample)" crc="EDFDA600"/>
+    </game>
+    <game name="Bonk III - Bonk's Big Adventure (USA)">
+        <rom name="Bonk III - Bonk's Big Adventure (USA)" crc="99868489"/>
+    </game>
+    <game name="Wizardry V - Heart of the Maelstrom (Japan)">
+        <rom name="Wizardry V - Heart of the Maelstrom (Japan)" crc="D9F66890"/>
+    </game>
+    <game name="Hypernova Blast (USA) (Unl)">
+        <rom name="Hypernova Blast (USA) (Unl)" crc="938C6CDF"/>
+    </game>
+    <game name="Wrestling Universe - Fire Pro Joshi - Dome Choujo Taisen - Zenjo vs. JWP (Japan)">
+        <rom name="Wrestling Universe - Fire Pro Joshi - Dome Choujo Taisen - Zenjo vs. JWP (Japan)" crc="D54A7769"/>
+    </game>
+    <game name="Kisou Louga (Japan) (FABT)">
+        <rom name="Kisou Louga (Japan) (FABT)" crc="9103A9B6"/>
+    </game>
+    <game name="Gyuwambler Jiko Chuushinha - Gekitou 36 Janshi (Japan)">
+        <rom name="Gyuwambler Jiko Chuushinha - Gekitou 36 Janshi (Japan)" crc="A79D1A6"/>
+    </game>
+    <game name="3x3 Eyes - Sanjiyan Henjou (Japan) (Rev 1)">
+        <rom name="3x3 Eyes - Sanjiyan Henjou (Japan) (Rev 1)" crc="76254F60"/>
+    </game>
+    <game name="Legend of Xanadu - Kaze no Densetsu Xanadu (Japan)">
+        <rom name="Legend of Xanadu - Kaze no Densetsu Xanadu (Japan)" crc="1725DE8F"/>
+    </game>
+    <game name="J. B. Harold Murder Club (USA) (En,Ja)">
+        <rom name="J. B. Harold Murder Club (USA) (En,Ja)" crc="D3701116"/>
+    </game>
+    <game name="Princess Maker 2 (Japan)">
+        <rom name="Princess Maker 2 (Japan)" crc="581C6FB0"/>
+    </game>
+    <game name="Startling Odyssey II - Maryuu Sensou (Japan) (Sample)">
+        <rom name="Startling Odyssey II - Maryuu Sensou (Japan) (Sample)" crc="936C68E9"/>
+    </game>
+    <game name="Bakuden - Unbalance Zone (Japan)">
+        <rom name="Bakuden - Unbalance Zone (Japan)" crc="B21067D3"/>
+    </game>
+    <game name="Snatcher CD-ROMantic (Japan)">
+        <rom name="Snatcher CD-ROMantic (Japan)" crc="F7D00BC3"/>
+    </game>
+    <game name="Might and Magic III - Isles of Terra (USA)">
+        <rom name="Might and Magic III - Isles of Terra (USA)" crc="999A09E1"/>
+    </game>
+    <game name="Forgotten Worlds (Japan)">
+        <rom name="Forgotten Worlds (Japan)" crc="F2E4DF96"/>
+    </game>
+    <game name="Kaze Kiri - Ninja Action (Japan)">
+        <rom name="Kaze Kiri - Ninja Action (Japan)" crc="46D4EF47"/>
+    </game>
+    <game name="Exile - Toki no Hasama e (Japan)">
+        <rom name="Exile - Toki no Hasama e (Japan)" crc="DAC015CE"/>
+    </game>
+    <game name="Chou Jikuu Yousai Macross - Eien no Love Song (Japan)">
+        <rom name="Chou Jikuu Yousai Macross - Eien no Love Song (Japan)" crc="7D970A2F"/>
+    </game>
+    <game name="Ai Chou Aniki (Japan) (SADS)">
+        <rom name="Ai Chou Aniki (Japan) (SADS)" crc="53F9E7E"/>
+    </game>
+    <game name="Dragon Ball Z - Idainaru Son Gokuu Densetsu (Japan) (FABT)">
+        <rom name="Dragon Ball Z - Idainaru Son Gokuu Densetsu (Japan) (FABT)" crc="775E784A"/>
+    </game>
+    <game name="Doukyuusei (Japan) (Rev 3) (Alt 1)">
+        <rom name="Doukyuusei (Japan) (Rev 3) (Alt 1)" crc="999EE1A0"/>
+    </game>
+    <game name="Bakushou Yoshimoto Shinkigeki (Japan) (FABT)">
+        <rom name="Bakushou Yoshimoto Shinkigeki (Japan) (FABT)" crc="1A8EDAA2"/>
+    </game>
+    <game name="Color Wars (Japan)">
+        <rom name="Color Wars (Japan)" crc="91782ACA"/>
+    </game>
+    <game name="Wonder Boy III - Monster Lair (Japan) (Rev 4)">
+        <rom name="Wonder Boy III - Monster Lair (Japan) (Rev 4)" crc="347D72F5"/>
+    </game>
+    <game name="Legend of Xanadu - Kaze no Densetsu Xanadu II (Japan)">
+        <rom name="Legend of Xanadu - Kaze no Densetsu Xanadu II (Japan)" crc="8465179"/>
+    </game>
+    <game name="No-Ri-Ko (Japan)">
+        <rom name="No-Ri-Ko (Japan)" crc="B72A28BE"/>
+    </game>
+    <game name="Tenshi no Uta II - Datenshi no Sentaku (Japan)">
+        <rom name="Tenshi no Uta II - Datenshi no Sentaku (Japan)" crc="4651F26E"/>
+    </game>
+    <game name="Develo Magazine Vol. 1 (Japan)">
+        <rom name="Develo Magazine Vol. 1 (Japan)" crc="E2AA2850"/>
+    </game>
+    <game name="Riot Zone (USA)">
+        <rom name="Riot Zone (USA)" crc="16C8DB79"/>
+    </game>
+    <game name="Princess Minerva (Japan)">
+        <rom name="Princess Minerva (Japan)" crc="101C73D2"/>
+    </game>
+    <game name="F1 Circus Special - Pole to Win (Japan) (FAAT, FACT)">
+        <rom name="F1 Circus Special - Pole to Win (Japan) (FAAT, FACT)" crc="3CB429C2"/>
+    </game>
+    <game name="PC Engine Hyper Catalog CD-ROM 3 - 1993 Summer (Japan)">
+        <rom name="PC Engine Hyper Catalog CD-ROM 3 - 1993 Summer (Japan)" crc="2BDA1F8A"/>
+    </game>
+    <game name="Ys I &amp; II (Japan)">
+        <rom name="Ys I &amp; II (Japan)" crc="FB683B9B"/>
+    </game>
+    <game name="Minesweeper (Japan)">
+        <rom name="Minesweeper (Japan)" crc="29281B15"/>
+    </game>
+    <game name="Mahjong on the Beach (Japan)">
+        <rom name="Mahjong on the Beach (Japan)" crc="D438E77F"/>
+    </game>
+    <game name="Chiki Chiki Boys (Japan)">
+        <rom name="Chiki Chiki Boys (Japan)" crc="D61CC3BB"/>
+    </game>
+    <game name="Tenshi no Uta (Japan)">
+        <rom name="Tenshi no Uta (Japan)" crc="1C8D820D"/>
+    </game>
+    <game name="Ultra Box 2-gou (Japan)">
+        <rom name="Ultra Box 2-gou (Japan)" crc="5D741E56"/>
+    </game>
+    <game name="Faceball (Japan) (Sample)">
+        <rom name="Faceball (Japan) (Sample)" crc="5B8A78F"/>
+    </game>
+    <game name="Prince of Persia (USA)">
+        <rom name="Prince of Persia (USA)" crc="1F5DF327"/>
+    </game>
+    <game name="Quiz de Gakuensai (Japan)">
+        <rom name="Quiz de Gakuensai (Japan)" crc="7AD40448"/>
+    </game>
+    <game name="Kick Boxing, The (Japan)">
+        <rom name="Kick Boxing, The (Japan)" crc="C4708080"/>
+    </game>
+    <game name="Linda^3 (Japan) (Rev 2)">
+        <rom name="Linda^3 (Japan) (Rev 2)" crc="11B25015"/>
+    </game>
+    <game name="Loom (Japan)">
+        <rom name="Loom (Japan)" crc="E296746A"/>
+    </game>
+    <game name="Galaxy Deka Gayvan (Japan)">
+        <rom name="Galaxy Deka Gayvan (Japan)" crc="DB11769E"/>
+    </game>
+    <game name="BuilderLand - The Story of Melba (Japan)">
+        <rom name="BuilderLand - The Story of Melba (Japan)" crc="D21745EB"/>
+    </game>
+    <game name="Valis II (Japan) (Alt 2)">
+        <rom name="Valis II (Japan) (Alt 2)" crc="41482161"/>
+    </game>
+    <game name="AV Tanjou (Japan) (Unl) (Alt 2)">
+        <rom name="AV Tanjou (Japan) (Unl) (Alt 2)" crc="23786CCC"/>
+    </game>
+    <game name="Yami no Ketsuzoku - Harukanaru Kioku (Japan)">
+        <rom name="Yami no Ketsuzoku - Harukanaru Kioku (Japan)" crc="94B4088F"/>
+    </game>
+    <game name="Dekoboko Densetsu - Hashiru Wagamanmaa (Japan)">
+        <rom name="Dekoboko Densetsu - Hashiru Wagamanmaa (Japan)" crc="BAF40705"/>
+    </game>
+    <game name="Gyuwambler Jiko Chuushinha - Mahjong Puzzle Collection (Japan)">
+        <rom name="Gyuwambler Jiko Chuushinha - Mahjong Puzzle Collection (Japan)" crc="932C6514"/>
+    </game>
+    <game name="Yuu Yuu Hakusho - Yami Shoubu!! Ankoku Bujutsu-kai (Japan)">
+        <rom name="Yuu Yuu Hakusho - Yami Shoubu!! Ankoku Bujutsu-kai (Japan)" crc="72CEF23F"/>
+    </game>
+    <game name="Meteor Blaster DX (USA) (Unl)">
+        <rom name="Meteor Blaster DX (USA) (Unl)" crc="667A6FE3"/>
+    </game>
+    <game name="Police Connection (Japan)">
+        <rom name="Police Connection (Japan)" crc="431F91AD"/>
+    </game>
+    <game name="Psychic Detective Series Vol. 3 - Aya (Japan)">
+        <rom name="Psychic Detective Series Vol. 3 - Aya (Japan)" crc="D2E32DA7"/>
+    </game>
+    <game name="Bomberman - Panic Bomber (Japan) (FABT)">
+        <rom name="Bomberman - Panic Bomber (Japan) (FABT)" crc="5E9AD6FF"/>
+    </game>
+    <game name="Valis II (Japan)">
+        <rom name="Valis II (Japan)" crc="41482161"/>
+    </game>
+    <game name="Fushigi no Umi no Nadia - The Secret of Blue Water (Japan)">
+        <rom name="Fushigi no Umi no Nadia - The Secret of Blue Water (Japan)" crc="49AC8AFD"/>
+    </game>
+    <game name="Super Real Mahjong PII, III Custom (Japan)">
+        <rom name="Super Real Mahjong PII, III Custom (Japan)" crc="F0F4B765"/>
+    </game>
+    <game name="Ruin - Kami no Isan (Japan)">
+        <rom name="Ruin - Kami no Isan (Japan)" crc="B623F90E"/>
+    </game>
+    <game name="Meteor Blaster DX (USA) (Unl) (Rerelease)">
+        <rom name="Meteor Blaster DX (USA) (Unl) (Rerelease)" crc="A82C1DF5"/>
+    </game>
+    <game name="Cosmic Fantasy - Bouken Shounen Yuu (Japan) (Alt 2)">
+        <rom name="Cosmic Fantasy - Bouken Shounen Yuu (Japan) (Alt 2)" crc="1AF08D2E"/>
+    </game>
+    <game name="Mugen Senshi Valis - The Legend of a Fantasm Soldier (Japan)">
+        <rom name="Mugen Senshi Valis - The Legend of a Fantasm Soldier (Japan)" crc="E057E2EE"/>
+    </game>
+</datafile>
