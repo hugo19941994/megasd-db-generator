@@ -305,7 +305,7 @@ class XMLGenerator():
 
             # Fuzzy match
             match = process.extractOne(filename, games_list.keys())
-            score = 70
+            score = 80
             if match[0][-1].isdigit() or filename[-1].isdigit():
                 score = 100
             if (len(filename) < 6) or (len(match[0]) < 6):
@@ -375,6 +375,11 @@ class XMLGenerator():
                         print(f'ABORTING - WRONG GENRE {g}')
                         exit()
 
+                if 'image' in game:
+                    f = etree.SubElement(b, '{http://tempuri.org/GameDB.xsd}Screenshot')
+                    f.text = game['image'].replace('/mnt/c', 'c:\\').replace('/', '\\\\')
+
+            """
             # Fuzzy match
             match = process.extractOne(filename, game_covers.keys())
             if match[1] >= score:
@@ -389,14 +394,17 @@ class XMLGenerator():
                 candidates = game['alternative_names'] + [current_game_name]
                 for c in candidates:
                     match = process.extractOne(c, game_covers.keys())
-                    if match[1] != 100:
-                        self.cfmw.writerow({"ROM": paths[0], "Cover": game_covers[match[0]], "Score": match[1]})
+                    if match[1] >= score:
+                        if match[1] != 100:
+                            self.cfmw.writerow({"ROM": paths[0], "Cover": game_covers[match[0]], "Score": match[1]})
 
-                    game_cover = game_covers[match[0]]
-                    f = etree.SubElement(b, '{http://tempuri.org/GameDB.xsd}Screenshot')
-                    f.text = game_cover.replace('/mnt/c', 'c:\\').replace('/', '\\\\')
-                    found_covers += 1
-                    break
+                        game_cover = game_covers[match[0]]
+                        f = etree.SubElement(b, '{http://tempuri.org/GameDB.xsd}Screenshot')
+                        f.text = game_cover.replace('/mnt/c', 'c:\\').replace('/', '\\\\')
+                        found_covers += 1
+                        break
+
+            """
 
             # Calulcate hash for all rom variations
             for p in paths:
