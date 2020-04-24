@@ -20,7 +20,7 @@ def downloadNoIntro():
         "Host": "datomatic.no-intro.org",
         "Origin": "https://datomatic.no-intro.org",
         "Pragma": "no-cache",
-        "Referer": "https://datomatic.no-intro.org/index.php?page=download&fun=daily",
+        "Referer": "https://datomatic.no-intro.org/index.php?page=download&op=daily",
         "Sec-Fetch-Mode": "navigate",
         "Sec-Fetch-Site": "same-origin",
         "Sec-Fetch-User": "?1",
@@ -31,7 +31,7 @@ def downloadNoIntro():
 
     # Request daily DAT pack
     s = requests.Session()  # session to maintain cookies
-    r = s.post("https://datomatic.no-intro.org/index.php?page=download&fun=daily",
+    r = s.post("https://datomatic.no-intro.org/index.php?page=download&op=daily",
                data={"dat_type": "standard", "prepare_2": "Prepare"}, headers=headers, allow_redirects=False)
     r.raise_for_status()
 
