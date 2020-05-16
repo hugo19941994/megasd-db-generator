@@ -1,4 +1,5 @@
 from io import BytesIO
+import re
 import logging
 import os
 import requests
@@ -70,6 +71,20 @@ def downloadRedump():
     # Extract Sega CD datfile
     archive.extractall("./dats/")
 
+    d = r.headers['content-disposition']
+    fname = re.findall("filename=(.+)", d)[0]
+    return fname[1:-5] + ".dat"
+
+
+def downloadSmokemonsterCD():
+    logging.info("Downloading Sega CD SmokeMonster DB")
+    r = requests.get(
+        "https://raw.githubusercontent.com/SmokeMonsterPacks/EverDrive-Packs-Lists-Database/master/EverDrive%20Pack%20SMDBs/MegaSD%20SMDB.txt")
+    r.raise_for_status()
+
+    with open('./dats/MegaSD SMDB.txt', 'w') as f:
+        f.write(r.text)
+
 
 def checkDATs():
     if len(os.listdir("./dats")) != 5:
@@ -78,8 +93,9 @@ def checkDATs():
 
 def downloadDATs():
     downloadNoIntro()
-    # TODO: Redump CRCs don't correspond to the MegaSD's expected CRC values
+    # Redump CRCs don't correspond to the MegaSD's expected CRC values
+    # use --update-custom-dat to generate the expected CRC values
     # downloadRedump()
-    checkDATs()
+    # checkDATs()
 
     logging.info("Successfully downloaded DATs\n")

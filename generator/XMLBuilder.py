@@ -110,7 +110,7 @@ class XMLGenerator():
                      'output/Sega - Master System - Mark III/Named_Titles', 'dbs/ms.json', a)
         self.do_roms('32X', '*.32x', 'output/Sega - 32X/Named_Titles', 'dbs/32x.json', a)
         self.do_roms('SG-1000', '*.sg', 'output/Sega - SG-1000/Named_Titles', 'dbs/sg1000.json', a)
-        self.do_roms('Mega CD & Sega CD', '*.cue', 'output/Sega - Mega CD & Sega CD/Named_Titles', 'dbs/cd.json', a)
+        self.do_roms('Sega - Mega CD & Sega CD - Datfile (MegaSD).dat', '*.cue', 'output/Sega - Mega CD & Sega CD/Named_Titles', 'dbs/cd.json', a)
 
         # Insert genres at the end of the XML
         l1 = etree.SubElement(a, '{http://tempuri.org/GameDB.xsd}Genre')

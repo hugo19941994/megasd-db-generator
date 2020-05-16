@@ -1,0 +1,84 @@
+<?xml version="1.0" ?>
+<datafile>
+    <!--Hacks with a different MegaSD CRC than the original CD-->
+    <game name="Final Fight CD (J Darkwater) Pyron Color Enhance V2 Final">
+        <rom name="Final Fight CD (J Darkwater) Pyron Color Enhance V2 Final.cue" crc="5CB79675"/>
+    </game>
+    <game name="Sonic CD++ (920 Prototype) v1.0 TOSEC JP WAVs">
+        <rom name="Sonic CD++ (920 Prototype) v1.0 TOSEC JP WAVs.cue" crc="0D447715"/>
+    </game>
+    <game name="Sonic The Hedgehog - CD Remake">
+        <rom name="Sonic The Hedgehog - CD Remake.cue" crc="F6B671FF"/>
+    </game>
+
+    <!--Homebrew & prototypes-->
+    <game name="Penn &amp; Teller's Smoke and Mirrors (Apr 30, 1995 prototype) (Disc 1)">
+		<rom name="Penn &amp; Teller's Smoke and Mirrors (Apr 30, 1995 prototype) (Disc 1).cue" crc="38AAD7C5"/>
+    </game>
+    <game name="Penn &amp; Teller's Smoke and Mirrors (Apr 30, 1995 prototype) (Disc 2)">
+		<rom name="Penn &amp; Teller's Smoke and Mirrors (Apr 30, 1995 prototype) (Disc 2).cue" crc="714BDB54"/>
+    </game>
+
+    <game name="Star Strike (USA) (unl)">
+        <rom name="Star Strike (2000)(Good Deal Games)(US).cue" crc="E87BEE55"/>
+    </game>
+    <game name="Star Strike (EU)">
+        <rom name="Star Strike (EU).cue" crc="EB8A360E"/>
+    </game>
+
+    <game name="Hide The Baby (J) (PD) v1.2">
+        <rom name="Hide The Baby (J) (PD) v1.2.cue" crc="03B77DF6"/>
+    </game>
+    <game name="Hide The Baby (PAL) (PD) v1.2">
+        <rom name="Hide The Baby (PAL) (PD) v1.2.cue" crc="440FEFD4"/>
+    </game>
+
+    <game name="Johnny Mnemonic (US) - (Disc 1 of 2)">
+        <rom name="Johnny Mnemonic (US) - (Disc 1 of 2).cue" crc="EA8567C4"/>
+    </game>
+    <game name="Johnny Mnemonic (US) - (Disc 2 of 2)">
+        <rom name="Johnny Mnemonic (US) - (Disc 2 of 2).cue" crc="EA8567C4"/>
+    </game>
+
+    <game name="Frog Feast (2005)(Oldergames)(NTSC)(US)">
+        <rom name="Frog Feast (2005)(Oldergames)(NTSC)(US).cue" crc="EEA22989"/>
+    </game>
+    <game name="Marko (USA) (unl)">
+        <rom name="Marko (2003)(Good Deal Games)(US).cue" crc="62E0ED95"/>
+    </game>
+    <game name="Mighty Mighty Missile! (USA) (unl)">
+        <rom name="Mighty Mighty Missile! (2004)(Good Deal Games)(US).cue" crc="DD2DA826"/>
+    </game>
+    <game name="Octopus CD (PD)">
+        <rom name="Octopus CD (PD).cue" crc="ED6818E9"/>
+    </game>
+    <game name="Rileys Letter Recycle (PD)">
+        <rom name="Rileys Letter Recycle (PD).cue" crc="EC90C559"/>
+    </game>
+    <game name="TetreX (PD)">
+        <rom name="TetreX (PD).cue" crc="1F3A255A"/>
+    </game>
+    <game name="Throne (PD)">
+        <rom name="Throne (PD).cue" crc="0B54819D"/>
+    </game>
+    <game name="Tower Tic Tac Toe (PD) v0.3 Tamkis">
+        <rom name="Tower Tic Tac Toe (PD) v0.3 Tamkis.cue" crc="B18B9636"/>
+    </game>
+
+    <!--Homebrews with the same MegaSD CRC-->
+    <!--<game name="Argisub (PD)">
+        <rom name="Argisub (PD).cue" crc="3507FEFD"/>
+    </game>
+    <game name="Blackjack CD (PD)">
+        <rom name="Blackjack CD (PD).cue" crc="3507FEFD"/>
+    </game>
+    <game name="Hide The Baby (USA) (PD) v1.2">
+        <rom name="Hide The Baby (USA) (PD) v1.2.cue" crc="3507FEFD"/>
+    </game>
+    <game name="Marco Polo (PD)">
+        <rom name="Marco Polo (PD).cue" crc="3507FEFD"/>
+    </game>
+    <game name="Unlucky Pony (PD) v1.1 gameblabla">
+        <rom name="Unlucky Pony (PD) v1.1 gameblabla.cue" crc="3507FEFD"/>
+    </game>-->
+</datafile>
