@@ -33,6 +33,11 @@ jobs:
         - name: Store date into an environment variable
           run: echo "::set-env name=DATE::$(date '+%Y-%m-%d')"
 
+        - name: Delete old drafts
+          uses: hugo19941994/delete-draft-releases@v0.1.0
+          env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
         - name: Create Github release
           id: create_release
           uses: actions/create-release@v1.1.0
