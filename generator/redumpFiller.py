@@ -11,62 +11,59 @@ from lxml import objectify, etree
 from datDownloader import downloadRedump
 
 
-def checkMissing(base_url):
-    # First download the newset Redump DAT
-    redump_dict = {}
-    redump_dat_name = downloadRedump()
-    tree_redump = objectify.parse(f"./dats/{redump_dat_name}")
+def _dat_to_dict(xml_path):
+    xml_dict = {}
+    tree_redump = objectify.parse(xml_path)
     for t in tree_redump.iter('rom'):
         if '.cue' in t.attrib.get('name'):
-            redump_dict[t.attrib.get('name')] = t.attrib.get('crc')
+            xml_dict[t.attrib.get('name')] = t.attrib.get('crc')
+    return xml_dict
 
-    # Load current
-    megasd_dict = {}
-    tree_megasd = objectify.parse(f"./dats/Sega - Mega CD & Sega CD - Datfile (MegaSD).dat")
-    for t in tree_megasd.iter('rom'):
-        megasd_dict[t.attrib.get('name')] = t.attrib.get('crc')
 
-    extras_dict = {}
-    tree_extras = objectify.parse(f"./dats/Sega - Mega CD & Sega CD - Datfile (EXTRAS).dat")
-    for t in tree_extras.iter('rom'):
-        extras_dict[t.attrib.get('name')] = t.attrib.get('crc')
+def checkMissing(game_source):
+    # Game source is either a URL or local folder
 
-    print(len(megasd_dict))
+    # First download the newset Redump DAT and load it
+    redump_dat_name = downloadRedump()
+    redump_dict = _dat_to_dict(f"./dats/{redump_dat_name}")
 
-    # megasd_dict now doesn't contain the extra roms not present in redump TODO: Get from smokemonster packs
+    # The load the custom MegaSD DAT file and the Extras DAT file
+    megasd_dict = _dat_to_dict(f"./dats/Sega - Mega CD & Sega CD - Datfile (MegaSD).dat")
+    extras_dict = _dat_to_dict(f"./dats/Sega - Mega CD & Sega CD - Datfile (EXTRAS).dat")
+
+    # The extras DAT file contains CRCs for games not present in the Redump set
+    # Remove it temporarily to update the MegaSD set with the newer Redump set
     megasd_dict = dict(megasd_dict.items() - extras_dict.items())
 
-    # remove from megasd_dict any roms that has a name which is not in the redump set (possible renames)
+    # Remove any removed or renamed game of the Redump set from the MegaSD set
     for name in list(megasd_dict.keys()):
         if name not in redump_dict.keys():
-            print('deleting', name)
+            print(f'Deleting game: {name}')
             del megasd_dict[name]
 
-    # now add any new rom not present in the megasd dataset from the redump set
+    # Add any new game from the Redump set in the MegaSD set
     for name in redump_dict.keys():
         if name not in megasd_dict.keys():
             # the CRC from the dict is not valid for the MegaSD, so get the ROM from somewhere and generate the new CRC
-            print('adding', name)
-            # TODO: make compatible with offline, downloaded roms too
-            crc = asyncio.run(downloadRom(name[:-4], base_url))
+            print(f'Adding: {name[:-4]}')
+            # Attempt to download game OR open from a folder
+            if game_source.startswith('http'):
+                crc = asyncio.run(downloadRom(name[:-4], game_source))
+            else:
+                crc = crc_from_folder(name[:-4], game_source)
             if crc is None:
-                print('could not add', name)
+                print(f'{name[:-4]} NOT found')
                 continue
-            print('added', name)
+            print(f'{name[:-4]} has CRC {crc}')
             megasd_dict[name] = crc
 
-    # Now re-add the extras
+    # Re-add the games from the EXTRA DAT
     for name, crc in extras_dict.items():
         megasd_dict[name] = crc
 
-    print(len(redump_dict))
-    print(len(extras_dict))
-
-    print(len(megasd_dict))
-
     # Generate new DAT file and overwrite the old one
     # This can be used by the CI pipeline to create a PR with the new data
-    # TODO: check if there is a difference regardless of order
+    # Games are sorted alphabteically for easier diffs in the PR
     a = etree.Element('datafile')
     for name, crc in sorted(megasd_dict.items()):
         b = etree.SubElement(a, "game")
@@ -81,8 +78,17 @@ def checkMissing(base_url):
 
 
 async def download_chunk(url, start_byte, end_byte, zipdata, client):
+    """
+    Asynchronosuly download a single chunk
+    Thi ZIP chunk itself will be streamed in 4096 byte chunks
+    """
     start_time = time.time()
+
+    # Write to in-memory IO from start_byte to end_byte
+    # sart writing at start_byte
     zipdata.seek(start_byte, 0)
+
+    # Keep track of current byte
     current = start_byte
     headers = {
         'Range': f'bytes={start_byte}-{end_byte}',
@@ -91,45 +97,74 @@ async def download_chunk(url, start_byte, end_byte, zipdata, client):
         'Accept-Encoding': 'gzip, deflate, br',
         'Connection': 'keep-alive'
     }
+
+    # Stream ZIP chunk in 4096 byte chunks
     async with client.stream('GET', url, headers=headers, timeout=60.0) as resp:
         resp.raise_for_status()
         async for data in resp.aiter_bytes():
             if data:
+                # write in the corrent place
                 zipdata.seek(current, 0)
                 zipdata.write(data)
+                # keep track of current byte
                 current += len(data)
+
     end_time = time.time()
     print(f'{start_byte}-{end_byte} took {str(end_time-start_time)}')
 
 
 async def downloadRom(name, base_url):
+    # Download game from a URL to generate the MegaSD hash
+    # url from arguments
     url = f'{base_url}/{quote(name)}.zip'
 
     client = httpx.AsyncClient()
+
+    # HEAD request to check the content-length
     r = await client.head(url)
+
+    # Game not found - abort
     if r.status_code != 200:
         return None
 
     length = int(r.headers['Content-Length'])
-    CONCURRENT = 40
-    chunk_size = length / CONCURRENT
-    chunk_remainder = length % CONCURRENT
-    chunk_size += chunk_remainder
-    print(length)
 
+    # Divide game in X chunks and download concurrently
+    CONCURRENT = 40
+    chunk_size = (length / CONCURRENT) + (length % CONCURRENT)  #  TODO: last chunk will be smaller
+    print(f'Content length: {length}')
+
+    # Store all the needed requests to execute concurrently
     urls = []
     for i in range(CONCURRENT):
         urls.append((url, int(chunk_size * i), int(chunk_size * (i + 1))))
 
+    # Save ZIP data in memory
     zipdata = BytesIO()
-    await asyncio.gather(*[download_chunk(d[0], d[1], d[2], zipdata, client) for d in urls])
-    crc = cal_crc(zipdata)
 
-    print(crc)
+    # Download all chunks concurrently
+    await asyncio.gather(*[download_chunk(d[0], d[1], d[2], zipdata, client) for d in urls])
+
+    # calculate MegaSD CRC from the ZIP file
+    crc = cal_crc(zipdata)
+    print(f'CRC: {crc}')
     return crc
 
 
+def crc_from_folder(name, source):
+    print(f'Attempting to open {source}/{name}.zip')
+    try:
+        with open(f'{source}/{name}.zip', 'rb') as f:
+            crc = cal_crc(f)
+            print(f'CRC: {crc}')
+            return crc
+    except FileNotFoundError:
+        print(f'{source}/{name}.zip not found')
+        pass
+
+
 def cal_crc(file_io):
+    """Calculate MegaSD CRC value from an in-memory zip file"""
     archive = zipfile.ZipFile(file_io)
 
     for a in archive.namelist():
