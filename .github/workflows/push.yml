@@ -11,10 +11,10 @@ jobs:
 
         steps:
         - name: Checkout code
-          uses: actions/checkout@v1
+          uses: actions/checkout@v2
 
         - name: Setup Python
-          uses: actions/setup-python@v1
+          uses: actions/setup-python@v2
           with:
             python-version: 3.8
 
@@ -33,9 +33,14 @@ jobs:
         - name: Store date into an environment variable
           run: echo "::set-env name=DATE::$(date '+%Y-%m-%d')"
 
+        - name: Delete old drafts
+          uses: hugo19941994/delete-draft-releases@v0.1.0
+          env:
+              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
         - name: Create Github release
           id: create_release
-          uses: actions/create-release@master
+          uses: actions/create-release@v1.1.0
           env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
@@ -46,7 +51,7 @@ jobs:
               prerelease: true
 
         - name: Upload zipped database into the release
-          uses: actions/upload-release-asset@v1.0.1
+          uses: actions/upload-release-asset@v1
           env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
