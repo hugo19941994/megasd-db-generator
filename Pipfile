@@ -10,6 +10,7 @@ lxml = "*"
 stop-words = "*"
 requests = "*"
 fuzzywuzzy = {extras = ["speedup"],version = "*"}
+httpx = "*"
 
 [requires]
 python_version = "3.8"

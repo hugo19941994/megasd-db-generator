@@ -26,7 +26,7 @@ jobs:
 
         - name: Download dats, db and generate the XML
           id: generator
-          run: ./generator/main.py --download-dats --download-db --generate-xml
+          run: ./generator/main.py --download-dats --update-custom-dat ${{ secrets.SECRET_URL }} --download-db --generate-xml
           env:
               IGDB_API_KEY: ${{ secrets.IGDB_API_KEY }}
 
@@ -59,4 +59,9 @@ jobs:
               asset_path: ./DB_${{env.DATE}}.zip
               asset_name: DB_${{env.DATE}}.zip
               asset_content_type: application/zip
+
+        - name: Generate new PR with the updated custom MegaSD DAT file if needed
+          uses: peter-evans/create-pull-request@v2.7.2
+          with:
+            commit-message: Update MegaSD Sega CD DAT
 
