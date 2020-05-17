@@ -17,8 +17,14 @@ pipenv install
 # Set the IGDB API Key
 export IGDB_API_KEY=9a286a31-6da4-4fc3-a356-dcc62d1eb289
 
-# Download DATs from No-Intro and Redump
+# Download DATs from No-Intro
 ./generator/main.py --download-dats
+
+# Download DAT from Redump and regenerate the MegaSD's custom Sega CD DAT
+# The source file can either be a local folder with ROMs as ZIP files or
+# an HTTP endpoint
+# This step can usually be omitted, as the repo should have an up-to-date DAT file
+./generator/main.py --update-custom-dat FOLDER-WITH-ROMS
 
 # Downloads info from IGDB
 ./generator/main.py --download-db
