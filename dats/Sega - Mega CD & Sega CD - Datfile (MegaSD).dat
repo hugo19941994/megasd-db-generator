@@ -639,6 +639,9 @@
     <game name="Keio Flying Squadron (USA)">
         <rom name="Keio Flying Squadron (USA).cue" crc="7C05000E"/>
     </game>
+    <game name="Keiou Yuugekitai (Japan) (Demo)">
+        <rom name="Keiou Yuugekitai (Japan) (Demo).cue" crc="1BB70600"/>
+    </game>
     <game name="Keiou Yuugekitai (Japan)">
         <rom name="Keiou Yuugekitai (Japan).cue" crc="9A042E06"/>
     </game>
@@ -867,6 +870,9 @@
     <game name="Night Trap (France) (Disc 2)">
         <rom name="Night Trap (France) (Disc 2).cue" crc="B257CC6C"/>
     </game>
+    <game name="Night Trap (Japan) (Demo)">
+        <rom name="Night Trap (Japan) (Demo).cue" crc="33619C4A"/>
+    </game>
     <game name="Night Trap (Japan) (Disc 1)">
         <rom name="Night Trap (Japan) (Disc 1).cue" crc="73BABDFA"/>
     </game>
@@ -951,6 +957,9 @@
     <game name="Popful Mail (USA) (RE)">
         <rom name="Popful Mail (USA) (RE).cue" crc="53561EF1"/>
     </game>
+    <game name="PopfulMail (Japan) (Demo)">
+        <rom name="PopfulMail (Japan) (Demo).cue" crc="314F6298"/>
+    </game>
     <game name="PopfulMail (Japan)">
         <rom name="PopfulMail (Japan).cue" crc="D7D2A7DC"/>
     </game>
@@ -1034,6 +1043,9 @@
     </game>
     <game name="Ranma 1-2 - Byakuranaika (Japan)">
         <rom name="Ranma 1-2 - Byakuranaika (Japan).cue" crc="FA1AF5B2"/>
+    </game>
+    <game name="Record of Lodoss War (Japan) (Demo)">
+        <rom name="Record of Lodoss War (Japan) (Demo).cue" crc="84C11643"/>
     </game>
     <game name="Record of Lodoss War (Japan)">
         <rom name="Record of Lodoss War (Japan).cue" crc="BBA85D42"/>
@@ -1190,6 +1202,9 @@
     </game>
     <game name="Silpheed (Europe)">
         <rom name="Silpheed (Europe).cue" crc="F418B67"/>
+    </game>
+    <game name="Silpheed (Japan) (Demo)">
+        <rom name="Silpheed (Japan) (Demo).cue" crc="A1C71747"/>
     </game>
     <game name="Silpheed (Japan)">
         <rom name="Silpheed (Japan).cue" crc="A1C71747"/>
@@ -1532,6 +1547,9 @@
     </game>
     <game name="Ultraverse Prime (USA)">
         <rom name="Ultraverse Prime (USA).cue" crc="E61EF8B3"/>
+    </game>
+    <game name="Urusei Yatsura - Dear My Friends (Japan) (Demo)">
+        <rom name="Urusei Yatsura - Dear My Friends (Japan) (Demo).cue" crc="CCA12E1E"/>
     </game>
     <game name="Urusei Yatsura - Dear My Friends (Japan)">
         <rom name="Urusei Yatsura - Dear My Friends (Japan).cue" crc="315388EF"/>
