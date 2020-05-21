@@ -1575,6 +1575,9 @@
     <game name="Warau Salesman (Japan)">
         <rom name="Warau Salesman (Japan).cue" crc="A076B8EB"/>
     </game>
+    <game name="What is X'Eye Multi Entertainment System (USA)">
+        <rom name="What is X'Eye Multi Entertainment System (USA).cue" crc="F8639D6"/>
+    </game>
     <game name="Wheel of Fortune (USA)">
         <rom name="Wheel of Fortune (USA).cue" crc="9919FF94"/>
     </game>
@@ -1614,8 +1617,8 @@
     <game name="Wonder Dog (USA) (RE)">
         <rom name="Wonder Dog (USA) (RE).cue" crc="73961348"/>
     </game>
-    <game name="WonderMega Collection (Japan)">
-        <rom name="WonderMega Collection (Japan).cue" crc="733D91FE"/>
+    <game name="WonderMega Collection (Japan) (Rev 2)">
+        <rom name="WonderMega Collection (Japan) (Rev 2).cue" crc="733D91FE"/>
     </game>
     <game name="World Cup USA '94 (Europe)">
         <rom name="World Cup USA '94 (Europe).cue" crc="CBEA06D3"/>
