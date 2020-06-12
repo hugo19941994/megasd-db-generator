@@ -546,6 +546,9 @@
     <game name="Heart of the Alien - Out of This World Parts I and II (USA) (RE)">
         <rom name="Heart of the Alien - Out of This World Parts I and II (USA) (RE).cue" crc="F4716AA3"/>
     </game>
+    <game name="Heavenly Symphony - Formula One World Championship 1993 (Japan) (Demo)">
+        <rom name="Heavenly Symphony - Formula One World Championship 1993 (Japan) (Demo).cue" crc="A77CE3E"/>
+    </game>
     <game name="Heavenly Symphony - Formula One World Championship 1993 (Japan)">
         <rom name="Heavenly Symphony - Formula One World Championship 1993 (Japan).cue" crc="CF87233F"/>
     </game>
