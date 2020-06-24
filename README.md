@@ -4,6 +4,8 @@ Python 3 scripts to create a DB for [Terraonion's GameDB Manager](https://github
 
 ### [User Guide](https://github.com/hugo19941994/megasd-db-generator/wiki/User-Guide)
 
+![MegaSD Menu](.github/megasdmenu.png)
+
 ## Thumbnails
 
 Most original thumbnails come from the [libretro-thumbnails](https://github.com/libretro-thumbnails/libretro-thumbnails) project (they can also be downloaded from the [libretro website](http://thumbnailpacks.libretro.com/)). Some others have been sourced from [Hidden Palace](https://hiddenpalace.org/). They have been resized and their color palette reduced to work with the MegaSD menu.
@@ -45,3 +47,4 @@ The generated `.zip` file contains the thumbnails, the XML database, and a list 
 If you want to contribute any missing info I encourage you to add the info in [IGDB](https://www.igdb.com/discover) and the CI pipeline should automatically integrate those changes.
 
 For any missing images first check the [libretro](https://github.com/libretro-thumbnails/libretro-thumbnails) repo. If the image is missing upload a PR there and open an issue here mentioning the screenshot. After the image is resized and its palette optimized it will be merged.
+
