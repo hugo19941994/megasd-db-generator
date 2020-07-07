@@ -106,7 +106,8 @@ class IGDBDownloader():
 
             resp_json = r.json()
             for date in resp_json:
-                date['region'] = self.regions[date['region']]
+                # TODO: id 203063 has region 9 for some reason
+                date['region'] = self.regions.get(date['region'], 'worldwide')
                 release_dates[date['id']] = date
                 del release_dates[date['id']]['id']
 
