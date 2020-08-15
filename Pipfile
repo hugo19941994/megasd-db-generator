@@ -11,6 +11,7 @@ stop-words = "*"
 requests = "*"
 fuzzywuzzy = {extras = ["speedup"],version = "*"}
 httpx = "*"
+chardet = "*"
 
 [requires]
 python_version = "3.8"
