@@ -22,11 +22,11 @@ jobs:
           run: sudo pip install pipenv
 
         - name: Install dependencies using Pipenv
-          run: pipenv install --deploy --system
+          run: pipenv install --deploy
 
         - name: Download dats, db and generate the XML
           id: generator
-          run: ./generator/main.py --download-dats --update-custom-dat ${{ secrets.SECRET_URL }} --download-db --generate-xml
+          run: pipenv run ./generator/main.py --download-dats --update-custom-dat ${{ secrets.SECRET_URL }} --download-db --generate-xml
           env:
               IGDB_API_KEY: ${{ secrets.IGDB_API_KEY }}
 
