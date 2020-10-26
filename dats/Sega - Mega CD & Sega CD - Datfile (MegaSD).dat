@@ -522,9 +522,6 @@
     <game name="Garou Densetsu Special (Japan)">
         <rom name="Garou Densetsu Special (Japan).cue" crc="31E83349"/>
     </game>
-    <game name="Genei Toshi - Illusion City (Japan)">
-        <rom name="Genei Toshi - Illusion City (Japan).cue" crc="5800D5E9"/>
-    </game>
     <game name="Ground Zero Texas (Europe) (Disc 1)">
         <rom name="Ground Zero Texas (Europe) (Disc 1).cue" crc="8E7523A"/>
     </game>
@@ -759,6 +756,9 @@
     <game name="Marko (2003)(Good Deal Games)(US)">
         <rom name="Marko (2003)(Good Deal Games)(US).cue" crc="62E0ED95"/>
     </game>
+    <game name="Marko (USA) (Unl)">
+        <rom name="Marko (USA) (Unl).cue" crc="62E0ED95"/>
+    </game>
     <game name="Marko's Magic Football (Europe) (En,Fr,De,Es)">
         <rom name="Marko's Magic Football (Europe) (En,Fr,De,Es).cue" crc="AC59AC76"/>
     </game>
@@ -809,6 +809,9 @@
     </game>
     <game name="Might and Magic III - Isles of Terra (Japan)">
         <rom name="Might and Magic III - Isles of Terra (Japan).cue" crc="8852B52D"/>
+    </game>
+    <game name="Mighty Mighty Missile (USA) (Unl)">
+        <rom name="Mighty Mighty Missile (USA) (Unl).cue" crc="DD2DA826"/>
     </game>
     <game name="Mighty Mighty Missile! (2004)(Good Deal Games)(US)">
         <rom name="Mighty Mighty Missile! (2004)(Good Deal Games)(US).cue" crc="DD2DA826"/>
@@ -944,6 +947,9 @@
     </game>
     <game name="Penn &amp; Teller's Smoke and Mirrors (Apr 30, 1995 prototype) (Disc 2)">
         <rom name="Penn &amp; Teller's Smoke and Mirrors (Apr 30, 1995 prototype) (Disc 2).cue" crc="714BDB54"/>
+    </game>
+    <game name="Pier Solar and the Great Architects - The Definitive Original Soundtrack (Europe) (Disc 4) (Enhanced Soundtrack Disc)">
+        <rom name="Pier Solar and the Great Architects - The Definitive Original Soundtrack (Europe) (Disc 4) (Enhanced Soundtrack Disc).cue" crc="3F6252E1"/>
     </game>
     <game name="Pier Solar and the Great Architects Enhanced Soundtrack Disc (USA)">
         <rom name="Pier Solar and the Great Architects Enhanced Soundtrack Disc (USA).cue" crc="3F6252E1"/>
