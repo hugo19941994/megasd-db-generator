@@ -121,7 +121,7 @@ async def downloadRom(name, base_url):
     client = httpx.AsyncClient()
 
     # HEAD request to check the content-length
-    r = await client.head(url)
+    r = await client.head(url, allow_redirects=True)
 
     # Game not found - abort
     if r.status_code != 200:
