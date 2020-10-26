@@ -16,8 +16,9 @@ Most original thumbnails come from the [libretro-thumbnails](https://github.com/
 # Install dependencies
 pipenv install
 
-# Set the IGDB API Key
-export IGDB_API_KEY=9a286a31-6da4-4fc3-a356-dcc62d1eb289
+# Set the Twitch Client ID & Client Secret
+export TWITCH_CLIENT_ID=24c375d1-4f24-46b5-8ecf-d53b8c8f3919
+export TWITCH_CLIENT_SECRET=850eeb9f-555f-4ebc-b3d8-76accb7b6238
 
 # Download DATs from No-Intro
 ./generator/main.py --download-dats

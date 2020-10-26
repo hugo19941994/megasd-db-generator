@@ -28,7 +28,8 @@ jobs:
           id: generator
           run: pipenv run ./generator/main.py --download-dats --update-custom-dat ${{ secrets.SECRET_URL }} --download-db --generate-xml
           env:
-              IGDB_API_KEY: ${{ secrets.IGDB_API_KEY }}
+              TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
+              TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
 
         - name: Store date into an environment variable
           run: echo "::set-env name=DATE::$(date '+%Y-%m-%d')"

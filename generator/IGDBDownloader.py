@@ -7,7 +7,9 @@ import os
 class IGDBDownloader():
     def __init__(self):
         logging.info("Downloading info from IGDB\n")
-        self.api_key = os.environ['IGDB_API_KEY']
+
+        self.headers = {'Client-ID': os.environ['TWITCH_CLIENT_ID'], 'Authorization': f'Bearer {self.get_token()}'}
+
         self.genres = self.download_genres()
         self.regions = {
             1: "europe",
@@ -26,13 +28,23 @@ class IGDBDownloader():
         if len(os.listdir("./dbs")) != 5:
             raise Exception("Expected 5 JSONs in ./dbs folder")
 
+    def get_token(self):
+        r = requests.request("POST", "https://id.twitch.tv/oauth2/token", params={
+            'client_id': os.environ['TWITCH_CLIENT_ID'],
+            'client_secret': os.environ['TWITCH_CLIENT_SECRET'],
+            'grant_type': 'client_credentials'
+        })
+        r.raise_for_status()
+
+        return r.json()['access_token']
+
     def download_genres(self):
         """
         Downloads all IGDB genres
         """
 
-        r = requests.request("POST", "https://api-v3.igdb.com/genres",
-                             headers={'user-key': self.api_key},
+        r = requests.request("POST", "https://api.igdb.com/v4/genres",
+                             headers=self.headers,
                              data="fields id,name; limit 500; sort id;")
         r.raise_for_status()
 
@@ -50,8 +62,8 @@ class IGDBDownloader():
 
         offset = 0
         while True:
-            r = requests.request("POST", "https://api-v3.igdb.com/games",
-                                 headers={'user-key': self.api_key},
+            r = requests.request("POST", "https://api.igdb.com/v4/games",
+                                 headers=self.headers,
                                  data=f"fields id,genres,name,release_dates,alternative_names; where platforms = [{platform}]; limit 500;offset {offset};")
             r.raise_for_status()
             offset += 500
@@ -77,8 +89,8 @@ class IGDBDownloader():
         while True:
             ids = alternative_names_ids[:500]
             alternative_names_ids = alternative_names_ids[500:]
-            r = requests.request("POST", "https://api-v3.igdb.com/alternative_names",
-                                 headers={'user-key': self.api_key},
+            r = requests.request("POST", "https://api.igdb.com/v4/alternative_names",
+                                 headers=self.headers,
                                  data=f"fields name; where id = ({', '.join(map(str, ids))}); limit 500;")
             r.raise_for_status()
 
@@ -98,8 +110,8 @@ class IGDBDownloader():
 
         offset = 0
         while True:
-            r = requests.request("POST", "https://api-v3.igdb.com/release_dates",
-                                 headers={'user-key': self.api_key},
+            r = requests.request("POST", "https://api.igdb.com/v4/release_dates",
+                                 headers=self.headers,
                                  data=f"fields id,y,region; where platform = {platform}; limit 500; offset {offset};")
             r.raise_for_status()
             offset += 500
