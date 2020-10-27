@@ -753,9 +753,6 @@
     <game name="Mansion of Hidden Souls (USA)">
         <rom name="Mansion of Hidden Souls (USA).cue" crc="1544BC1B"/>
     </game>
-    <game name="Marko (2003)(Good Deal Games)(US)">
-        <rom name="Marko (2003)(Good Deal Games)(US).cue" crc="62E0ED95"/>
-    </game>
     <game name="Marko (USA) (Unl)">
         <rom name="Marko (USA) (Unl).cue" crc="62E0ED95"/>
     </game>
@@ -812,9 +809,6 @@
     </game>
     <game name="Mighty Mighty Missile (USA) (Unl)">
         <rom name="Mighty Mighty Missile (USA) (Unl).cue" crc="DD2DA826"/>
-    </game>
-    <game name="Mighty Mighty Missile! (2004)(Good Deal Games)(US)">
-        <rom name="Mighty Mighty Missile! (2004)(Good Deal Games)(US).cue" crc="DD2DA826"/>
     </game>
     <game name="Mighty Morphin Power Rangers (Europe)">
         <rom name="Mighty Morphin Power Rangers (Europe).cue" crc="84106F6B"/>
