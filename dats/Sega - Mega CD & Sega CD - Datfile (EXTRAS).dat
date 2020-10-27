@@ -43,12 +43,6 @@
     <game name="Frog Feast (2005)(Oldergames)(NTSC)(US)">
         <rom name="Frog Feast (2005)(Oldergames)(NTSC)(US).cue" crc="EEA22989"/>
     </game>
-    <game name="Marko (USA) (unl)">
-        <rom name="Marko (2003)(Good Deal Games)(US).cue" crc="62E0ED95"/>
-    </game>
-    <game name="Mighty Mighty Missile! (USA) (unl)">
-        <rom name="Mighty Mighty Missile! (2004)(Good Deal Games)(US).cue" crc="DD2DA826"/>
-    </game>
     <game name="Octopus CD (PD)">
         <rom name="Octopus CD (PD).cue" crc="ED6818E9"/>
     </game>
