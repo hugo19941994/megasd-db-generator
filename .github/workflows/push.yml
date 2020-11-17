@@ -32,6 +32,8 @@ jobs:
               TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
 
         - name: Store date into an environment variable
+          env:
+              ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
           run: echo "::set-env name=DATE::$(date '+%Y-%m-%d')"
 
         - name: Delete old drafts
