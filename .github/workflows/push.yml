@@ -66,5 +66,7 @@ jobs:
         - name: Generate new PR with the updated custom MegaSD DAT file if needed
           uses: peter-evans/create-pull-request@v2.7.2
           with:
-            commit-message: Update MegaSD Sega CD DAT
+              commit-message: Update MegaSD Sega CD DAT
+          env:
+              ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
 
