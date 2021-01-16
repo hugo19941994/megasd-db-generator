@@ -9,3 +9,4 @@ db.xml
 __pycache__/
 *.py[cod]
 *$py.class
+geckodriver.log

@@ -12,6 +12,7 @@ requests = "*"
 fuzzywuzzy = {extras = ["speedup"],version = "*"}
 httpx = "*"
 chardet = "*"
+selenium = "*"
 
 [requires]
 python_version = "3.8"
