@@ -22,15 +22,15 @@ def convert_genre(genre):
         "PLATFORM": "Platform",
         "PACHINKO": "Puzzle",
         "POKER": "Casino",
-        "ACTION": "Fighter",
+        "ACTION": "Action",
         "DRAWING APPLICATION": "Other",
         "SHOOT 'EM UP": "Shooter",
         "GAMBLING": "Casino",
-        "DIGITAL COMIC": "Other",
+        "DIGITAL COMIC": "Visual Novel",
         "SPORT": "Sports",
-        "ADULT": "Other",
+        "ADULT": "Romance",
         "FLIGHT COMBAT SIMULATION": "Strategy",
-        "ROLE-PLAYING": "Strategy",
+        "ROLE-PLAYING": "RPG",
         "GAMBLING SIMULATION": "Casino",
         "QUIZ": "Strategy",
         "SIMULATION": "Other",
@@ -50,14 +50,14 @@ def convert_genre(genre):
         "ONE-ON-ONE BEAT 'EM UP": "Beat\'Em-Up",
         "STRATEGY": "Strategy",
         "SPORTS": "Sports",
-        "LIFE SIMULATION": "Strategy",
+        "LIFE SIMULATION": "Visual Novel",
         "STRATEGY MANAGEMENT": "Strategy",
-        "ACTION ROLE-PLAYING": "Strategy",
+        "ACTION ROLE-PLAYING": "Adventure",
         "RPG": "Strategy",
         "WRESTLING": "Sports",
         "RACING SIMULATION": "Driving",
         "BOXING": "Sports",
-        "ADVENTURE": "Action",
+        "ADVENTURE": "Adventure",
         "CARD GAME": "Strategy",
         "PUZZLE": "Puzzle",
         "CARD GAMES": "Board",
@@ -220,7 +220,7 @@ def inspect_game(name, alt_names):
                 r = requests.get(f"http://www.pcengine.co.uk/{img['src'][3:]}")
                 with open(f'output/pce/{game["name"].replace("/", " ")}.jpg', 'wb') as f:
                     f.write(r.content)
-                call(f'convert "output/pce/{game["name"].replace("/", " ")}.jpg" -filter lanczos -resize 64x64! -normalize -unsharp 0 -enhance +dither "output/pce/{game["name"].replace("/", " ")}.bmp3"', shell=True)
+                call(f'convert "output/pce/{game["name"].replace("/", " ")}.jpg" -filter lanczos -resize 64x40! -normalize -unsharp 0 -enhance +dither "output/pce/{game["name"].replace("/", " ")}.bmp3"', shell=True)
                 os.rename(f'output/pce/{game["name"].replace("/", " ")}.bmp3', f'output/pce/{game["name"].replace("/", " ")}.bmp')
                 call(f'python3 Quantomatic.py "output/pce/{game["name"].replace("/", " ")}" -p 13', shell=True)
                 call(f'convert "output/pce/{game["name"].replace("/", " ")}CrushedPals.bmp" "output/pce/{game["name"].replace("/", " ")}.png"', shell=True)
@@ -259,7 +259,7 @@ for c in string.ascii_uppercase:
                         with open(f'output/pce/{cover_downloaded[1]}.jpg', 'wb') as f:
                             f.write(r.content)
                         call(
-                            f'convert "output/pce/{cover_downloaded[1]}.jpg" -filter lanczos -resize 64x64! -normalize -unsharp 0 -enhance +dither "output/pce/{cover_downloaded[1]}.bmp3"', shell=True)
+                            f'convert "output/pce/{cover_downloaded[1]}.jpg" -filter lanczos -resize 64x40! -normalize -unsharp 0 -enhance +dither "output/pce/{cover_downloaded[1]}.bmp3"', shell=True)
                         os.rename(f'output/pce/{cover_downloaded[1]}.bmp3', f'output/pce/{cover_downloaded[1]}.bmp')
                         call(f'python3 Quantomatic.py "output/pce/{cover_downloaded[1]}" -p 13', shell=True)
                         call(f'convert "output/pce/{cover_downloaded[1]}CrushedPals.bmp" "output/pce/{cover_downloaded[1]}.png"', shell=True)
@@ -276,3 +276,11 @@ with open('db.json', 'w') as f:
 # clean jpg images
 for y in glob.glob('output/pce/*.jpg'):
     os.remove(y)
+
+for i in os.listdir('/Usrs/hfs/Downloads/new'):
+    i = os.path.splitext(Path(i).name)[0]
+    call(f'convert "/Users/hfs/Downloads/new/{i}.jpg" -filter lanczos -resize 64x40! -normalize -unsharp 0 -enhance +dither "/Users/hfs/Downloads/new/{i}.bmp3"', shell=True)
+    os.rename(f'/Users/hfs/Downloads/new/{i}.bmp3', f'Users/hfs/Downloads/new/{i}.bmp')
+    call(f'python3 Quantomatic.py "/Users/hfs/Downloads/new/{i}.bmp" -p 13', shell=True)
+    call(f'convert "/Users/hfs/Downloads/new/{i}CrushedPals.bmp" "/Users/hfs/Downloads/new/{]}.png"', shell=True)
+

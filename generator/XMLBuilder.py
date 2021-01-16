@@ -228,7 +228,31 @@ class XMLGenerator():
         k39 = etree.SubElement(l21, '{http://tempuri.org/GameDB.xsd}Genre')
         k39.text = str(21)
         k40 = etree.SubElement(l21, '{http://tempuri.org/GameDB.xsd}Name')
-        k40.text = 'Other'
+        k40.text = 'RPG'
+
+        l22 = etree.SubElement(a, '{http://tempuri.org/GameDB.xsd}Genre')
+        k41 = etree.SubElement(l22, '{http://tempuri.org/GameDB.xsd}Genre')
+        k41.text = str(22)
+        k42 = etree.SubElement(l22, '{http://tempuri.org/GameDB.xsd}Name')
+        k42.text = 'Visual Novel'
+
+        l23 = etree.SubElement(a, '{http://tempuri.org/GameDB.xsd}Genre')
+        k43 = etree.SubElement(l23, '{http://tempuri.org/GameDB.xsd}Genre')
+        k43.text = str(23)
+        k44 = etree.SubElement(l23, '{http://tempuri.org/GameDB.xsd}Name')
+        k44.text = 'Adventure'
+
+        l24 = etree.SubElement(a, '{http://tempuri.org/GameDB.xsd}Genre')
+        k45 = etree.SubElement(l24, '{http://tempuri.org/GameDB.xsd}Genre')
+        k45.text = str(24)
+        k46 = etree.SubElement(l24, '{http://tempuri.org/GameDB.xsd}Name')
+        k46.text = 'Romance'
+
+        l25 = etree.SubElement(a, '{http://tempuri.org/GameDB.xsd}Genre')
+        k47 = etree.SubElement(l25, '{http://tempuri.org/GameDB.xsd}Genre')
+        k47.text = str(25)
+        k48 = etree.SubElement(l25, '{http://tempuri.org/GameDB.xsd}Name')
+        k48.text = 'Other'
 
         # Validate schema - Exception thrown if not valid
         try:
@@ -371,6 +395,14 @@ class XMLGenerator():
                         e.text = str(20)
                     elif g == 'Other':
                         e.text = str(21)
+                    elif g == 'RPG':
+                        e.text = str(22)
+                    elif g == 'Adventure':
+                        e.text = str(23)
+                    elif g == 'Visual Novel':
+                        e.text = str(24)
+                    elif g == 'Romance':
+                        e.text = str(25)
                     else:  # Wrong genre
                         print(f'ABORTING - WRONG GENRE {g}')
                         exit()

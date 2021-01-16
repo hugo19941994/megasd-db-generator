@@ -20,7 +20,7 @@ def downloadNoIntro():
         "Host": "datomatic.no-intro.org",
         "Origin": "https://datomatic.no-intro.org",
         "Pragma": "no-cache",
-        "Referer": "https://datomatic.no-intro.org/index.php?page=download&fun=daily",
+        "Referer": "https://datomatic.no-intro.org/index.php?page=download&op=daily",
         "Sec-Fetch-Mode": "navigate",
         "Sec-Fetch-Site": "same-origin",
         "Sec-Fetch-User": "?1",
@@ -31,8 +31,8 @@ def downloadNoIntro():
 
     # Request daily DAT pack
     s = requests.Session()  # session to maintain cookies
-    r = s.post("https://datomatic.no-intro.org/index.php?page=download&fun=daily",
-               data={"dat_type": "standard", "prepare_2": "Prepare"}, headers=headers, allow_redirects=False)
+    r = s.post("https://datomatic.no-intro.org/index.php?page=download&op=daily",
+               data={"dat_type": "standard", "sometimes-I-change-this-too": "Prepare", "recaptcha_response": ""}, headers=headers, allow_redirects=False)
     r.raise_for_status()
 
     # Extract download ID from the 302 response Location header
@@ -40,7 +40,7 @@ def downloadNoIntro():
 
     # Download the DAT pack
     r = s.post(f"https://datomatic.no-intro.org/index.php?page=manager&download={download_id}",
-               data={"download": "Download"}, headers=headers, allow_redirects=True)
+               params={"page": "manager", "download": download_id}, data={"wtwtwtf": "Download"})
     r.raise_for_status()
 
     # Load zip file into memory
