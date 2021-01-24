@@ -168,8 +168,8 @@
     <game name="Bram Stoker's Dracula (USA)">
         <rom name="Bram Stoker's Dracula (USA).cue" crc="B7E5AC5E"/>
     </game>
-    <game name="Brutal - Paws of Fury (Europe)">
-        <rom name="Brutal - Paws of Fury (Europe).cue" crc="2337BF3D"/>
+    <game name="Brutal - Paws of Fury (Europe) (En,Fr,De)">
+        <rom name="Brutal - Paws of Fury (Europe) (En,Fr,De).cue" crc="2337BF3D"/>
     </game>
     <game name="Brutal - Paws of Fury (USA)">
         <rom name="Brutal - Paws of Fury (USA).cue" crc="E4C6975"/>
@@ -438,8 +438,8 @@
     <game name="FIFA International Soccer - Championship Edition (Europe) (Demo)">
         <rom name="FIFA International Soccer - Championship Edition (Europe) (Demo).cue" crc="F7315440"/>
     </game>
-    <game name="FIFA International Soccer - Championship Edition (Europe)">
-        <rom name="FIFA International Soccer - Championship Edition (Europe).cue" crc="EC719846"/>
+    <game name="FIFA International Soccer - Championship Edition (Europe) (En,Fr,De,Es)">
+        <rom name="FIFA International Soccer - Championship Edition (Europe) (En,Fr,De,Es).cue" crc="EC719846"/>
     </game>
     <game name="Fahrenheit (Europe)">
         <rom name="Fahrenheit (Europe).cue" crc="483D1859"/>
@@ -521,6 +521,9 @@
     </game>
     <game name="Garou Densetsu Special (Japan)">
         <rom name="Garou Densetsu Special (Japan).cue" crc="31E83349"/>
+    </game>
+    <game name="Gen'ei Toshi - Illusion City (Japan)">
+        <rom name="Gen'ei Toshi - Illusion City (Japan).cue" crc="5800D5E9"/>
     </game>
     <game name="Ground Zero Texas (Europe) (Disc 1)">
         <rom name="Ground Zero Texas (Europe) (Disc 1).cue" crc="8E7523A"/>
