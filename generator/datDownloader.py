@@ -1,6 +1,7 @@
 from io import BytesIO
 from selenium import webdriver
 from time import sleep
+import hashlib
 import logging
 import os
 import re
@@ -26,10 +27,47 @@ def downloadNoIntro():
     driver.implicitly_wait(10)
 
     driver.get("https://datomatic.no-intro.org")
+
+    # select downloads
     driver.find_element_by_xpath('/html/body/div/header/nav/ul/li[3]/a').click()
+
+    # select daily downloads
     driver.find_element_by_xpath('/html/body/div/section/article/table[1]/tbody/tr/td/a[6]').click()
-    driver.find_element_by_xpath('/html/body/div/section/article/div/form/input[1]').click()
-    driver.find_element_by_xpath('/html/body/div/section/article/div/form/input').click()
+
+    sleep(5)
+
+    # click the prepare button
+    driver.find_element_by_xpath(f'/html/body/div/section/article/div/form/input[1]').click()
+
+    captcha = False
+
+    try:
+        captcha_image = driver.find_element_by_xpath('/html/body/div/section/article/div/form/img').get_attribute(
+            'src')
+        captcha = True
+    except NoSuchElementException:
+        pass
+
+    if not captcha:
+        driver.find_element_by_name('dwnl').click()
+    else:
+        # download the captcha image
+        image = requests.get(captcha_image, stream=True).raw
+
+        # hash the image
+        hasher = hashlib.md5()
+        buf = image.read()
+        hasher.update(buf)
+        hash = hasher.hexdigest()
+
+        hash_map = {
+            '402240d761cb146915b25a01c771c6a9': 'dwnl_blue',
+            '3fe379d46842ffed389aa9bbeb42bb93': 'dwnl_red',
+            '1e3ad98f1290f8ba0d3fc21f313f5396': 'dwnl_yellow'
+        }
+
+        # click the correct captcha color coded download button
+        driver.find_element_by_name(hash_map[hash]).click()
 
     # wait until file is found
     found = False
