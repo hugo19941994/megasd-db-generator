@@ -329,7 +329,7 @@ class XMLGenerator():
                     self.ifmw.writerow({'ROM': paths[0], 'DB Entry': games_list[match[0]]["name"], "Score": match[1]})
 
                 # Year must be inserted before the genre
-                if 'release_dates' in game and 'y' in game['release_dates'][0]:
+                if 'release_dates' in game and len(game['release_dates']) > 0 and 'y' in game['release_dates'][0]:
                     e2 = etree.SubElement(b, '{http://tempuri.org/GameDB.xsd}Year')
                     e2.text = str(game['release_dates'][0]['y'])
 
