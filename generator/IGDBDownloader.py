@@ -187,5 +187,7 @@ class IGDBDownloader():
             "Indie": "Other",
             "Arcade": "Action",
             "Visual Novel": "Other",
+            "Card & Board Game": "Board",
+            "MOBA": "Strategy"
         }
         return genre_conversion[genre]
