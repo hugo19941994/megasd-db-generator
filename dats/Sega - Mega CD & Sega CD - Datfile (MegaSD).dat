@@ -915,9 +915,6 @@
     <game name="Nobunaga no Yabou - Haouden (Japan)">
         <rom name="Nobunaga no Yabou - Haouden (Japan).cue" crc="D6548105"/>
     </game>
-    <game name="Nostalgia 1907 (Japan)">
-        <rom name="Nostalgia 1907 (Japan).cue" crc="23A12C36"/>
-    </game>
     <game name="Note! Color Mechanica (USA) (Unl) (Alt)">
         <rom name="Note! Color Mechanica (USA) (Unl) (Alt).cue" crc="21994516"/>
     </game>
