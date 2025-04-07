@@ -37,7 +37,7 @@ jobs:
           run: echo "::set-env name=DATE::$(date '+%Y-%m-%d')"
 
         - name: Delete old drafts
-          uses: hugo19941994/delete-draft-releases@v1.0.0
+          uses: hugo19941994/delete-draft-releases@master
           env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
