@@ -11,12 +11,12 @@ jobs:
 
         steps:
         - name: Checkout code
-          uses: actions/checkout@v2
+          uses: actions/checkout@v4
 
         - name: Setup Python
-          uses: actions/setup-python@v2
+          uses: actions/setup-python@v5.6.0
           with:
-            python-version: 3.9
+            python-version: 3.13
 
         - name: Install pipenv
           run: sudo pip install pipenv
@@ -37,13 +37,13 @@ jobs:
           run: echo "::set-env name=DATE::$(date '+%Y-%m-%d')"
 
         - name: Delete old drafts
-          uses: hugo19941994/delete-draft-releases@master
+          uses: hugo19941994/delete-draft-releases@v2.0.0
           env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         - name: Create Github release
           id: create_release
-          uses: actions/create-release@v1.1.0
+          uses: actions/create-release@v1.1.4
           env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
@@ -54,7 +54,7 @@ jobs:
               prerelease: true
 
         - name: Upload zipped database into the release
-          uses: actions/upload-release-asset@v1
+          uses: actions/upload-release-asset@v1.0.2
           env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
@@ -64,9 +64,7 @@ jobs:
               asset_content_type: application/zip
 
         - name: Generate new PR with the updated custom MegaSD DAT file if needed
-          uses: peter-evans/create-pull-request@v2.7.2
+          uses: peter-evans/create-pull-request@v7.0.8
           with:
               commit-message: Update MegaSD Sega CD DAT
-          env:
-              ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
 
