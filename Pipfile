@@ -6,13 +6,14 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-lxml = "*"
-stop-words = "*"
-requests = "*"
-fuzzywuzzy = {extras = ["speedup"],version = "*"}
-httpx = "*"
-chardet = "*"
-selenium = "*"
+lxml = "~=6.0.0"
+stop-words = "~=2018.7.23"
+requests = "~=2.32.4"
+fuzzywuzzy = {extras = ["speedup"],version = "~=0.18.0"}
+httpx = "~=0.28.1"
+chardet = "~=5.2.0"
+selenium = "~=4.34.2"
 
 [requires]
 python_version = "3.13"
+
