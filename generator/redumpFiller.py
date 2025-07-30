@@ -127,28 +127,40 @@ async def downloadRom(name, base_url):
     if r.status_code != 200:
         return None
 
-    length = int(r.headers['Content-Length'])
+    length = r.headers.get('Content-Length', None)
+    if length is not None:
+        length = int(length)
+        # Divide game in X chunks and download concurrently
+        CONCURRENT = 40
+        chunk_size = (length / CONCURRENT) + (length % CONCURRENT)  #  TODO: last chunk will be smaller
+        print(f'Content length: {length}')
 
-    # Divide game in X chunks and download concurrently
-    CONCURRENT = 40
-    chunk_size = (length / CONCURRENT) + (length % CONCURRENT)  #  TODO: last chunk will be smaller
-    print(f'Content length: {length}')
+        # Store all the needed requests to execute concurrently
+        urls = []
+        for i in range(CONCURRENT):
+            urls.append((url, int(chunk_size * i), int(chunk_size * (i + 1))))
 
-    # Store all the needed requests to execute concurrently
-    urls = []
-    for i in range(CONCURRENT):
-        urls.append((url, int(chunk_size * i), int(chunk_size * (i + 1))))
+        # Save ZIP data in memory
+        zipdata = BytesIO()
 
-    # Save ZIP data in memory
-    zipdata = BytesIO()
+        # Download all chunks concurrently
+        await asyncio.gather(*[download_chunk(d[0], d[1], d[2], zipdata, client) for d in urls])
 
-    # Download all chunks concurrently
-    await asyncio.gather(*[download_chunk(d[0], d[1], d[2], zipdata, client) for d in urls])
-
-    # calculate MegaSD CRC from the ZIP file
-    crc = cal_crc(zipdata)
-    print(f'CRC: {crc}')
-    return crc
+        # calculate MegaSD CRC from the ZIP file
+        crc = cal_crc(zipdata)
+        print(f'CRC: {crc}')
+        return crc
+    else:
+        HEADERS = {
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36',
+            'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+            'Referer': f"{base_url}/",
+        }
+        r = await client.get(url, follow_redirects=True, headers=HEADERS)
+        # calculate MegaSD CRC from the ZIP file
+        crc = cal_crc(BytesIO(r.content))
+        print(f'CRC: {crc}')
+        return crc
 
 
 def crc_from_folder(name, source):
