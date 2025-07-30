@@ -28,6 +28,23 @@ jobs:
         - name: Install dependencies using Pipenv
           run: pipenv install --deploy
 
+        - name: Setup Tailscale
+          uses: tailscale/github-action@v3.2.3
+          with:
+            oauth-client-id: ${{ secrets.TAILSCALE_OAUTH_CLIENT_ID }}
+            oauth-secret: ${{ secrets.TAILSCALE_OAUTH_SECRET }}
+            tags: tag:github-actions
+            use-cache: 'true'
+
+        - name: Use named exit node in tailscale
+          run: |
+            timeout 5m sudo -E tailscale set --exit-node=${{ secrets.TAILSCALE_EXIT_NODE }}
+
+        - name: Verify HTTP traffic is routed through exit node
+          run: |
+            echo "Available exit nodes:"
+            tailscale status | grep 'exit node'
+
         - name: Download dats, db and generate the XML
           id: generator
           run: pipenv run ./generator/main.py --download-dats --update-custom-dat ${{ secrets.SECRET_URL }} --download-db --generate-xml
