@@ -5,6 +5,10 @@ on:
     schedule:
         - cron:  '0 12 * * *'
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
     build:
         runs-on: ubuntu-latest
@@ -43,25 +47,16 @@ jobs:
 
         - name: Create Github release
           id: create_release
-          uses: actions/create-release@v1.1.4
+          uses: softprops/action-gh-release@v2.3.2
           env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
               tag_name: ${{ github.ref }}
-              release_name: DB ${{env.DATE}}
+              name: DB ${{ env.DATE }}
               body: ${{ steps.generator.outputs.GITHUB_RELEASE_MD }}
               draft: true
               prerelease: true
-
-        - name: Upload zipped database into the release
-          uses: actions/upload-release-asset@v1.0.2
-          env:
-              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          with:
-              upload_url: ${{ steps.create_release.outputs.upload_url }}
-              asset_path: ./DB_${{env.DATE}}.zip
-              asset_name: DB_${{env.DATE}}.zip
-              asset_content_type: application/zip
+              files: ./DB_${{ env.DATE }}.zip
 
         - name: Generate new PR with the updated custom MegaSD DAT file if needed
           uses: peter-evans/create-pull-request@v7.0.8

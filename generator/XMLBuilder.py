@@ -53,7 +53,8 @@ class XMLGenerator():
 
             # Release text for Github
             if os.environ.get("GITHUB_ACTIONS"):
-                print(f"::set-output name=GITHUB_RELEASE_MD::{self.release_md}")
+                with open(os.environ.get("GITHUB_OUTPUT"), 'a') as f:
+                    f.write(f"GITHUB_RELEASE_MD={self.release_md}")
 
         finally:
             # Close files
