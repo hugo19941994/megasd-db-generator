@@ -6,9 +6,9 @@ import zipfile
 import zlib
 from io import BytesIO
 from urllib.parse import quote
-from xml.dom import minidom
 
 import httpx
+from defusedxml import minidom
 from lxml import etree, objectify
 
 from generator.dat_downloader import download_redump
@@ -141,9 +141,7 @@ async def download_rom(name, base_url):
         print(f"Content length: {length}")
 
         # Store all the needed requests to execute concurrently
-        urls = []
-        for i in range(concurrent):
-            urls.append((url, int(chunk_size * i), int(chunk_size * (i + 1))))
+        urls = [(url, int(chunk_size * i), int(chunk_size * (i + 1))) for i in range(concurrent)]
 
         # Save ZIP data in memory
         zipdata = BytesIO()

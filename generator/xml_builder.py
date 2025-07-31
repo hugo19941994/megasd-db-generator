@@ -9,9 +9,9 @@ from collections import defaultdict
 from csv import DictWriter
 from datetime import date
 from io import StringIO
-from xml.dom import minidom
 from zipfile import ZipFile
 
+from defusedxml import minidom
 from lxml import etree, objectify
 from stop_words import get_stop_words
 from thefuzz import process
@@ -285,7 +285,7 @@ class XMLGenerator:
         # Load all roms with full path
         roms = []
         roms_hash = {}  # store rom name with corresponding hash
-        filename = [x for x in os.listdir("./dats") if datfile_name in x][0]
+        filename = next(x for x in os.listdir("./dats") if datfile_name in x)
         tree = objectify.parse(f"./dats/{filename}")
         for t in tree.iter("rom"):
             roms.append(t.attrib.get("name"))
@@ -294,7 +294,9 @@ class XMLGenerator:
         # Load game covers
         game_covers_l = []
         for x in os.walk(f"{cover_path}"):
+            print(x)
             for y in glob.glob(os.path.join(x[0], "*.png")):
+                print(y)
                 game_covers_l.append(y)
         game_covers = {}
         # Normalize cover name (some will be overwritten by the normalization)

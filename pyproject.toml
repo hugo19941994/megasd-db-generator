@@ -5,11 +5,12 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
+    "defusedxml>=0.7.1",
     "httpx~=0.28.1",
     "lxml~=6.0.0",
     "requests~=2.32.4",
     "stop-words~=2018.7.23",
-    "thefuzz>=0.22.1"
+    "thefuzz>=0.22.1",
 ]
 
 [dependency-groups]
