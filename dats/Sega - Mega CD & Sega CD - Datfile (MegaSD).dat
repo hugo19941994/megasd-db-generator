@@ -57,12 +57,6 @@
     <game name="Android Assault - The Revenge of Bari-Arm (USA)">
         <rom name="Android Assault - The Revenge of Bari-Arm (USA).cue" crc="649134B3"/>
     </game>
-    <game name="Animals!, The (Europe)">
-        <rom name="Animals!, The (Europe).cue" crc="9A7F24FE"/>
-    </game>
-    <game name="Animals!, The (USA)">
-        <rom name="Animals!, The (USA).cue" crc="E38E96DF"/>
-    </game>
     <game name="Annett Futatabi (Japan)">
         <rom name="Annett Futatabi (Japan).cue" crc="37AE7771"/>
     </game>
@@ -150,8 +144,8 @@
     <game name="Blackhole Assault (USA)">
         <rom name="Blackhole Assault (USA).cue" crc="848BD6D8"/>
     </game>
-    <game name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es)">
-        <rom name="Bloodshot ~ Battle Frenzy (Europe) (En,Fr,De,Es).cue" crc="4E35E1"/>
+    <game name="Bloodshot (Europe) (En,Fr,De,Es)">
+        <rom name="Bloodshot (Europe) (En,Fr,De,Es).cue" crc="4E35E1"/>
     </game>
     <game name="Bouncers (USA)">
         <rom name="Bouncers (USA).cue" crc="1022C502"/>
@@ -183,14 +177,14 @@
     <game name="Burning Fists - Force Striker (USA) (Unl)">
         <rom name="Burning Fists - Force Striker (USA) (Unl).cue" crc="1DD416C3"/>
     </game>
-    <game name="CD Sonic The Hedgehog (Japan) (Beta 1)">
-        <rom name="CD Sonic The Hedgehog (Japan) (Beta 1).cue" crc="FA45698D"/>
+    <game name="CD Sonic the Hedgehog (Japan) (Beta) (1992-12-04)">
+        <rom name="CD Sonic the Hedgehog (Japan) (Beta) (1992-12-04).cue" crc="FA45698D"/>
     </game>
-    <game name="CD Sonic The Hedgehog (Japan) (Beta 2)">
-        <rom name="CD Sonic The Hedgehog (Japan) (Beta 2).cue" crc="B57C11FB"/>
+    <game name="CD Sonic the Hedgehog (Japan) (Beta) (1993-05-13)">
+        <rom name="CD Sonic the Hedgehog (Japan) (Beta) (1993-05-13).cue" crc="B57C11FB"/>
     </game>
-    <game name="CD Sonic The Hedgehog (Japan) (Beta 3)">
-        <rom name="CD Sonic The Hedgehog (Japan) (Beta 3).cue" crc="5B2223B7"/>
+    <game name="CD Sonic the Hedgehog (Japan) (Beta) (1993-06-21)">
+        <rom name="CD Sonic the Hedgehog (Japan) (Beta) (1993-06-21).cue" crc="5B2223B7"/>
     </game>
     <game name="Cadillacs and Dinosaurs - The Second Cataclysm (USA, Brazil) (RE)">
         <rom name="Cadillacs and Dinosaurs - The Second Cataclysm (USA, Brazil) (RE).cue" crc="9A8B1AA9"/>
@@ -198,8 +192,8 @@
     <game name="Captain Tsubasa (Japan)">
         <rom name="Captain Tsubasa (Japan).cue" crc="A76FD837"/>
     </game>
-    <game name="Championship Soccer '94 (USA)">
-        <rom name="Championship Soccer '94 (USA).cue" crc="8B2A18FE"/>
+    <game name="Championship Soccer '94 (USA) (En,Fr,De,It)">
+        <rom name="Championship Soccer '94 (USA) (En,Fr,De,It).cue" crc="8B2A18FE"/>
     </game>
     <game name="Chuck Rock (Europe)">
         <rom name="Chuck Rock (Europe).cue" crc="D3C08418"/>
@@ -312,8 +306,8 @@
     <game name="Dracula Unleashed (USA) (Disc 2)">
         <rom name="Dracula Unleashed (USA) (Disc 2).cue" crc="4028A0C0"/>
     </game>
-    <game name="Dragon's Lair (Europe)">
-        <rom name="Dragon's Lair (Europe).cue" crc="81A46F9A"/>
+    <game name="Dragon's Lair (Europe) (En,Fr,De,It)">
+        <rom name="Dragon's Lair (Europe) (En,Fr,De,It).cue" crc="81A46F9A"/>
     </game>
     <game name="Dragon's Lair (Japan) (En,Ja,Fr,De,It)">
         <rom name="Dragon's Lair (Japan) (En,Ja,Fr,De,It).cue" crc="BF19CDF4"/>
@@ -324,11 +318,11 @@
     <game name="Dragon's Lair (USA)">
         <rom name="Dragon's Lair (USA).cue" crc="CA356DEB"/>
     </game>
-    <game name="Dune (Europe) (En,Fr,De,Es,It,Ar)">
-        <rom name="Dune (Europe) (En,Fr,De,Es,It,Ar).cue" crc="25A6A51C"/>
+    <game name="Dune (Europe) (En,Fr,De,Es,It)">
+        <rom name="Dune (Europe) (En,Fr,De,Es,It).cue" crc="25A6A51C"/>
     </game>
-    <game name="Dune (USA)">
-        <rom name="Dune (USA).cue" crc="8B78668A"/>
+    <game name="Dune (USA) (En,Fr,De,Es,It)">
+        <rom name="Dune (USA) (En,Fr,De,Es,It).cue" crc="8B78668A"/>
     </game>
     <game name="Dungeon Explorer (Europe)">
         <rom name="Dungeon Explorer (Europe).cue" crc="A032C48E"/>
@@ -402,14 +396,14 @@
     <game name="Egawa Suguru no Super League CD (Japan)">
         <rom name="Egawa Suguru no Super League CD (Japan).cue" crc="78F58E87"/>
     </game>
-    <game name="Eternal Champions - Challenge from the Dark Side (Europe) (Beta)">
-        <rom name="Eternal Champions - Challenge from the Dark Side (Europe) (Beta).cue" crc="A2ECAB8B"/>
+    <game name="Eternal Champions - Challenge from the Dark Side (Europe) (Beta) (1995-06-09)">
+        <rom name="Eternal Champions - Challenge from the Dark Side (Europe) (Beta) (1995-06-09).cue" crc="A2ECAB8B"/>
     </game>
     <game name="Eternal Champions - Challenge from the Dark Side (Europe)">
         <rom name="Eternal Champions - Challenge from the Dark Side (Europe).cue" crc="A2ECAB8B"/>
     </game>
-    <game name="Eternal Champions - Challenge from the Dark Side (USA) (Beta)">
-        <rom name="Eternal Champions - Challenge from the Dark Side (USA) (Beta).cue" crc="23BDFFCD"/>
+    <game name="Eternal Champions - Challenge from the Dark Side (USA) (Beta) (1995-05-11)">
+        <rom name="Eternal Champions - Challenge from the Dark Side (USA) (Beta) (1995-05-11).cue" crc="23BDFFCD"/>
     </game>
     <game name="Eternal Champions - Challenge from the Dark Side (USA) (RE)">
         <rom name="Eternal Champions - Challenge from the Dark Side (USA) (RE).cue" crc="280092B"/>
@@ -429,8 +423,8 @@
     <game name="F1 Circus CD (Japan)">
         <rom name="F1 Circus CD (Japan).cue" crc="99454046"/>
     </game>
-    <game name="FIFA International Soccer (USA)">
-        <rom name="FIFA International Soccer (USA).cue" crc="C525B15A"/>
+    <game name="FIFA International Soccer (USA) (En,Fr,De,Es)">
+        <rom name="FIFA International Soccer (USA) (En,Fr,De,Es).cue" crc="C525B15A"/>
     </game>
     <game name="FIFA International Soccer - Championship Edition (Europe) (Demo) (Alt)">
         <rom name="FIFA International Soccer - Championship Edition (Europe) (Demo) (Alt).cue" crc="F7315440"/>
@@ -456,8 +450,8 @@
     <game name="Fahrenheit (USA) (Disc 2) (32X CD)">
         <rom name="Fahrenheit (USA) (Disc 2) (32X CD).cue" crc="A6F272D7"/>
     </game>
-    <game name="Fatal Fury Special (Europe) (Beta)">
-        <rom name="Fatal Fury Special (Europe) (Beta).cue" crc="BF7C996B"/>
+    <game name="Fatal Fury Special (Europe) (Beta) (1995-02-23)">
+        <rom name="Fatal Fury Special (Europe) (Beta) (1995-02-23).cue" crc="BF7C996B"/>
     </game>
     <game name="Fatal Fury Special (Europe) (Demo)">
         <rom name="Fatal Fury Special (Europe) (Demo).cue" crc="9F4661A"/>
@@ -495,11 +489,11 @@
     <game name="Flashback - The Quest for Identity (USA)">
         <rom name="Flashback - The Quest for Identity (USA).cue" crc="74AA6F5C"/>
     </game>
-    <game name="Flink (Europe)">
-        <rom name="Flink (Europe).cue" crc="5E1B0079"/>
+    <game name="Flink (Europe) (En,Fr,De,Es,Nl)">
+        <rom name="Flink (Europe) (En,Fr,De,Es,Nl).cue" crc="5E1B0079"/>
     </game>
-    <game name="Flink (USA)">
-        <rom name="Flink (USA).cue" crc="669836B7"/>
+    <game name="Flink (USA) (En,Fr,De,Es,Nl)">
+        <rom name="Flink (USA) (En,Fr,De,Es,Nl).cue" crc="669836B7"/>
     </game>
     <game name="Formula One World Championship - Beyond the Limit (Europe)">
         <rom name="Formula One World Championship - Beyond the Limit (Europe).cue" crc="C1A6F0C0"/>
@@ -540,8 +534,8 @@
     <game name="Ground Zero Texas (USA) (Disc 2)">
         <rom name="Ground Zero Texas (USA) (Disc 2).cue" crc="2B87E8FC"/>
     </game>
-    <game name="Gyuwambler Jiko Chuushinha 2 - Gekitou! Tokyo Mahjongland Hen (Japan)">
-        <rom name="Gyuwambler Jiko Chuushinha 2 - Gekitou! Tokyo Mahjongland Hen (Japan).cue" crc="F1B91840"/>
+    <game name="Gyuwambler Jiko Chuushinha 2 - Gekitou! Tokyo Mahjongland-hen (Japan)">
+        <rom name="Gyuwambler Jiko Chuushinha 2 - Gekitou! Tokyo Mahjongland-hen (Japan).cue" crc="F1B91840"/>
     </game>
     <game name="Heart of the Alien - Out of This World Parts I and II (USA) (RE)">
         <rom name="Heart of the Alien - Out of This World Parts I and II (USA) (RE).cue" crc="F4716AA3"/>
@@ -675,8 +669,8 @@
     <game name="Lethal Enforcers (USA)">
         <rom name="Lethal Enforcers (USA).cue" crc="7E125211"/>
     </game>
-    <game name="Lethal Enforcers II - Gun Fighters (Europe) (Beta)">
-        <rom name="Lethal Enforcers II - Gun Fighters (Europe) (Beta).cue" crc="C51BC0CD"/>
+    <game name="Lethal Enforcers II - Gun Fighters (Europe) (Beta) (1994-09-23)">
+        <rom name="Lethal Enforcers II - Gun Fighters (Europe) (Beta) (1994-09-23).cue" crc="C51BC0CD"/>
     </game>
     <game name="Lethal Enforcers II - Gun Fighters (Europe) (Demo)">
         <rom name="Lethal Enforcers II - Gun Fighters (Europe) (Demo).cue" crc="C51BC0CD"/>
@@ -692,6 +686,12 @@
     </game>
     <game name="Links - The Challenge of Golf (USA) (RE)">
         <rom name="Links - The Challenge of Golf (USA) (RE).cue" crc="BF89ED7"/>
+    </game>
+    <game name="Links - The Challenge of Golf (USA)">
+        <rom name="Links - The Challenge of Golf (USA).cue" crc="DA1A34F3"/>
+    </game>
+    <game name="Loadstar - The Legend of Tully Bodine (USA) (Beta)">
+        <rom name="Loadstar - The Legend of Tully Bodine (USA) (Beta).cue" crc="88C3BC2C"/>
     </game>
     <game name="Loadstar - The Legend of Tully Bodine (USA, Brazil)">
         <rom name="Loadstar - The Legend of Tully Bodine (USA, Brazil).cue" crc="7C6FF42B"/>
@@ -735,8 +735,8 @@
     <game name="Make My Video - INXS (Europe)">
         <rom name="Make My Video - INXS (Europe).cue" crc="513B1B7E"/>
     </game>
-    <game name="Make My Video - INXS (USA) (Beta)">
-        <rom name="Make My Video - INXS (USA) (Beta).cue" crc="8266D954"/>
+    <game name="Make My Video - INXS (USA) (Beta) (1992-12-15)">
+        <rom name="Make My Video - INXS (USA) (Beta) (1992-12-15).cue" crc="8266D954"/>
     </game>
     <game name="Make My Video - INXS (USA)">
         <rom name="Make My Video - INXS (USA).cue" crc="624B4FFE"/>
@@ -747,8 +747,8 @@
     <game name="Make My Video - Kris Kross (USA)">
         <rom name="Make My Video - Kris Kross (USA).cue" crc="77DF7FC7"/>
     </game>
-    <game name="Make My Video - Marky Mark and the Funky Bunch (USA) (Beta)">
-        <rom name="Make My Video - Marky Mark and the Funky Bunch (USA) (Beta).cue" crc="72E94DAF"/>
+    <game name="Make My Video - Marky Mark and the Funky Bunch (USA) (Beta) (1992-12-11)">
+        <rom name="Make My Video - Marky Mark and the Funky Bunch (USA) (Beta) (1992-12-11).cue" crc="72E94DAF"/>
     </game>
     <game name="Make My Video - Marky Mark and the Funky Bunch (USA)">
         <rom name="Make My Video - Marky Mark and the Funky Bunch (USA).cue" crc="72E94DAF"/>
@@ -915,6 +915,9 @@
     <game name="Nobunaga no Yabou - Haouden (Japan)">
         <rom name="Nobunaga no Yabou - Haouden (Japan).cue" crc="D6548105"/>
     </game>
+    <game name="Nostalgia 1907 - In North Atlantic Sea (Japan)">
+        <rom name="Nostalgia 1907 - In North Atlantic Sea (Japan).cue" crc="23A12C36"/>
+    </game>
     <game name="Note! Color Mechanica (USA) (Unl) (Alt)">
         <rom name="Note! Color Mechanica (USA) (Unl) (Alt).cue" crc="21994516"/>
     </game>
@@ -1011,6 +1014,9 @@
     <game name="Pro Yakyuu Super League CD (Japan)">
         <rom name="Pro Yakyuu Super League CD (Japan).cue" crc="9DA77A1B"/>
     </game>
+    <game name="Psychic Detective Series Vol. 3 - Aya (Japan) (Demo)">
+        <rom name="Psychic Detective Series Vol. 3 - Aya (Japan) (Demo).cue" crc="B7417680"/>
+    </game>
     <game name="Psychic Detective Series Vol. 3 - Aya (Japan)">
         <rom name="Psychic Detective Series Vol. 3 - Aya (Japan).cue" crc="B7417680"/>
     </game>
@@ -1098,17 +1104,26 @@
     <game name="Samurai Shodown (USA) (RE)">
         <rom name="Samurai Shodown (USA) (RE).cue" crc="81219B2E"/>
     </game>
+    <game name="San Diego Zoo Presents... The Animals!, The (Europe)">
+        <rom name="San Diego Zoo Presents... The Animals!, The (Europe).cue" crc="9A7F24FE"/>
+    </game>
+    <game name="San Diego Zoo Presents... The Animals!, The (USA)">
+        <rom name="San Diego Zoo Presents... The Animals!, The (USA).cue" crc="E38E96DF"/>
+    </game>
     <game name="Sangokushi III (Japan)">
         <rom name="Sangokushi III (Japan).cue" crc="56D334CD"/>
     </game>
     <game name="Secret of Monkey Island, The (Japan)">
         <rom name="Secret of Monkey Island, The (Japan).cue" crc="B35FA2C"/>
     </game>
+    <game name="Secret of Monkey Island, The (USA) (Limited Run Games)">
+        <rom name="Secret of Monkey Island, The (USA) (Limited Run Games).cue" crc="F96A96F0"/>
+    </game>
     <game name="Secret of Monkey Island, The (USA) (RE)">
         <rom name="Secret of Monkey Island, The (USA) (RE).cue" crc="F96A96F0"/>
     </game>
-    <game name="Sega CD Demo (Japan) (Proto)">
-        <rom name="Sega CD Demo (Japan) (Proto).cue" crc="C1AE004"/>
+    <game name="Sega CD Demo (Japan) (Proto) (1992-05-29)">
+        <rom name="Sega CD Demo (Japan) (Proto) (1992-05-29).cue" crc="C1AE004"/>
     </game>
     <game name="Sega Classic Arcade Collection - Limited Edition (Japan)">
         <rom name="Sega Classic Arcade Collection - Limited Edition (Japan).cue" crc="E26F832"/>
@@ -1140,8 +1155,8 @@
     <game name="Sensible Soccer (Europe) (Demo)">
         <rom name="Sensible Soccer (Europe) (Demo).cue" crc="FB4DE7B4"/>
     </game>
-    <game name="Sensible Soccer (Europe)">
-        <rom name="Sensible Soccer (Europe).cue" crc="4A02C8AA"/>
+    <game name="Sensible Soccer (Europe) (En,Fr,De,It)">
+        <rom name="Sensible Soccer (Europe) (En,Fr,De,It).cue" crc="4A02C8AA"/>
     </game>
     <game name="Sewer Shark (Europe)">
         <rom name="Sewer Shark (Europe).cue" crc="61BBA60D"/>
@@ -1176,17 +1191,17 @@
     <game name="Sherlock Holmes - Consulting Detective (USA)">
         <rom name="Sherlock Holmes - Consulting Detective (USA).cue" crc="AF04CBE"/>
     </game>
-    <game name="Sherlock Holmes - Consulting Detective Vol. II (Europe) (Disc 1)">
-        <rom name="Sherlock Holmes - Consulting Detective Vol. II (Europe) (Disc 1).cue" crc="814A0A8E"/>
+    <game name="Sherlock Holmes - Consulting Detective - Vol. II (Europe) (Disc 1)">
+        <rom name="Sherlock Holmes - Consulting Detective - Vol. II (Europe) (Disc 1).cue" crc="814A0A8E"/>
     </game>
-    <game name="Sherlock Holmes - Consulting Detective Vol. II (Europe) (Disc 2)">
-        <rom name="Sherlock Holmes - Consulting Detective Vol. II (Europe) (Disc 2).cue" crc="814A0A8E"/>
+    <game name="Sherlock Holmes - Consulting Detective - Vol. II (Europe) (Disc 2)">
+        <rom name="Sherlock Holmes - Consulting Detective - Vol. II (Europe) (Disc 2).cue" crc="814A0A8E"/>
     </game>
-    <game name="Sherlock Holmes - Consulting Detective Vol. II (USA) (Disc 1)">
-        <rom name="Sherlock Holmes - Consulting Detective Vol. II (USA) (Disc 1).cue" crc="74E5C044"/>
+    <game name="Sherlock Holmes - Consulting Detective - Vol. II (USA) (Disc 1)">
+        <rom name="Sherlock Holmes - Consulting Detective - Vol. II (USA) (Disc 1).cue" crc="74E5C044"/>
     </game>
-    <game name="Sherlock Holmes - Consulting Detective Vol. II (USA) (Disc 2)">
-        <rom name="Sherlock Holmes - Consulting Detective Vol. II (USA) (Disc 2).cue" crc="74E5C044"/>
+    <game name="Sherlock Holmes - Consulting Detective - Vol. II (USA) (Disc 2)">
+        <rom name="Sherlock Holmes - Consulting Detective - Vol. II (USA) (Disc 2).cue" crc="74E5C044"/>
     </game>
     <game name="Shin Megami Tensei (Japan)">
         <rom name="Shin Megami Tensei (Japan).cue" crc="D849384A"/>
@@ -1205,6 +1220,9 @@
     </game>
     <game name="Silpheed (Europe)">
         <rom name="Silpheed (Europe).cue" crc="F418B67"/>
+    </game>
+    <game name="Silpheed (Japan) (Demo) (Fixed Dump)">
+        <rom name="Silpheed (Japan) (Demo) (Fixed Dump).cue" crc="A1C71747"/>
     </game>
     <game name="Silpheed (Japan) (Demo)">
         <rom name="Silpheed (Japan) (Demo).cue" crc="A1C71747"/>
@@ -1284,8 +1302,8 @@
     <game name="Smurfs, The (Europe) (En,Fr,De,Es,It)">
         <rom name="Smurfs, The (Europe) (En,Fr,De,Es,It).cue" crc="DFC47A5C"/>
     </game>
-    <game name="Snatcher (Europe) (Beta)">
-        <rom name="Snatcher (Europe) (Beta).cue" crc="5818C22D"/>
+    <game name="Snatcher (Europe) (Beta) (1994-10-07)">
+        <rom name="Snatcher (Europe) (Beta) (1994-10-07).cue" crc="5818C22D"/>
     </game>
     <game name="Snatcher (Europe)">
         <rom name="Snatcher (Europe).cue" crc="43AC9AB4"/>
@@ -1311,23 +1329,32 @@
     <game name="Sol-Feace (Japan)">
         <rom name="Sol-Feace (Japan).cue" crc="BF8EDC33"/>
     </game>
+    <game name="Sol-Feace (USA) (RE)">
+        <rom name="Sol-Feace (USA) (RE).cue" crc="21DC358A"/>
+    </game>
     <game name="Sol-Feace (USA) (RE2)">
         <rom name="Sol-Feace (USA) (RE2).cue" crc="21DC358A"/>
     </game>
-    <game name="Sonic CD (Europe) (Beta 1)">
-        <rom name="Sonic CD (Europe) (Beta 1).cue" crc="694DC5C4"/>
+    <game name="Sonic CD (Europe) (Beta) (1993-08-06)">
+        <rom name="Sonic CD (Europe) (Beta) (1993-08-06).cue" crc="694DC5C4"/>
     </game>
-    <game name="Sonic CD (Europe) (Beta 2)">
-        <rom name="Sonic CD (Europe) (Beta 2).cue" crc="31A84701"/>
+    <game name="Sonic CD (Europe) (Beta) (1993-08-19)">
+        <rom name="Sonic CD (Europe) (Beta) (1993-08-19).cue" crc="31A84701"/>
     </game>
     <game name="Sonic CD (Europe)">
         <rom name="Sonic CD (Europe).cue" crc="AAD7D1F0"/>
     </game>
-    <game name="Sonic CD (USA) (Beta)">
-        <rom name="Sonic CD (USA) (Beta).cue" crc="F1E47626"/>
+    <game name="Sonic CD (USA) (Alt)">
+        <rom name="Sonic CD (USA) (Alt).cue" crc="F1E47626"/>
     </game>
-    <game name="Sonic CD (USA) (RE125) (Alt)">
-        <rom name="Sonic CD (USA) (RE125) (Alt).cue" crc="F1E47626"/>
+    <game name="Sonic CD (USA) (Beta) (1993-10-12)">
+        <rom name="Sonic CD (USA) (Beta) (1993-10-12).cue" crc="F1E47626"/>
+    </game>
+    <game name="Sonic CD (USA) (RE125) (Alt 1)">
+        <rom name="Sonic CD (USA) (RE125) (Alt 1).cue" crc="F1E47626"/>
+    </game>
+    <game name="Sonic CD (USA) (RE125) (Alt 2)">
+        <rom name="Sonic CD (USA) (RE125) (Alt 2).cue" crc="F1E47626"/>
     </game>
     <game name="Sonic CD (USA) (RE125)">
         <rom name="Sonic CD (USA) (RE125).cue" crc="F1E47626"/>
@@ -1344,17 +1371,17 @@
     <game name="Sonic The Hedgehog - CD Remake">
         <rom name="Sonic The Hedgehog - CD Remake.cue" crc="F6B671FF"/>
     </game>
-    <game name="Sonic The Hedgehog CD (Japan) (Beta 1)">
-        <rom name="Sonic The Hedgehog CD (Japan) (Beta 1).cue" crc="A4253D54"/>
+    <game name="Sonic the Hedgehog CD (Japan) (Beta) (1993-07-12)">
+        <rom name="Sonic the Hedgehog CD (Japan) (Beta) (1993-07-12).cue" crc="A4253D54"/>
     </game>
-    <game name="Sonic The Hedgehog CD (Japan) (Beta 2)">
-        <rom name="Sonic The Hedgehog CD (Japan) (Beta 2).cue" crc="136E714C"/>
+    <game name="Sonic the Hedgehog CD (Japan) (Beta) (1993-08-01)">
+        <rom name="Sonic the Hedgehog CD (Japan) (Beta) (1993-08-01).cue" crc="136E714C"/>
     </game>
-    <game name="Sonic The Hedgehog CD (Japan) (Demo)">
-        <rom name="Sonic The Hedgehog CD (Japan) (Demo).cue" crc="9B45B6C0"/>
+    <game name="Sonic the Hedgehog CD (Japan) (Demo)">
+        <rom name="Sonic the Hedgehog CD (Japan) (Demo).cue" crc="9B45B6C0"/>
     </game>
-    <game name="Sonic The Hedgehog CD (Japan)">
-        <rom name="Sonic The Hedgehog CD (Japan).cue" crc="8C2425D2"/>
+    <game name="Sonic the Hedgehog CD (Japan)">
+        <rom name="Sonic the Hedgehog CD (Japan).cue" crc="8C2425D2"/>
     </game>
     <game name="SoulStar &amp; Battlecorps (Europe) (Demo)">
         <rom name="SoulStar &amp; Battlecorps (Europe) (Demo).cue" crc="F5533033"/>
@@ -1401,6 +1428,9 @@
     <game name="Star Wars - Rebel Assault (Japan)">
         <rom name="Star Wars - Rebel Assault (Japan).cue" crc="7DB64C46"/>
     </game>
+    <game name="Star Wars - Rebel Assault (USA) (Limited Run Games)">
+        <rom name="Star Wars - Rebel Assault (USA) (Limited Run Games).cue" crc="D179A1B8"/>
+    </game>
     <game name="Star Wars - Rebel Assault (USA)">
         <rom name="Star Wars - Rebel Assault (USA).cue" crc="D179A1B8"/>
     </game>
@@ -1430,6 +1460,9 @@
     </game>
     <game name="Supreme Warrior (Europe) (Disc 2)">
         <rom name="Supreme Warrior (Europe) (Disc 2).cue" crc="A8DCC071"/>
+    </game>
+    <game name="Supreme Warrior (USA) (Disc 1) (Fire &amp; Earth) (Alt)">
+        <rom name="Supreme Warrior (USA) (Disc 1) (Fire &amp; Earth) (Alt).cue" crc="770E694D"/>
     </game>
     <game name="Supreme Warrior (USA) (Disc 1) (Fire &amp; Earth) (Sega CD 32X)">
         <rom name="Supreme Warrior (USA) (Disc 1) (Fire &amp; Earth) (Sega CD 32X).cue" crc="71B78202"/>
@@ -1461,8 +1494,8 @@
     <game name="Switch (Japan)">
         <rom name="Switch (Japan).cue" crc="C59316C9"/>
     </game>
-    <game name="Syndicate (Europe)">
-        <rom name="Syndicate (Europe).cue" crc="1BEEB6EF"/>
+    <game name="Syndicate (Europe) (En,Fr,De)">
+        <rom name="Syndicate (Europe) (En,Fr,De).cue" crc="1BEEB6EF"/>
     </game>
     <game name="Tenbu Mega CD Special (Japan)">
         <rom name="Tenbu Mega CD Special (Japan).cue" crc="FA4BBC58"/>
@@ -1479,8 +1512,8 @@
     <game name="TetreX (PD)">
         <rom name="TetreX (PD).cue" crc="1F3A255A"/>
     </game>
-    <game name="Theme Park (Europe)">
-        <rom name="Theme Park (Europe).cue" crc="5321F26A"/>
+    <game name="Theme Park (Europe) (En,Fr,De,Es)">
+        <rom name="Theme Park (Europe) (En,Fr,De,Es).cue" crc="5321F26A"/>
     </game>
     <game name="Third World War (USA)">
         <rom name="Third World War (USA).cue" crc="BEE0BC35"/>
@@ -1578,8 +1611,8 @@
     <game name="Warau Salesman (Japan)">
         <rom name="Warau Salesman (Japan).cue" crc="A076B8EB"/>
     </game>
-    <game name="What is X'Eye Multi Entertainment System (USA)">
-        <rom name="What is X'Eye Multi Entertainment System (USA).cue" crc="F8639D6"/>
+    <game name="What Is X'Eye Multi Entertainment System (USA)">
+        <rom name="What Is X'Eye Multi Entertainment System (USA).cue" crc="F8639D6"/>
     </game>
     <game name="Wheel of Fortune (USA)">
         <rom name="Wheel of Fortune (USA).cue" crc="9919FF94"/>
@@ -1598,6 +1631,9 @@
     </game>
     <game name="Winning Post (Japan)">
         <rom name="Winning Post (Japan).cue" crc="1BD35BA8"/>
+    </game>
+    <game name="WireHead (Europe) (Beta) (1995-09-12)">
+        <rom name="WireHead (Europe) (Beta) (1995-09-12).cue" crc="576529C5"/>
     </game>
     <game name="WireHead (USA)">
         <rom name="WireHead (USA).cue" crc="10434B27"/>
@@ -1623,11 +1659,11 @@
     <game name="WonderMega Collection (Japan) (Rev 2)">
         <rom name="WonderMega Collection (Japan) (Rev 2).cue" crc="733D91FE"/>
     </game>
-    <game name="World Cup USA '94 (Europe)">
-        <rom name="World Cup USA '94 (Europe).cue" crc="CBEA06D3"/>
+    <game name="World Cup USA '94 (Europe) (En,Fr,De,Es,It,Nl,Pt,Sv)">
+        <rom name="World Cup USA '94 (Europe) (En,Fr,De,Es,It,Nl,Pt,Sv).cue" crc="CBEA06D3"/>
     </game>
-    <game name="World Cup USA '94 (USA)">
-        <rom name="World Cup USA '94 (USA).cue" crc="F58438BB"/>
+    <game name="World Cup USA '94 (USA) (En,Fr,De,Es,It,Nl,Pt,Sv)">
+        <rom name="World Cup USA '94 (USA) (En,Fr,De,Es,It,Nl,Pt,Sv).cue" crc="F58438BB"/>
     </game>
     <game name="Yumemi Mystery Mansion (Australia)">
         <rom name="Yumemi Mystery Mansion (Australia).cue" crc="17601211"/>
