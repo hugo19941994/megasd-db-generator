@@ -29,7 +29,7 @@ class XMLGenerator():
 
         # Store some info to later put in the GitHub release as markdown
         self.clean_release_notes()
-        release_md = "| System | Info | Covers |\n| --- | --- | --- |\n"
+        self.build_release_notes("| System | Info | Covers |\n| --- | --- | --- |\n")
 
         self.STOP_WORDS = get_stop_words('en')
         self.STOP_WORDS = [word.replace('\'', '') for word in self.STOP_WORDS]
@@ -51,9 +51,6 @@ class XMLGenerator():
 
             # Generate release ZIP file
             self.generate_zip(XMLStr)
-
-            # Release text for Github
-            self.build_release_notes(release_md)
 
         finally:
             # Close files
