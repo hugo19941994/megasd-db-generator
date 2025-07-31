@@ -3,17 +3,18 @@
 import argparse
 import logging
 import sys
-from datDownloader import downloadDATs
-from IGDBDownloader import IGDBDownloader
-from XMLBuilder import XMLGenerator
-from redumpFiller import checkMissing
+
+from generator.dat_downloader import download_dats
+from generator.igdb_downloader import IGDBDownloader
+from generator.redump_filler import check_missing
+from generator.xml_builder import XMLGenerator
 
 
 def main():
-    FORMAT = '%(asctime)s - %(message)s'
-    logging.basicConfig(level=logging.INFO, format=FORMAT)
+    log_format = "%(asctime)s - %(message)s"
+    logging.basicConfig(level=logging.INFO, format=log_format)
 
-    logging.info('MegaSD DB Generator\n')
+    logging.info("MegaSD DB Generator\n")
 
     parser = argparse.ArgumentParser()
 
@@ -28,11 +29,11 @@ def main():
         parser.print_help()
 
     if args.download_dats:
-        downloadDATs()
+        download_dats()
 
     if args.update_custom_dat:
         print(args.update_custom_dat)
-        checkMissing(args.update_custom_dat[0])
+        check_missing(args.update_custom_dat[0])
 
     if args.download_db:
         IGDBDownloader()

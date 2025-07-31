@@ -5,23 +5,24 @@ description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
-    "chardet~=5.2.0",
-    "fuzzywuzzy[speedup]~=0.18.0",
     "httpx~=0.28.1",
     "lxml~=6.0.0",
     "requests~=2.32.4",
-    "selenium~=4.34.2",
-    "stop-words~=2018.7.23"
+    "stop-words~=2018.7.23",
+    "thefuzz>=0.22.1"
 ]
 
 [dependency-groups]
 dev = [
-  "ruff>=0.12.7"
+    "lxml-stubs>=0.5.1",
+    "mypy>=1.17.1",
+    "ruff>=0.12.7",
+    "types-requests>=2.32.4.20250611"
 ]
 
 [tool.ruff]
 line-length = 120
 
 [tool.ruff.lint]
-select = ["E", "F", "W", "C90", "I", "N", "UP", "S", "B", "A", "UP", "RUF", "TRY", "PERF", "ARG", "SIM", "D"]
+select = ["E", "F", "W", "C90", "I", "N", "UP", "S", "B", "A", "UP", "RUF", "TRY", "PERF", "ARG", "SIM"]
 ignore = ["E501"]
