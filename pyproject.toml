@@ -13,3 +13,15 @@ dependencies = [
     "selenium~=4.34.2",
     "stop-words~=2018.7.23"
 ]
+
+[dependency-groups]
+dev = [
+  "ruff>=0.12.7"
+]
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "C90", "I", "N", "UP", "S", "B", "A", "UP", "RUF", "TRY", "PERF", "ARG", "SIM", "D"]
+ignore = ["E501"]
