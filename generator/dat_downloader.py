@@ -52,10 +52,10 @@ def download_redump():
     return fname[1:-5] + ".dat"
 
 
-def download_smokemonster_cd():
-    logging.info("Downloading Sega CD SmokeMonster DB")
+def download_htgdb_cd():
+    logging.info("Downloading Sega CD Hardware Target Game DB")
     r = requests.get(
-        "https://raw.githubusercontent.com/SmokeMonsterPacks/EverDrive-Packs-Lists-Database/master/EverDrive%20Pack%20SMDBs/MegaSD%20SMDB.txt",
+        "https://raw.githubusercontent.com/frederic-mahe/Hardware-Target-Game-Database/master/EverDrive%20Pack%20SMDBs/MegaSD%20SMDB.txt",
         timeout=60,
     )
     r.raise_for_status()
