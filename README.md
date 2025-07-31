@@ -14,7 +14,7 @@ Most original thumbnails come from the [libretro-thumbnails](https://github.com/
 
 ```bash
 # Install dependencies
-pipenv install
+uv sync
 
 # Set the Twitch Client ID & Client Secret
 export TWITCH_CLIENT_ID=24c375d1-4f24-46b5-8ecf-d53b8c8f3919

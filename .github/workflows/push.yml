@@ -5,31 +5,51 @@ on:
     schedule:
         - cron:  '0 12 * * *'
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
     build:
         runs-on: ubuntu-latest
 
         steps:
         - name: Checkout code
-          uses: actions/checkout@v2
+          uses: actions/checkout@v4
 
         - name: Setup Python
-          uses: actions/setup-python@v2
+          uses: actions/setup-python@v5.6.0
           with:
-            python-version: 3.9
+            python-version: 3.13
 
-        - name: Install pipenv
-          run: sudo pip install pipenv
+        - name: Install the latest version of uv
+          uses: astral-sh/setup-uv@v6.4.3
 
-        - name: Install dependencies using Pipenv
-          run: pipenv install --deploy
+        - name: Install dependencies using uv
+          run: uv sync
+
+        - name: Setup Tailscale
+          uses: tailscale/github-action@v3.2.3
+          with:
+            oauth-client-id: ${{ secrets.TAILSCALE_OAUTH_CLIENT_ID }}
+            oauth-secret: ${{ secrets.TAILSCALE_OAUTH_SECRET }}
+            tags: tag:github-actions
+            use-cache: 'true'
+
+        - name: Use named exit node in tailscale
+          run: |
+            timeout 5m sudo -E tailscale set --exit-node=${{ secrets.TAILSCALE_EXIT_NODE }} --exit-node-allow-lan-access
 
         - name: Download dats, db and generate the XML
           id: generator
-          run: pipenv run ./generator/main.py --download-dats --update-custom-dat ${{ secrets.SECRET_URL }} --download-db --generate-xml
+          run: uv run python3 -m generator.main --download-dats --update-custom-dat ${{ secrets.SECRET_URL }} --download-db --generate-xml
           env:
               TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
               TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+
+        - name: Stop using a named exit node in tailscale
+          run: |
+            timeout 5m sudo -E tailscale set --exit-node=
 
         - name: Store date into an environment variable
           env:
@@ -37,36 +57,25 @@ jobs:
           run: echo "::set-env name=DATE::$(date '+%Y-%m-%d')"
 
         - name: Delete old drafts
-          uses: hugo19941994/delete-draft-releases@master
+          uses: hugo19941994/delete-draft-releases@v2.0.0
           env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
         - name: Create Github release
           id: create_release
-          uses: actions/create-release@v1.1.0
+          uses: softprops/action-gh-release@v2.3.2
           env:
               GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           with:
               tag_name: ${{ github.ref }}
-              release_name: DB ${{env.DATE}}
-              body: ${{ steps.generator.outputs.GITHUB_RELEASE_MD }}
+              name: DB ${{ env.DATE }}
+              body_path: .body.md
               draft: true
               prerelease: true
-
-        - name: Upload zipped database into the release
-          uses: actions/upload-release-asset@v1
-          env:
-              GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          with:
-              upload_url: ${{ steps.create_release.outputs.upload_url }}
-              asset_path: ./DB_${{env.DATE}}.zip
-              asset_name: DB_${{env.DATE}}.zip
-              asset_content_type: application/zip
+              files: ./DB_${{ env.DATE }}.zip
 
         - name: Generate new PR with the updated custom MegaSD DAT file if needed
-          uses: peter-evans/create-pull-request@v2.7.2
+          uses: peter-evans/create-pull-request@v7.0.8
           with:
               commit-message: Update MegaSD Sega CD DAT
-          env:
-              ACTIONS_ALLOW_UNSECURE_COMMANDS: "true"
 
