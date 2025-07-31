@@ -28,7 +28,7 @@ class XMLGenerator():
         self.ifmw.writeheader()
 
         # Store some info to later put in the GitHub release as markdown
-        self.release_md = "| System | Info | Covers |%0A| --- | --- | --- |%0A"
+        self.release_md = "| System | Info | Covers |\n| --- | --- | --- |\n"
 
         self.STOP_WORDS = get_stop_words('en')
         self.STOP_WORDS = [word.replace('\'', '') for word in self.STOP_WORDS]
@@ -420,7 +420,7 @@ class XMLGenerator():
         logging.info(f"IGDB Matches: {found_db}/{len(games_list.keys())}")
         logging.info(f"Cover matches: {found_covers}/{len(game_covers.keys())}\n")
 
-        self.release_md += f"| {datfile_name} | {found_db} | {found_covers} |%0A"
+        self.release_md += f"| {datfile_name} | {found_db} | {found_covers} |\n"
 
     @staticmethod
     def crc(fileName):
