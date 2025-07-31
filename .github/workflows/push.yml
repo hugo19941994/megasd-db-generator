@@ -38,12 +38,7 @@ jobs:
 
         - name: Use named exit node in tailscale
           run: |
-            timeout 5m sudo -E tailscale set --exit-node=${{ secrets.TAILSCALE_EXIT_NODE }}
-
-        - name: Verify HTTP traffic is routed through exit node
-          run: |
-            echo "Available exit nodes:"
-            tailscale status | grep 'exit node'
+            timeout 5m sudo -E tailscale set --exit-node=${{ secrets.TAILSCALE_EXIT_NODE }} --exit-node-allow-lan-access
 
         - name: Download dats, db and generate the XML
           id: generator
@@ -51,6 +46,10 @@ jobs:
           env:
               TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
               TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
+
+        - name: Stop using a named exit node in tailscale
+          run: |
+            timeout 5m sudo -E tailscale set --exit-node=
 
         - name: Store date into an environment variable
           env:

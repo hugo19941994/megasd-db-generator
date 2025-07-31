@@ -9,6 +9,10 @@ from io import BytesIO
 from urllib.parse import quote
 from lxml import objectify, etree
 from datDownloader import downloadRedump
+import logging
+
+logging.getLogger('httpx').setLevel(logging.WARNING)
+logging.getLogger('httpcore').setLevel(logging.WARNING)
 
 
 def _dat_to_dict(xml_path):
