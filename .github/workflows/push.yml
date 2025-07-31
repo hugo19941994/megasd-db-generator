@@ -25,7 +25,7 @@ jobs:
         - name: Install the latest version of uv
           uses: astral-sh/setup-uv@v6.4.3
 
-        - name: Install dependencies using Pipenv
+        - name: Install dependencies using uv
           run: uv sync
 
         - name: Setup Tailscale
@@ -42,7 +42,7 @@ jobs:
 
         - name: Download dats, db and generate the XML
           id: generator
-          run: pipenv run ./generator/main.py --download-dats --update-custom-dat ${{ secrets.SECRET_URL }} --download-db --generate-xml
+          run: uv run ./generator/main.py --download-dats --update-custom-dat ${{ secrets.SECRET_URL }} --download-db --generate-xml
           env:
               TWITCH_CLIENT_ID: ${{ secrets.TWITCH_CLIENT_ID }}
               TWITCH_CLIENT_SECRET: ${{ secrets.TWITCH_CLIENT_SECRET }}
