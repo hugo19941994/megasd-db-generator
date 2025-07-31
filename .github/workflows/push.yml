@@ -69,7 +69,7 @@ jobs:
           with:
               tag_name: ${{ github.ref }}
               name: DB ${{ env.DATE }}
-              body: ${{ steps.generator.outputs.GITHUB_RELEASE_MD }}
+              body_path: .body.md
               draft: true
               prerelease: true
               files: ./DB_${{ env.DATE }}.zip

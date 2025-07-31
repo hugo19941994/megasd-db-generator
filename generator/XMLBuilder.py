@@ -28,7 +28,8 @@ class XMLGenerator():
         self.ifmw.writeheader()
 
         # Store some info to later put in the GitHub release as markdown
-        self.release_md = "| System | Info | Covers |\n| --- | --- | --- |\n"
+        self.clean_release_notes()
+        release_md = "| System | Info | Covers |\n| --- | --- | --- |\n"
 
         self.STOP_WORDS = get_stop_words('en')
         self.STOP_WORDS = [word.replace('\'', '') for word in self.STOP_WORDS]
@@ -52,14 +53,21 @@ class XMLGenerator():
             self.generate_zip(XMLStr)
 
             # Release text for Github
-            if os.environ.get("GITHUB_ACTIONS"):
-                with open(os.environ.get("GITHUB_OUTPUT"), 'a') as f:
-                    f.write(f"GITHUB_RELEASE_MD={self.release_md}")
+            self.build_release_notes(release_md)
 
         finally:
             # Close files
             self.cfm.close()
             self.ifm.close()
+
+    def clean_release_notes(self):
+        # Remove the file if it exists
+        if os.path.exists('.body.md'):
+            os.remove('.body.md')
+
+    def build_release_notes(self, text):
+        with open('.body.md', 'a') as f:
+            f.write(text)
 
     def generate_zip(self, XMLStr):
         # create a ZipFile object
@@ -420,7 +428,7 @@ class XMLGenerator():
         logging.info(f"IGDB Matches: {found_db}/{len(games_list.keys())}")
         logging.info(f"Cover matches: {found_covers}/{len(game_covers.keys())}\n")
 
-        self.release_md += f"| {datfile_name} | {found_db} | {found_covers} |\n"
+        self.build_release_notes(f"| {datfile_name} | {found_db} | {found_covers} |\n")
 
     @staticmethod
     def crc(fileName):
