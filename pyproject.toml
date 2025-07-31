@@ -1,0 +1,15 @@
+[project]
+name = "megasd-db-generator"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "chardet~=5.2.0",
+    "fuzzywuzzy[speedup]~=0.18.0",
+    "httpx~=0.28.1",
+    "lxml~=6.0.0",
+    "requests~=2.32.4",
+    "selenium~=4.34.2",
+    "stop-words~=2018.7.23"
+]

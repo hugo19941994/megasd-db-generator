@@ -22,11 +22,11 @@ jobs:
           with:
             python-version: 3.13
 
-        - name: Install pipenv
-          run: sudo pip install pipenv
+        - name: Install the latest version of uv
+          uses: astral-sh/setup-uv@v6.4.3
 
         - name: Install dependencies using Pipenv
-          run: pipenv install --deploy
+          run: uv sync
 
         - name: Setup Tailscale
           uses: tailscale/github-action@v3.2.3
