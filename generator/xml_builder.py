@@ -282,28 +282,9 @@ class XMLGenerator:
         return minidom.parseString(etree.tostring(a)).toprettyxml(indent="    ")
 
     def do_roms(self, datfile_name, rom_ext, cover_path, db_path, a):
-        # Load all roms with full path
-        roms = []
-        roms_hash = {}  # store rom name with corresponding hash
-        filename = next(x for x in os.listdir("./dats") if datfile_name in x)
-        tree = objectify.parse(f"./dats/{filename}")
-        for t in tree.iter("rom"):
-            roms.append(t.attrib.get("name"))
-            roms_hash[t.attrib.get("name")] = t.attrib.get("crc")
-
-        # Load game covers
-        game_covers_l = [str(x) for x in Path(cover_path).glob("**/*.png")]
-
-        game_covers = {}
-        # Normalize cover name (some will be overwritten by the normalization)
-        for d in game_covers_l:
-            game_covers[self.normalize(os.path.basename(d))] = d
-
-        # Load IGDB games lists
-        # Use downloader.py
-        games_list = []
-        with open(db_path) as f:
-            games_list = json.load(f)
+        roms, roms_hash = self._dict_roms(datfile_name)
+        game_covers = self._game_covers(cover_path)
+        games_list = self._load_db(db_path)
 
         # Normalize game names
         new_games_list = {}
@@ -442,6 +423,34 @@ class XMLGenerator:
         logging.info(f"Cover matches: {found_covers}/{len(game_covers.keys())}\n")
 
         self.build_release_notes(f"| {datfile_name} | {found_db} | {found_covers} |\n")
+
+    def _dict_roms(self, datfile_name):
+        # Load all roms with full path
+        roms = []
+        roms_hash = {}  # store rom name with corresponding hash
+        filename = next(x for x in os.listdir("./dats") if datfile_name in x)
+        tree = objectify.parse(f"./dats/{filename}")
+        for t in tree.iter("rom"):
+            roms.append(t.attrib.get("name"))
+            roms_hash[t.attrib.get("name")] = t.attrib.get("crc")
+        return roms, roms_hash
+
+    def _game_covers(self, cover_path):
+        # Load game covers
+        game_covers_l = [str(x) for x in Path(cover_path).glob("**/*.png")]
+        game_covers = {}
+        # Normalize cover name (some will be overwritten by the normalization)
+        for d in game_covers_l:
+            game_covers[self.normalize(os.path.basename(d))] = d
+        return game_covers
+
+    def _load_db(self, db_path):
+        # Load IGDB games lists
+        # Use downloader.py
+        games_list = []
+        with open(db_path) as f:
+            games_list = json.load(f)
+        return games_list
 
     @staticmethod
     def crc(file_name):
