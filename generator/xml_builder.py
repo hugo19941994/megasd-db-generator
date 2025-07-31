@@ -1,4 +1,3 @@
-import glob
 import json
 import logging
 import os
@@ -9,6 +8,7 @@ from collections import defaultdict
 from csv import DictWriter
 from datetime import date
 from io import StringIO
+from pathlib import Path
 from zipfile import ZipFile
 
 from defusedxml import minidom
@@ -292,12 +292,8 @@ class XMLGenerator:
             roms_hash[t.attrib.get("name")] = t.attrib.get("crc")
 
         # Load game covers
-        game_covers_l = []
-        for x in os.walk(f"{cover_path}"):
-            print(x)
-            for y in glob.glob(os.path.join(x[0], "*.png")):
-                print(y)
-                game_covers_l.append(y)
+        game_covers_l = [str(x) for x in Path(cover_path).glob("**/*.png")]
+
         game_covers = {}
         # Normalize cover name (some will be overwritten by the normalization)
         for d in game_covers_l:
