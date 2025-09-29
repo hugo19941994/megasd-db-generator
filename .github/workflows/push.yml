@@ -29,7 +29,7 @@ jobs:
           run: uv sync
 
         - name: Setup Tailscale
-          uses: tailscale/github-action@v3.2.3
+          uses: tailscale/github-action@v3.3.0
           with:
             oauth-client-id: ${{ secrets.TAILSCALE_OAUTH_CLIENT_ID }}
             oauth-secret: ${{ secrets.TAILSCALE_OAUTH_SECRET }}
